@@ -2,7 +2,7 @@
 
 ## How to install Aspecto's SDK for nodejs
 
-Aspecto is using [OpenTelemetry](www.opentelemetry.io) to collect data, you can install it by 
+Aspecto is using [OpenTelemetry](www.opentelemetry.io) to collect data, you can install it by:
 
 ```
 $ npm install @aspecto/opentelemetry
