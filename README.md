@@ -12,7 +12,7 @@ What is it  used for - Use Aspecto to  manage the natural changes to your micros
 
 This doc site explains how to instrument your microservices with Aspecto, and then how to  use it at different steps of your devops process, including  deployment  to production.
 
-**get started** - download and instrument your microservices with Aspecto in a few simple steps. Then you can immediately use Aspecto Live Flow to monitor and analyze your microservices \(or specific ones\) as they run, with real  or simulated data
+**configure** - download and instrument your microservices with Aspecto in a few simple steps. Then you can immediately use Aspecto Live Flow to monitor and analyze your microservices \(or specific ones\) as they run, with real  or simulated data
 
 **Live Flow** -  view actual data flows between your services in real-time, and detect when breaks appear in endpoints, where changes on one side of a contract are not implemented on the other  side.
 
