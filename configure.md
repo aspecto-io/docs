@@ -42,7 +42,7 @@ You can pass the following configuration to the Aspecto client:
 
 ### Live Flows
 
-Live Flows captures all payloads and traces in your local environment and automatically extract the topology & dependencies between endpoints. 
+Live Flows captures all payloads and traces in your local environment and automatically extracts the topology & dependencies between endpoints. 
 
 Activate it using `{local:true}`, like this:
 
