@@ -1,5 +1,5 @@
 ---
-description: how to use Aspecto Live Flow to view services running locally
+description: How to use Aspecto Live Flow to view services running locally
 ---
 
 # Live Flow
@@ -72,13 +72,21 @@ The Logs view shows log messages recorded by the service. Logging requires the s
 
 ## Search
 
-incremental
+You can search for text that appears in the listed data flows. For example, you can search for specific field names, or for values, in either the request or response. All flows that match the search text are highlighted.
 
-in node data.
+![](../.gitbook/assets/search-highlighted%20%281%29.jpg)
 
 ## Settings
 
-group
+### Group flows
 
-exclude/include
+You can group flows that are similar, to declutter the list of flows. 
+
+### Exclude & include
+
+You can exclude specific flows from the Live Flow list. Use this to declutter the list by hiding flows that  are not  interesting to you.
+
+Excluded flows are not gone.  You  can remove the exclusion, so that they reappear in the flow  list.
+
+
 
