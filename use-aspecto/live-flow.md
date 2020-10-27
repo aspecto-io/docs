@@ -4,21 +4,21 @@ description: How to use Aspecto Live Flow to view services running locally
 
 # Live Flow
 
-The Live Flow is a view of  the data flows occurring in your services. It shows in near real-time the flows through different  endpoints and microservices, based on traffic you send it.
+The Live Flow is a view of the data flows occurring in your services. It shows in near real-time the flows through different endpoints and microservices, based on traffic you send it.
 
 You can use this view to analyze the data flows, discover dependencies, and detect the effect of development changes.
 
-## Getting started with Live  Flow
+## Getting started with Live Flow
 
-To get start with Live Flow, follow [these steps ](../configure.md#configuration)to instrument your application for the telemetry that Aspecto uses. This securely sends information  about live data flows to Aspecto, which is shown in the Live Flow.
+To get started with Live Flow, follow [these steps ](../configure.md#configuration)to instrument your application for the telemetry that Aspecto uses. This securely sends information about live data flows to Aspecto, which is shown in the Live Flow.
 
-Follow the  link shown in your devops tool, to open the Live Flow in your browser.
+Follow the link shown in your DevOps tool, to open the Live Flow in your browser.
 
-The initial view is waiting  for  live traffic to your service.
+The initial view is waiting for live traffic to your service.
 
 ![](../.gitbook/assets/whatsapp-image-2020-10-20-at-14.44.01.jpeg)
 
-Now, send traffic to the one or more endpoints in the service \(for example from Postman\). The telemetry instrumented in your service will capture this and  update the Live Flow view with the flows that were detected.
+Now, send traffic to one or more endpoints in the service \(for example from Postman\). The telemetry instrumented in your service will capture this and update the Live Flow view with the flows that were detected.
 
 
 
@@ -50,7 +50,7 @@ The list of flows is updated as new flows are detected by the telemetry sent fro
 
 ## Graph
 
-The graph view shows  the services and endpoints involved in  a flow.
+The graph view shows the services and endpoints involved in a flow.
 
 ## Node information
 
@@ -84,9 +84,9 @@ You can group flows that are similar, to declutter the list of flows.
 
 ### Exclude & include
 
-You can exclude specific flows from the Live Flow list. Use this to declutter the list by hiding flows that  are not  interesting to you.
+You can exclude specific flows from the Live Flow list. Use this to declutter the list by hiding flows that are not interesting to you.
 
-Excluded flows are not gone.  You  can remove the exclusion, so that they reappear in the flow  list.
+Excluded flows are not gone.  You can remove the exclusion so that they reappear in the flow list.
 
 
 

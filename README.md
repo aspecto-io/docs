@@ -1,6 +1,6 @@
 # Aspecto Documentation
 
-## What  is Aspecto
+## What is Aspecto
 
 Aspecto allows you to manage the complexity of your microservices, in both development and production environments. It uses deep telemetry analysis  of your microservices to discover how and where your endpoints are used, and to detect changes when they occur, and detect the impact surface of these changes.
 
@@ -10,11 +10,11 @@ What is it  used for - Use Aspecto to  manage the natural changes to your micros
 
 ## What's in this doc site
 
-This doc site explains how to instrument your microservices with Aspecto, and then how to  use it at different steps of your devops process, including  deployment  to production.
+This doc site explains how to instrument your microservices with Aspecto, and then how to use it at different steps of your DevOps process, including deployment to production.
 
 **configure** - download and instrument your microservices with Aspecto in a few simple steps. Then you can immediately use Aspecto Live Flow to monitor and analyze your microservices \(or specific ones\) as they run, with real  or simulated data
 
-**Live Flow** -  view actual data flows between your services in real-time, and detect when breaks appear in endpoints, where changes on one side of a contract are not implemented on the other  side.
+**Live Flow** -  view actual data flow between your services in real-time, and detect when breaks appear in endpoints, where changes on one side of a contract are not implemented on the other side.
 
 **dependency analysis**
 
