@@ -87,6 +87,6 @@ In isolated mode, the message in the console will look like this \(with `port` p
 ===============================================================================================
 ```
 
-Note: In case the Live Flows port keep on changing, just add an environment variable `ASPECTO_LIVE_PORT=59778` In order for live flows to work in isolated mode when running the service inside of the container the port that is used by live flows has to be published \(https://docs.docker.com/config/containers/container-networking\).  
+Note: If the Live Flows port is not static, add the environment variable `ASPECTO_LIVE_PORT=59778` in order for Live Flows to work in isolated mode when running the service in the container the port that is used by live flows has to be published \(https://docs.docker.com/config/containers/container-networking\).  
 
 
