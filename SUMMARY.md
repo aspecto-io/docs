@@ -3,11 +3,14 @@
 * [Aspecto Documentation](README.md)
 * [Configure Aspecto](configure.md)
 
-## Use Aspecto
+## Live Flow
 
-* [Live Flow](use-aspecto/live-flow.md)
+* [Getting Started](live-flow/live-flow.md)
+* [Visualize data flows](live-flow/visualize-data-flows/README.md)
+  * [Visualize flows into 3rd-party libraries](live-flow/visualize-data-flows/visualize-flows-into-3rd-party-libraries.md)
+* [Timing](live-flow/timing.md)
 
 ---
 
-* [Production view \(rename\)](production-view-rename.md)
+* [Live Flow on Production environments](live-flow-production.md)
 

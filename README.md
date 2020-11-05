@@ -14,11 +14,11 @@ This doc site explains how to instrument your microservices with Aspecto, and th
 
 **configure** - download and instrument your microservices with Aspecto in a few simple steps. Then you can immediately use Aspecto Live Flow to monitor and analyze your microservices \(or specific ones\) as they run, with real  or simulated data
 
-**Live Flow** -  view actual data flow between your services in real-time, and detect when breaks appear in endpoints, where changes on one side of a contract are not implemented on the other side.
+**Live Flow** -  visualize actual data flows in your services in real-time
 
-**dependency analysis**
+**dependency analysis  -** uncover the dependencies between services and their endpoints, including with 3rd-party libraries.  Detect when breaks appear in endpoints, where changes on one side of a contract are not implemented on the other side.
 
-**performance** 
+**performance** - see the actual timing of the data flows in your services, and identify possible bottlenecks.
 
 **security**
 
