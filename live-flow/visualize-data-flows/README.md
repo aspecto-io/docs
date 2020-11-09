@@ -1,26 +1,35 @@
 ---
-description: visualize the data flows in your apps and services
+description: Visualize the data flows in your apps and services
 ---
 
-# Visualize data flows
+# Flow Visualization
 
 Aspecto collects information on all data flows in your services. You view these flows on the Live Flow view.
 
 Use this view to see details for all the data flows in your services, to help in debugging and troubleshooting your application, before deploying it to a production environment. 
 
-For each flow,  you can see the steps in the flow, starting with the initial endpoint. At each step, you can see the service or microservice, the endpoint involved, and details of the request and response.
+For each flow,  you can see the steps in the flow, starting with the initial endpoint. At each step, you can see the microservice, the endpoint involved, and extra details.
 
-The example below shows a data flow, starting with an API request, and ending with a database operation.
+The example below shows a data flow, starting with an API request, traversing to a different microservice, and involving a database operation.
 
  Click on the first stop in the flow \(highlighted in blue\), and see details of the request and response on the right.
 
 ![](../../.gitbook/assets/flow-example-3.jpeg)
 
-Follow the flow to the next node.
+To visualize the next part of the flow, click on the next node in the chain.  
+In this case, the next node is in a different microservice.
 
 ![](../../.gitbook/assets/flow-example-1.jpeg)
 
-Finally, the last step in the flow is the action on the MongoDB database, in this case a query. The query text is  shown on the right.
+Finally, the last step in the flow is the action on the MongoDB database, in this case, a query.   
+The query text, along with other relevant data, is shown on the right.
 
 ![](../../.gitbook/assets/flow-example-2.jpeg)
+
+
+
+Add a section here that explains what I gained from this, like:  
+\* Now I can understand how a request travels between different services.  
+\*  How the data flows between them  
+\*  
 

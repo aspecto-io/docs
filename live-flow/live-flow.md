@@ -12,21 +12,13 @@ You can use this view to analyze the data flows, discover dependencies, and dete
 
 To get started with Live Flow, follow [these steps ](../configure.md#configuration)to instrument your application for the telemetry that Aspecto uses. This securely sends information about live data flows to Aspecto, which is shown in the Live Flow.
 
-Follow the link shown in your DevOps tool, to open the Live Flow in your browser.
+Follow the link shown in your terminal, to open the Live Flow in your browser.
 
 The initial view is waiting for live traffic to your service.
 
 ![](../.gitbook/assets/whatsapp-image-2020-10-20-at-14.44.01.jpeg)
 
 Now, send traffic to one or more endpoints in the service \(for example from Postman\). The telemetry instrumented in your service will capture this and update the Live Flow view with the flows that were detected.
-
-
-
-
-
-
-
-
 
 ## Live Flow UI
 
