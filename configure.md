@@ -30,7 +30,7 @@ You can pass the following configuration to the Aspecto client:
 
 | Option | Type | Description |
 | :--- | :--- | :--- |
-| env | string | set environment name manually instead of using `env` environment variable |
+| env | string | set environment name manually instead of using `NODE_ENV` environment variable |
 | aspectoAuth | UUID | set aspecto token from code instead of using `aspecto.json` |
 | packageName | string | set packageName manually instead of reading it from `package.json` |
 | packageVersion | string | set packageVersion manually instead of reading it from `package.json` |
@@ -48,7 +48,7 @@ Live Flows captures all payloads and traces in your local environment and automa
 Activate it using `{local:true}`, like this:
 
 ```text
-require('@aspecto/opentelemetry')({    local: true,});
+require('@aspecto/opentelemetry')({ local: true });
 ```
 
 Live flows works in two modes:
@@ -68,14 +68,15 @@ This is the default mode. It allows you to capture flows from all the microservi
 =====================================================================================================================================
 ```
 
-Click on the link to open the Live Flow, to see traces from all the microservices that are running on your environment that have local mode enabled. The link is valid for a limited period of time \(couple of days, but it may change in the future\). If you don't see trace from some microservice \(or none of them\), click the newly-generated link.
+Click on the link to open the Live Flow, to see traces from all the microservices that are running on your environment that have local mode enabled. The link is valid for a limited period of time \(a couple of days, but it may change in the future\).   
+If you don't see a trace from some microservice \(or none of them\), click the newly-generated link.
 
 #### Isolated mode
 
-In this mode you can only see flows from one microservice. Also, in this case, all the data is being sent directly to the browser. To activate isolated mode use `isolate` option like so:
+In this mode, you can only see flows from one microservice. Also, in this case, all the data is being sent directly to the browser. To activate isolated mode use `isolate` option like so:
 
 ```text
-require('@aspecto/opentelemetry')({local: true,isolate: true});
+require('@aspecto/opentelemetry')({ local: true, isolate: true });
 ```
 
 In isolated mode, the message in the console will look like this \(with `port` parameter\):
