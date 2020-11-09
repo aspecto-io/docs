@@ -39,6 +39,7 @@ You can pass the following configuration to the Aspecto client:
 | liveExporterPort | number | specify port for [live flows](https://www.npmjs.com/package/@aspecto/opentelemetry#live-flows) |
 | logger | logger interface | logger to be used in this tracing library. common use for debugging `logger: console` |
 | customZipkinEndpoint | URL | Send all traces to additional Zipkin server for debug |
+| samplingRatio | number | By default, Aspecto will collect all traces in the application, but sometimes it might be desirable to reduce the amount of traces and collect only a sampling of the traces. By setting the `samplingRatio` parameter to a value in range \[0.0, 1.0\] you can control the amount of traces starting in this service which will be probability sampled. This parameter has no influence on traces that start in other services and call the current instance, so a distributed trace is either completely sampled or completely dropped but no partial traces are expected. |
 
 ### Live Flows
 
