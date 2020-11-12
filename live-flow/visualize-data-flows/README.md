@@ -28,8 +28,14 @@ The query text, along with other relevant data, is shown on the right.
 
 
 
-Add a section here that explains what I gained from this, like:  
-\* Now I can understand how a request travels between different services.  
-\*  How the data flows between them  
-\*  
+The Live Flow visualization gives you visibility into the following:
+
+* how requests flow between different services
+* the data that flows between services
+
+The sections below explain how to use these Live Flow features
+
+* view timelines see the timing of each stage of a flow
+* view logs to see raw data at various stages
+* view the flow into and through 3rd-party APIs and libraries
 
