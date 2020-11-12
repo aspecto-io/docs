@@ -20,7 +20,7 @@ Click on a flow in this list to open a Live Flow view for it. You can investigat
 
 
 
-Note: If empty because not installed on mature env 
+ 
 
 
 
