@@ -6,11 +6,15 @@ description: View flows from other services using the same endpoints as your ser
 
 The Live Flows view shows the flows from other services using the same endpoints as your services. These are in the DEPENDENCIES tab, grouped by service and endpoint.
 
+{% hint style="info" %}
+If there are no flows in the DEPENDENCIES tab,  your service might not be running in a mature   production environment, with the other services in your application.
+{% endhint %}
+
 ![](../../.gitbook/assets/whatsapp-image-2020-11-08-at-15.30.22-dependencies.jpeg)
 
 
 
-Click on a flow in this list to open a Live Flow view for it.
+Click on a flow in this list to open a Live Flow view for it. You can investigate this flow in the same way as  the flows in your service,
 
 ![](../../.gitbook/assets/whatsapp-image-2020-11-10-at-15.57.16-dependencies-flow-detail.jpeg)
 
@@ -20,13 +24,5 @@ Note: If empty because not installed on mature env
 
 
 
-shows - flows from other services that use same endpoint.
 
-benefit - identify 'dependencies' - affects of changes in endpoint
-
-how to view - select node \(graph\), select DEPENDENCIES  tab.
-
-explain the  detail - services & endpoints, number of different flows
-
-click on an endpoint -?
 
