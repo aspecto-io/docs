@@ -7,21 +7,14 @@ description: >-
 
 # Live Flows with Production Data
 
-When you deploy your instrumented services You can use the Live Flow in a production environment to expose even more information about the data flows in your application. You can see the following detail:
+When you deploy your instrumented services in a production environment, you can use Live Flow to expose even more information about the data flows in your application. You can see the following detail:
 
-* which other services 
+* which other services use the same endpoints, and their data flows
+* which services are effected by changes you make in endpoints 
 
 
 
-What you can do: 
 
--see all/other flows using the same endpoints - see the scope/effect that changes to the endpoint will have. 
-
--identify the effects of changes \(breaks\) in the way your service uses an endpoint, and other services that use the same endpoint.
-
-What you need: production environment \(all services running\):
-
-dependencies
 
 
 
