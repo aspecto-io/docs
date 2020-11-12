@@ -14,7 +14,3 @@
   * [Dependencies](live-flow/live-flow-production/dependencies.md)
   * [Breaking Changes](live-flow/live-flow-production/breaking-changes.md)
 
-## Mature Environments
-
-* [Getting Started](mature-environments/getting-started.md)
-
