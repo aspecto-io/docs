@@ -1,16 +1,20 @@
 # Table of contents
 
-* [Aspecto Documentation](README.md)
-* [Configure Aspecto](configure.md)
+* [What is Aspecto](README.md)
+* [Install](install.md)
+* [How it works](how-it-works.md)
 
-## Live Flow
+## Live Debugging
 
-* [Getting Started](live-flow/live-flow.md)
-* [Flow Visualization](live-flow/visualize-data-flows/README.md)
-  * [Timeline](live-flow/visualize-data-flows/timing.md)
-  * [Logging](live-flow/visualize-data-flows/logging.md)
-  * [Visualize 3rd-party APIs](live-flow/visualize-data-flows/visualize-flows-into-3rd-party-libraries.md)
-* [Live Flows with Production Data](live-flow/live-flow-production/README.md)
-  * [Dependencies](live-flow/live-flow-production/dependencies.md)
-  * [Breaking Changes](live-flow/live-flow-production/breaking-changes.md)
+* [Live Flows Overview](live-debugging/live-flows-overview.md)
+* [Flow Visualization](live-debugging/visualize-data-flows/README.md)
+  * [Timeline](live-debugging/visualize-data-flows/timing.md)
+  * [Logging](live-debugging/visualize-data-flows/logging.md)
+* [Production Data](live-debugging/live-flow-production/README.md)
+  * [Dependencies](live-debugging/live-flow-production/dependencies.md)
+  * [Breaking Changes](live-debugging/live-flow-production/breaking-changes.md)
+
+## Settings
+
+* [Data Privacy](settings/data-privacy.md)
 
