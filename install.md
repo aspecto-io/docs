@@ -17,7 +17,7 @@ $ npm install @aspecto/opentelemetry
 ### Usage
 
 In the root folder create an `aspecto.json` file with content `{"token" : "-- token goes here --"}`.   
-Alternatively, you can provide it through ASPECTO\_AUTH env param OR `aspectoAuth`[https://docs.aspecto.io](https://docs.aspecto.io) init option.  
+Alternatively, you can provide it through ASPECTO\_AUTH env param OR `aspectoAuth`init option.  
 Obtain your token [here](https://app.aspecto.io/app/integration/api-key).
 
 Add this call at the top of your app entry point:
@@ -40,60 +40,70 @@ You can pass the following configuration to the Aspecto client:
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">env</td>
+      <td style="text-align:left"><code>env</code>
+      </td>
       <td style="text-align:left">string</td>
       <td style="text-align:left">set environment name manually instead of using <code>NODE_ENV</code> environment
         variable</td>
     </tr>
     <tr>
-      <td style="text-align:left">aspectoAuth</td>
+      <td style="text-align:left"><code>aspectoAuth</code>
+      </td>
       <td style="text-align:left">UUID</td>
       <td style="text-align:left">set Aspecto token from code instead of using <code>aspecto.json</code>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">packageName</td>
+      <td style="text-align:left"><code>packageName</code>
+      </td>
       <td style="text-align:left">string</td>
       <td style="text-align:left">set packageName manually instead of reading it from <code>package.json</code>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">packageVersion</td>
+      <td style="text-align:left"><code>packageVersion</code>
+      </td>
       <td style="text-align:left">string</td>
       <td style="text-align:left">set packageVersion manually instead of reading it from <code>package.json</code>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">local</td>
+      <td style="text-align:left"><code>local</code>
+      </td>
       <td style="text-align:left">boolean</td>
       <td style="text-align:left">when set to true, enable <a href="https://www.npmjs.com/package/@aspecto/opentelemetry#live-flows">live flows</a>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">isolate</td>
+      <td style="text-align:left"><code>isolate</code>
+      </td>
       <td style="text-align:left">boolean</td>
       <td style="text-align:left">when set to true, enable isolated mode for <a href="https://www.npmjs.com/package/@aspecto/opentelemetry#live-flows">live flows</a>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">liveExporterPort</td>
+      <td style="text-align:left"><code>liveExporterPort</code>
+      </td>
       <td style="text-align:left">number</td>
       <td style="text-align:left">specify port for <a href="https://www.npmjs.com/package/@aspecto/opentelemetry#live-flows">live flows</a>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">logger</td>
+      <td style="text-align:left"><code>logger</code>
+      </td>
       <td style="text-align:left">logger interface</td>
       <td style="text-align:left">logger to be used in this tracing library. common use for debugging <code>logger: console</code>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">customZipkinEndpoint</td>
+      <td style="text-align:left"><code>customZipkinEndpoint</code>
+      </td>
       <td style="text-align:left">URL</td>
       <td style="text-align:left">Send all traces to additional Zipkin server for debug</td>
     </tr>
     <tr>
-      <td style="text-align:left">samplingRatio</td>
+      <td style="text-align:left"><code>samplingRatio</code>
+      </td>
       <td style="text-align:left">number</td>
       <td style="text-align:left">
         <p>Rate of traces to be sampled. Between 0 to 1 (default is 1).</p>
