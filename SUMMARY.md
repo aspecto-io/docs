@@ -1,10 +1,15 @@
 # Table of contents
 
 * [What is Aspecto](README.md)
+
+## 🎬 GETTING STARTED
+
+---
+
 * [Install](install.md)
 * [How it works](how-it-works.md)
 
-## Live Debugging
+## 🐞 Live Debugging
 
 * [Live Flows Overview](live-debugging/live-flows-overview.md)
 * [Flow Visualization](live-debugging/visualize-data-flows/README.md)
@@ -14,7 +19,7 @@
   * [Dependencies](live-debugging/live-flow-production/dependencies.md)
   * [Breaking Changes](live-debugging/live-flow-production/breaking-changes.md)
 
-## Settings
+## ⚙️ Settings
 
 * [Data Privacy](settings/data-privacy.md)
 

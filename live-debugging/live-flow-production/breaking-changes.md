@@ -6,6 +6,12 @@ description: see the effects of changes that you make to endpoints
 
 The Live Flow view shows the effects that changes you make in endpoints have on other services using these endpoints.
 
+{% hint style="info" %}
+If breaking changes never appear,  Aspecto might not be running on your service in a mature environment.
+{% endhint %}
+
+![](../../.gitbook/assets/whatsapp-image-2020-11-08-at-15.30.22-dependencies.jpeg)
+
 When you make a change to an endpoint, a _Breaking changes alert_ is shown. This indicates that another flow, that uses the endpoint, is affected by the change, and may not function correctly as a result.
 
 ![](../../.gitbook/assets/whatsapp-image-2020-11-08-at-15.40.44-breakingchanges.jpeg)
