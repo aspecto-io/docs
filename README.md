@@ -6,7 +6,7 @@ Aspecto allows you to manage the complexity of your microservices, in both devel
 
 Use Aspecto to manage the natural changes to your microservices as your application evolves, and ensure that all parties to contracts between services implement changes so that your application doesn't break. Use it also to ensure the correct test coverage of all relevant use-cases flows before you deploy.
 
-## Jump to
+## See also
 
 {% page-ref page="install.md" %}
 
