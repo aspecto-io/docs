@@ -29,5 +29,6 @@ The sections below explain how to use these Live Flow features:
 
 * View timelines see the timing of each stage of a flow
 * View logs to see raw data at various stages
-* View the flow into and through 3rd-party APIs and libraries
+
+
 

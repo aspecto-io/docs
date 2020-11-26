@@ -32,8 +32,6 @@ The Live Flow view shows the  following:
 
 **3** \(lower right\) - information view of a selected node in the graph
 
-
-
 ## Flows Table
 
 The list of flows shows the service and entry point for the flow, the time, and the number of nodes involved.
