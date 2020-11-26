@@ -43,17 +43,31 @@ New flows are shown on top.
 
 ## Graph
 
-The graph view shows the services and endpoints involved in a flow.  
-- explain on the edges \(order, operation, status\)  
-- explain on the label  
-- explain on the flag
+The graph view shows the services and endpoints involved in a flow. Here is a typical graph:
+
+![](../.gitbook/assets/whatsapp-image-2020-11-24-at-11.09.56-graph-2-highlighted.jpg)
+
+The graph has these elements:
+
+**1** - squares are nodes. There are different types, such as microservices, databases, and Lambda functions. The node label indicates the type of node, with more detail inside the node. The detail varies according to the  type of node.
+
+Nodes  are  the source or destination for an action. 
+
+The endpoint node is shown with this  symbol:
+
+![](../.gitbook/assets/graph-endpoint.png)
+
+**2** - lines represent operations  between nodes. This can be, for example, an HTTP request, or a database operation.  The operation is labelled on the line, along with the status of the operation. The arrow indicates the direction of the action.
+
+**3** - numbers on lines represent the sequence of actions within the flow 
 
 ## Node information
 
-The information view shows details for a node in the graph. This includes details for the message in the data flow \(request, response\).  
-- explain different component show different details
+The information view shows details for a node in the graph. This includes details for the incoming segment to the node in the data flow. In the example below, details for the node /api/v2/flow/transform are shown. This includes the REQUEST and RESPONSE \(coming in to the node\), other flows using the same endpoint \([Dependencies](live-flow-production/dependencies.md)\), and the raw data in the request.
 
-There are also the following additional options in the  information view
+![](../.gitbook/assets/flow-example-3-node-info.jpg)
+
+There are also the following additional options in the node information view.
 
 ## Search
 
