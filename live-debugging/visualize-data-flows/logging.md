@@ -30,7 +30,7 @@ const { setLogger } = Instrument({ local: true });
 
 In the Live Flow, in the info pane on the right, click _Logs._ The Logs pane will open at the bottom. 
 
-![](../../.gitbook/assets/whatsapp-image-2020-11-09-at-15.09.09-log-3-highlighted.jpg)
+![](../../.gitbook/assets/logs.png)
 
 On the left, You can filter the view to show different log **severities**, filter by **service name**, or **search** for specific log records with a text search.
 

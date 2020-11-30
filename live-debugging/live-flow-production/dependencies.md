@@ -4,19 +4,18 @@ description: View flows from other services using the same endpoints as your ser
 
 # Dependencies
 
-The Live Flows view shows the flows from other services using the same endpoints as your services. These are in the DEPENDENCIES tab, grouped by service and endpoint.
+The Live Flows view shows the flows from other services using the same endpoints as your services. These are in the **DEPENDENCIES** tab, grouped by service and endpoint.
 
 {% hint style="info" %}
 If there are no flows in the DEPENDENCIES tab, Aspecto might not be running on your service in a mature environment.
 {% endhint %}
 
-![](../../.gitbook/assets/whatsapp-image-2020-11-08-at-15.30.22-dependencies.jpeg)
+![](../../.gitbook/assets/image%20%281%29.png)
 
-Click on a flow in this list to open a Live Flow view for it. You can investigate this flow in the same way as  in live flows:
+Click on a flow in this list to open a Flow view for it.   
+You can investigate the dependant in the same way as  in live flows:
 
-![](../../.gitbook/assets/whatsapp-image-2020-11-10-at-15.57.16-dependencies-flow-detail.jpeg)
-
-
+![Dependant Flow View](../../.gitbook/assets/dependecy.png)
 
  
 

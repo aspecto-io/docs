@@ -43,7 +43,7 @@ New flows are shown **on top**.
 
 The graph view shows the services and endpoints involved in a flow. Here is a typical graph:
 
-![](../.gitbook/assets/whatsapp-image-2020-11-24-at-11.09.56-graph-2-highlighted.jpg)
+![](../.gitbook/assets/explain-graph.png)
 
 The graph has these elements:
 
@@ -51,7 +51,7 @@ The graph has these elements:
 
 Nodes are the source or destination for an action. 
 
-The entry node is shown with  a flag:
+The entry node is shown with a flag, and a text showing the agent that make the request \(if applicable\):
 
 ![](../.gitbook/assets/graph-endpoint.png)
 
@@ -63,9 +63,10 @@ The entry node is shown with  a flag:
 
 The information view shows details for a node in the graph.   
 This includes details for the incoming segment to the node in the data flow.   
-In the example below, details for the node `/user/token` are shown. This includes the REQUEST and RESPONSE \(coming into the node\), other flows using the same endpoint \([Dependencies](live-flow-production/dependencies.md)\), and the raw data in the request.
+In the example below, details for the node `/user/login` are shown.   
+This includes the **REQUEST** and **RESPONSE**, other flows using the same endpoint \([Dependencies](live-flow-production/dependencies.md)\), and the raw data of the span.
 
-![](../.gitbook/assets/image%20%281%29.png)
+![](../.gitbook/assets/image%20%285%29.png)
 
 ## Search
 

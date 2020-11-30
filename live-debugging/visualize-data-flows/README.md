@@ -11,19 +11,19 @@ For each flow,  you can see the steps in the flow, starting with the initial end
 
 The example below shows a data flow, starting with an API request, traversing to a different microservice, and involving a database operation.
 
-Click on the first stop in the flow \(highlighted in blue\), and see details of the request and response on the right.
+Click on the first stop in the flow after the entry flag \(highlighted in blue\), and see details of the request and response on the right.
 
-![](../../.gitbook/assets/flow-example-3.jpeg)
+![Flow starts from GET to &quot;wikipedia-service&quot;](../../.gitbook/assets/flow-wikipedia-service.png)
 
 To visualize the next part of the flow, click on the next node in the chain.  
-In this case, the next node is in a different microservice.
+In this case, the next node is in a different microservice - user-service.
 
-![](../../.gitbook/assets/flow-example-1.jpeg)
+![](../../.gitbook/assets/flow-user-service.png)
 
-Finally, the last step in the flow is the action on the MongoDB database, in this case, a query.   
-The query text, along with other relevant data, is shown on the right.
+The next step in the flow is an action on the MongoDB database, in this case, a _findOne_ operation.   
+The query, along with other relevant data, is shown on the right:
 
-![](../../.gitbook/assets/flow-example-2.jpeg)
+![](../../.gitbook/assets/flow-users-db.png)
 
 The next sections explain how to use these Live Flow features:
 

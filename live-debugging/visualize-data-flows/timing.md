@@ -9,7 +9,7 @@ This can give you insights into delays and possible **bottlenecks** in your appl
 
 Once you have selected a flow to investigate, click _Timeline_ in the information pane on the right.
 
-![](../../.gitbook/assets/whatsapp-image-2020-10-18-at-15.01.10-timeline-highlighted%20%281%29.jpg)
+![](../../.gitbook/assets/timeline.png)
 
 The timeline for the flow is shown below, with the selected node highlighted.
 
