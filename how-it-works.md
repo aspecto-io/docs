@@ -1,16 +1,21 @@
 ---
-description: how Aspecto shows you the flows within your applications
+description: How Aspecto shows you the flows within your applications
 ---
 
 # How it works
 
 ## OpenTelemetry
 
-Aspecto uses [OpenTelemetry ](https://opentelemetry.io/docs/concepts/what-is-opentelemetry/)to collect information about the the flows in your  applications. This information is forwarded to Aspecto. In Aspecto, it is analyzed and rendered into Live Flow and other visualizations that you can use to understand and debug the actions in your applications down to component levels. 
+Aspecto uses [OpenTelemetry ](https://opentelemetry.io/docs/concepts/what-is-opentelemetry/)to collect information about the flows in your applications.   
+OpenTelemetry is based on **distributed tracing**, which is a method used to profile and monitor applications, especially those built using a microservices architecture.  
+  
+This information is forwarded to Aspecto. In Aspecto, it is **analyzed** and rendered into Live Flow and other **visualizations** that you can use to understand and debug the actions in your applications down to component levels. 
 
 ## Auto-instrumentation
 
-When you use Aspecto, your application is instrumented with a telemetry module \(see [Install](install.md)\) for Node.js. Aspecto supports a number of Node.js libraries. As they are included in your application, Aspecto automatically includes additional telemetry instrumentation plugin modules for them.
+When you use Aspecto, your application is **instrumented** with our Node.js SDK \(see [Install](install.md)\).  
+Aspecto supports a number of Node.js libraries.   
+As they are included in your application, Aspecto automatically includes additional telemetry instrumentation plugin modules for them.
 
 These libraries are supported: 
 
@@ -25,9 +30,8 @@ These libraries are supported:
 * ioredis
 * sequelize
 
-The plugin modules for these libraries are this open-source repository
-
-[https://github.com/aspecto-io/opentelemetry-ext-js](https://github.com/aspecto-io/opentelemetry-ext-js)
+Some of the plugins were developed by Aspecto and available as open-source.  
+Check them out here: [https://github.com/aspecto-io/opentelemetry-ext-js](https://github.com/aspecto-io/opentelemetry-ext-js)
 
 
 

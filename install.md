@@ -1,5 +1,5 @@
 ---
-description: How to instrument Aspecto  in your code
+description: How to instrument your service using Aspecto
 ---
 
 # Install
@@ -10,7 +10,7 @@ Aspecto uses [OpenTelemetry](www.opentelemetry.io) to collect data.
 
 Install our Node.js library using `npm`:
 
-```
+```bash
 $ npm install @aspecto/opentelemetry
 ```
 
@@ -22,7 +22,7 @@ Obtain your token [here](https://app.aspecto.io/app/integration/api-key).
 
 Add this call at the top of your app entry point:
 
-```text
+```javascript
 require('@aspecto/opentelemetry')();
 ```
 
@@ -117,11 +117,11 @@ You can pass the following configuration to the Aspecto client:
 
 {% page-ref page="live-debugging/live-flows-overview.md" %}
 
-Live Flows captures all payloads and traces in your local environment and automatically extracts the topology & dependencies between endpoints. 
+Live Flows captures all payloads and traces in your **local environment** and automatically extracts the topology & dependencies between endpoints. 
 
 Activate it using `{local:true}`, like this:
 
-```text
+```javascript
 require('@aspecto/opentelemetry')({ local: true });
 ```
 
@@ -149,7 +149,7 @@ If you don't see a trace from some microservice \(or none of them\), click the n
 
 In this mode, you can only see flows from one microservice. Also, in this case, all the data is being sent directly to the browser. To activate isolated mode use `isolate` option like so:
 
-```text
+```javascript
 require('@aspecto/opentelemetry')({ local: true, isolate: true });
 ```
 
@@ -163,6 +163,6 @@ In isolated mode, the message in the console will look like this \(with `port` p
 ===============================================================================================
 ```
 
-Note: If the Live Flows port is not static, add the environment variable `ASPECTO_LIVE_PORT=59778` in order for Live Flows to work in isolated mode when running the service in the container the port that is used by live flows has to be published \(https://docs.docker.com/config/containers/container-networking\).  
+Note: If the Live Flows port is not static, set the `liveExporterPort` configuration option.  
 
 

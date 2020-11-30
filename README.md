@@ -1,6 +1,6 @@
 # What is Aspecto
 
-Aspecto allows you to manage the complexity of your microservices, in both development and production envir~~o~~nments. It uses deep telemetry analysis of your microservices to discover how and where your endpoints are used, to detect changes when they occur, and detect the impact surface of these changes.
+Aspecto allows you to manage the complexity of your **microservices**, in both development and production environments. It uses deep telemetry analysis of your microservices to discover how and where your endpoints are used, to detect changes when they occur, and detect the impact surface of these changes.
 
 ## What is it used for?
 
