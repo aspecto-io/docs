@@ -15,7 +15,7 @@ This information is forwarded to Aspecto. In Aspecto, it is **analyzed** and ren
 
 When you use Aspecto, your application is **instrumented** with our Node.js SDK \(see [Install](install.md)\).  
 Aspecto supports a number of Node.js libraries.   
-As they are included in your application, Aspecto automatically includes additional telemetry instrumentation plugin modules for them.
+As they are imported into your application, Aspecto automatically includes additional telemetry instrumentation plugin modules for them.
 
 These libraries are supported: 
 
