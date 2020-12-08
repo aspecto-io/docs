@@ -11,7 +11,7 @@ For each flow,  you can see the steps in the flow, starting with the initial end
 
 The example below shows a data flow, starting with an API request, traversing to a different microservice, and involving a database operation.
 
-Click on the first stop in the flow after the entry flag \(highlighted in blue\), and see details of the http request and http response on the right.
+Click on the first stop in the flow after the entry flag \(highlighted in blue\), and see on the right details of the HTTP request and response.
 
 ![Flow starts from GET to &quot;wikipedia-service&quot;](../../.gitbook/assets/flow-wikipedia-service.png)
 
