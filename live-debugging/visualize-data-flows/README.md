@@ -11,7 +11,7 @@ For each flow,  you can see the steps in the flow, starting with the initial end
 
 The example below shows a data flow, starting with an API request, traversing to a different microservice, and involving a database operation.
 
-Click on the first stop in the flow after the entry flag \(highlighted in blue\), and see details of the request and response on the right.
+Click on the first stop in the flow after the entry flag \(highlighted in blue\), and see details of the http request and http response on the right.
 
 ![Flow starts from GET to &quot;wikipedia-service&quot;](../../.gitbook/assets/flow-wikipedia-service.png)
 
@@ -21,7 +21,7 @@ In this case, the next node is in a different microservice - user-service.
 ![](../../.gitbook/assets/flow-user-service.png)
 
 The next step in the flow is an action on the MongoDB database, in this case, a _findOne_ operation.   
-The query, along with other relevant data, is shown on the right:
+The query, along with other relevant data, such as the DB response, is shown on the right:
 
 ![](../../.gitbook/assets/flow-users-db.png)
 

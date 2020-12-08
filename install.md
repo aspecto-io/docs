@@ -20,15 +20,26 @@ In the root folder create an `aspecto.json` file with content `{"token" : "-- to
 Alternatively, you can provide it through ASPECTO\_AUTH env param OR `aspectoAuth`init option.  
 Obtain your token [here](https://app.aspecto.io/app/integration/api-key).
 
-Add this call at the top of your app entry point:
+Add this call at the top of your app entry point, **before any other import**:
 
 ```javascript
 require('@aspecto/opentelemetry')();
+// ... other imports ...
 ```
 
 ### Configuration
 
-You can pass the following configuration to the Aspecto client:
+You can pass a configuration object when initializing Aspecto, like this for example:
+
+```javascript
+require('@aspecto/opentelemetry')({
+    packageName: 'my-package',
+    env: 'production',
+    samplingRatio: 0.1
+});
+```
+
+Available configurations are:
 
 <table>
   <thead>
@@ -163,6 +174,6 @@ In isolated mode, the message in the console will look like this \(with `port` p
 ===============================================================================================
 ```
 
-Note: If the Live Flows port is not static, set the `liveExporterPort` configuration option.  
+Note: To make sure the port used is consistent between restarts, use the `liveExporterPort` configuration option.  
 
 

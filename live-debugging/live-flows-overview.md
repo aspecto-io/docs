@@ -34,7 +34,7 @@ The Live Flow view shows the  following:
 
 ## Flows Table
 
-The list of flows shows the service and **entry point** for the flow, the time, and the number of nodes involved.
+The list of flows shows the service and **entry point** for the flow, and the time.
 
 The list of flows is updated as new flows are detected by the telemetry sent from the service.  
 New flows are shown **on top**.

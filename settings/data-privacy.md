@@ -26,7 +26,7 @@ Click _Settings_, in the lower left of the Aspecto app, and then select _Data Pr
 5. Then, select the specific service or flow in which it occurs, or anywhere \(all services or flows\)
 6. Click _CREATE_, to add the rule.
 
-Once created,  the rule will be applied to all data collected after this \(but not to data already collected\).
+Once created,  the rule will be applied to all data collected after this action \(but not to data already collected\).
 
 
 

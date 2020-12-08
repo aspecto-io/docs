@@ -19,15 +19,14 @@ As they are included in your application, Aspecto automatically includes additio
 
 These libraries are supported: 
 
-* mongoose
-* aws-sdk 
-* kafka-node 
-* kafkajs 
-* express 
-* typeorm 
 * http 
 * https
+* express 
+* mongoose
 * ioredis
+* aws-sdk 
+* kafkajs 
+* typeorm 
 * sequelize
 
 Some of the plugins were developed by Aspecto and available as open-source.  
