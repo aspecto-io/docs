@@ -10,7 +10,7 @@ You can use this view to analyze the data flows, discover dependencies, and dete
 
 ## Getting started with Live Flow
 
-To get started with Live Flow, follow [these steps ](../install.md#configuration)to instrument your application for the telemetry that Aspecto uses. This securely sends information about live data flows to Aspecto, which is then shown in the Live Flow view.
+To get started with Live Flow, follow [these steps ](../install/#configuration)to instrument your application for the telemetry that Aspecto uses. This securely sends information about live data flows to Aspecto, which is then shown in the Live Flow view.
 
 Follow the [link](https://docs.aspecto.io/v1/install#connected-mode) shown in your terminal, to open the Live Flow in your browser.  
 The initial view is waiting for live traffic to your service.

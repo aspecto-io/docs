@@ -137,7 +137,7 @@ Available configurations are \(all optional\):
 
 ### Live Flows
 
-{% page-ref page="live-debugging/live-flows-overview.md" %}
+{% page-ref page="../live-debugging/live-flows-overview.md" %}
 
 Live Flows captures all payloads and traces in your **local environment** and automatically extracts the topology & dependencies between endpoints. 
 

@@ -8,5 +8,5 @@ Use Aspecto to manage the natural changes to your microservices as your applicat
 
 ## See also
 
-{% page-ref page="install.md" %}
+{% page-ref page="install/" %}
 

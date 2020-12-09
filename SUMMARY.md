@@ -6,7 +6,9 @@
 
 ---
 
-* [Install](install.md)
+* [Install](install/README.md)
+  * [Install on AWS Lamba](install/lambda.md)
+  * [Install on GCF](install/gcf.md)
 * [How it works](how-it-works.md)
 
 ## 🐞 Live Debugging
