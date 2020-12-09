@@ -39,7 +39,7 @@ require('@aspecto/opentelemetry')({
 });
 ```
 
-Available configurations are:
+Available configurations are \(all optional\):
 
 <table>
   <thead>
@@ -47,6 +47,7 @@ Available configurations are:
       <th style="text-align:left">Option</th>
       <th style="text-align:left">Type</th>
       <th style="text-align:left">Description</th>
+      <th style="text-align:left">Default</th>
     </tr>
   </thead>
   <tbody>
@@ -54,72 +55,82 @@ Available configurations are:
       <td style="text-align:left"><code>env</code>
       </td>
       <td style="text-align:left">string</td>
-      <td style="text-align:left">set environment name manually instead of using <code>NODE_ENV</code> environment
-        variable</td>
+      <td style="text-align:left">Set environment name manually</td>
+      <td style="text-align:left"><code>process.env.NODE_ENV</code>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>aspectoAuth</code>
       </td>
       <td style="text-align:left">UUID</td>
-      <td style="text-align:left">set Aspecto token from code instead of using <code>aspecto.json</code>
+      <td style="text-align:left">Set Aspecto token from code instead of using <code>aspecto.json</code>
       </td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>packageName</code>
       </td>
       <td style="text-align:left">string</td>
-      <td style="text-align:left">set packageName manually instead of reading it from <code>package.json</code>
+      <td style="text-align:left">Service name</td>
+      <td style="text-align:left">&quot;name&quot; in <code>package.json</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>packageVersion</code>
       </td>
       <td style="text-align:left">string</td>
-      <td style="text-align:left">set packageVersion manually instead of reading it from <code>package.json</code>
+      <td style="text-align:left">Service version</td>
+      <td style="text-align:left">&quot;version&quot; is <code>package.json</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>local</code>
       </td>
       <td style="text-align:left">boolean</td>
-      <td style="text-align:left">when set to true, enable <a href="https://www.npmjs.com/package/@aspecto/opentelemetry#live-flows">live flows</a>
+      <td style="text-align:left">When set to true, enable <a href="https://www.npmjs.com/package/@aspecto/opentelemetry#live-flows">live flows</a>
       </td>
+      <td style="text-align:left">false</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>isolate</code>
       </td>
       <td style="text-align:left">boolean</td>
-      <td style="text-align:left">when set to true, enable isolated mode for <a href="https://www.npmjs.com/package/@aspecto/opentelemetry#live-flows">live flows</a>
+      <td style="text-align:left">When set to true, enable isolated mode for <a href="https://www.npmjs.com/package/@aspecto/opentelemetry#live-flows">live flows</a>
       </td>
+      <td style="text-align:left">false</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>liveExporterPort</code>
       </td>
       <td style="text-align:left">number</td>
-      <td style="text-align:left">specify port for <a href="https://www.npmjs.com/package/@aspecto/opentelemetry#live-flows">live flows</a>
+      <td style="text-align:left">Specify port for <a href="https://www.npmjs.com/package/@aspecto/opentelemetry#live-flows">live flows</a>
       </td>
+      <td style="text-align:left">random</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>logger</code>
       </td>
       <td style="text-align:left">logger interface</td>
-      <td style="text-align:left">logger to be used in this tracing library. common use for debugging <code>logger: console</code>
+      <td style="text-align:left">Logger to be used in this tracing library. common use for debugging <code>logger: console</code>
       </td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>customZipkinEndpoint</code>
       </td>
       <td style="text-align:left">URL</td>
       <td style="text-align:left">Send all traces to additional Zipkin server for debug</td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>samplingRatio</code>
       </td>
       <td style="text-align:left">number</td>
       <td style="text-align:left">
-        <p>Rate of traces to be sampled. Between 0 to 1 (default is 1).</p>
+        <p>Rate of traces to be sampled. Between 0 to 1.</p>
         <p>Uses <a href="https://github.com/open-telemetry/opentelemetry-specification/blob/master/specification/trace/sdk.md#parentbased">parent-based</a> sampling.</p>
       </td>
+      <td style="text-align:left">1</td>
     </tr>
   </tbody>
 </table>
