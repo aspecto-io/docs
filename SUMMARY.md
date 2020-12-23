@@ -21,6 +21,12 @@
   * [Dependencies](live-debugging/live-flow-production/dependencies.md)
   * [Breaking Changes](live-debugging/live-flow-production/breaking-changes.md)
 
+## Debug Deployed Environments
+
+* [Overview](debug-deployed-environments/overview.md)
+* [Flow Search](debug-deployed-environments/flow-search.md)
+* [Logs Correlation](debug-deployed-environments/logs-correlation.md)
+
 ## ⚙️ Settings
 
 * [Data Privacy](settings/data-privacy.md)
