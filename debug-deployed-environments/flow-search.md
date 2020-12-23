@@ -36,7 +36,7 @@ The Flow Aggregation tab shows the flows, aggregated \(grouped\) according to co
 
 ![](../.gitbook/assets/2020-12-16-14_11_59-aspecto-flows-search-aggregation.png)
 
-## Scans
+## Spans
 
-You can also view flow information according to scans  \(nodes\). This shows individual points in flows.
+You can also view flow information according to spans \(nodes\). This shows individual points in flows.
 
