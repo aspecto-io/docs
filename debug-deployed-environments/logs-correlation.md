@@ -1,15 +1,17 @@
 ---
-description: How to correlate your logs with Aspecto traces.
+description: Correlate your logs with Aspecto traces.
 ---
 
 # Logs Correlation
 
 A common use case for flow search is to see the related flow while inspecting a log event.  
-To achieve this you'd need to attach the active **traceId** to your logs.
+You can do this with Aspecto. To do this, attach the active **traceId** to your logs.
 
 ## Setup
 
-In order to do so, use the `getContext` method, exposed from our package:
+Follow these steps to attach traceId.
+
+Use the `getContext` method, exposed from our package:
 
 ```javascript
 const { getContext } = require('@aspecto/opentelemetry');
@@ -18,7 +20,7 @@ console.log('Something happened!', { traceId: getContext().traceId });
 ```
 
 If you're using a custom logger, it's recommended to add the traceId to all logs by default.  
-Here's an example of doing so using **winston**:
+Here's an example using **winston**:
 
 ```typescript
 const { getContext } = require('@aspecto/opentelemetry');
@@ -38,9 +40,9 @@ const logger = winston.createLogger({
 });
 ```
 
-## Usage
+## Use
 
-After finishing setup and deploying your service, find the relevant log in your logging solution \(i.e. CloudWatch, logz.io, etc...\) and copy the traceId.
+After completing the setup, and deploying your service, find the relevant log in your logging solution \(i.e. CloudWatch, logz.io, etc...\) and copy the traceId.
 
 ![Finding the traceId in a CloudWatch log](../.gitbook/assets/image%20%287%29.png)
 

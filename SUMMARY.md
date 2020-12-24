@@ -23,7 +23,6 @@
 
 ## Debug Deployed Environments
 
-* [Overview](debug-deployed-environments/overview.md)
 * [Flow Search](debug-deployed-environments/flow-search.md)
 * [Logs Correlation](debug-deployed-environments/logs-correlation.md)
 
