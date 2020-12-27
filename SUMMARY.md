@@ -21,10 +21,10 @@
   * [Dependencies](live-debugging/live-flow-production/dependencies.md)
   * [Breaking Changes](live-debugging/live-flow-production/breaking-changes.md)
 
-## Debug Deployed Environments
+## 🏗️ Mature Environment <a id="mature-environments"></a>
 
-* [Flow Search](debug-deployed-environments/flow-search.md)
-* [Logs Correlation](debug-deployed-environments/logs-correlation.md)
+* [Flow Search](mature-environments/flow-search.md)
+* [Logs Correlation](mature-environments/logs-correlation.md)
 
 ## ⚙️ Settings
 
