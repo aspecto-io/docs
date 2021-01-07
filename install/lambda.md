@@ -4,7 +4,8 @@ Aspecto supports instrumenting AWS Lambdas.
 To do so, [set up Aspecto](./#usage) as you'd usually do, and extract the returned `lambda` utility:
 
 ```javascript
-const { lambda } = require('@aspecto/opentelemetry')();
+const instrument = require('@aspecto/opentelemetry');
+const { lambda } = instrument(myConfig);
 ```
 
 Next, wrap your function handler definition with the returned utility.
