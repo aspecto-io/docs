@@ -1,5 +1,5 @@
 ---
-description: keep your sensitive data private while working with Aspecto
+description: Keep your sensitive data private while working with Aspecto
 ---
 
 # Data Privacy

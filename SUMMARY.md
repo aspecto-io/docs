@@ -25,6 +25,7 @@
 
 * [Flow Search](mature-environments/flow-search.md)
 * [Logs Correlation](mature-environments/logs-correlation.md)
+* [Sampling Rules](mature-environments/sampling-rules.md)
 
 ## ⚙️ Settings
 
