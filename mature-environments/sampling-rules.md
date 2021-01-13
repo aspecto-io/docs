@@ -32,5 +32,6 @@ Possible matchers are:
 * String-based rules are **case insensitive** \(i.e. `"HELLO" contains "he"` will match\) 
 * SDK clients are updated in real-time and changes are **effective immediately**, so be careful! 
 * Rules are run by their priority where **1 is the top priority.**  Once a rule is matched the other rules won't be run on the targeted flow anymore. 
-* If non of the rules match, the default sampling rate will be used \(`samplingRate` option or 100% if none provided\).
+* If non of the rules match, the default sampling rate will be used \(`samplingRate` option or 100% if none provided\). 
+* Sampling rules are ignored when running in local mode.
 
