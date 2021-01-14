@@ -21,9 +21,10 @@ Possible matchers for the extra conditions are:
 
 * HTTP Request Path \(i.e. `/api/users/5ffc067eb3fe9c9520611f34`\)
 * HTTP Full URL \(i.e. `https://my.domain.com/api/users?page=6&size=10`\)
-* HTTP Method \(i.e. `GET`, `POST`, etc...\)
+* HTTP Method \(i.e. `GET`, `POST`, etc.\)
 * HTTP Host \(i.e. `my.domain.com`\)
 * User Agent \(i.e. `PostmanRuntime/7.2` \) 
+* Queue/Topic Name \(Queue name for SQS, Topic name for Kafka, etc.\)
 
 ## **Important Notes**
 
