@@ -14,7 +14,12 @@ To view flows, follow [these steps](../install/#configuration) to instrument you
 require('@aspecto/opentelemetry')({ local: false });
 ```
 
+Aspecto uses information from `.git` folder to extract a `gitHash` of the service that is being instrumented. If you don't have this folder in your docker container, you can specify `gitHash` manually by setting `ASPECTO_GITHASH` environment variable.   
+Otherwise, flows for those services will be displayed with the version equal to `not-set`.
 
+It is also important to have an environment name \(production/staging/etc\).   
+The SDK uses `NODE_ENV` environment variable by default, but you can also specify it manually with the [env config option](../install/#configuration).   
+If neither option nor env variable are specified, filter by environment won't work, since all flows will be under the same environment \(equal to `not-set`\).
 
 ## Search Flows
 
