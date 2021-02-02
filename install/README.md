@@ -185,6 +185,13 @@ In isolated mode, the message in the console will look like this \(with `port` p
 ===============================================================================================
 ```
 
-Note: To make sure the port used is consistent between restarts, use the `liveExporterPort` configuration option.  
+Note: To make sure the port used is consistent between restarts, use the `liveExporterPort` configuration option.
 
+## Advanced Settings
+
+#### Exporting Format
+
+Data collected by the SDK is sent to Aspecto's collector in **protobuf** format by default.   
+An alternative is to send the data in JSON format, which uses less CPU for encoding the message but is more verbose - causing more data to be sent over the network.   
+To export data over JSON instead of protobuf, set the environment variable  `ASPECTO_TRACE_EXPORT_JSON` to any value.
 
