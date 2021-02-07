@@ -15,7 +15,7 @@ To get started with Live Flow, follow [these steps ](../install/#configuration)t
 Follow the [link](https://docs.aspecto.io/v1/install#connected-mode) shown in your terminal, to open the Live Flow in your browser.  
 The initial view is waiting for live traffic to your service.
 
-![](../.gitbook/assets/live-flows-ready.png)
+![](../.gitbook/assets/liveflow.png)
 
 Now, send traffic to one or more endpoints in the instrumented service \(for example from Postman\).   
 Our SDK will capture this and update the Live Flow view with the flows that were detected.
