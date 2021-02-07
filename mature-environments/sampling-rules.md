@@ -29,7 +29,7 @@ Possible matchers for the extra conditions are:
 ## **Important Notes**
 
 * **All** rule conditions must be fulfilled for a rule to apply. 
-* Rules are matched only against the **entry point** of a flow, but affect the sampling of the entire flow. That means that if I set a rule where `HTTP Request Path equals "/user"` , and my flow starts with a request to an endpoint called `/account` , which internally calls the `/user` endpoint, the rule will not apply, even though the user endpoint was involved.  
+* Rules are matched only against the **entry point** of a flow but affect the sampling of the entire flow. That means that if I set a rule where `HTTP Request Path equals "/user"` , and my flow starts with a request to an endpoint called `/account` , which internally calls the `/user` endpoint, the rule will not apply, even though the user endpoint was involved.  
 * String-based rules are **case insensitive** \(i.e. `"HELLO" contains "he"` will match\) 
 * SDK clients are updated in real-time and changes are **effective immediately**, so be careful! 
 * Rules are run by their priority where **1 is the top priority.**  Once a rule is matched the other rules won't be run on the targeted flow anymore. 
