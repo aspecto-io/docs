@@ -1,5 +1,5 @@
 ---
-description: Instrument Google Cloud Function
+description: Instrument Aspecto on Google Cloud Functions
 ---
 
 # Install on GCF
@@ -37,5 +37,5 @@ exports.users = gcf(app);
 ```
 
   
-**Notice**: if your GCF is not deployed with a `package.json` file, make sure to provide the `packageName` option when initializing Aspecto.
+**Note**: if your GCF is not deployed with a `package.json` file, make sure to provide the `packageName` option when initializing Aspecto.
 

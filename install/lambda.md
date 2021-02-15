@@ -1,3 +1,7 @@
+---
+description: Instrument Aspecto in AWS Lambda
+---
+
 # Install on AWS Lamba
 
 Aspecto supports instrumenting AWS Lambdas.  
@@ -22,6 +26,6 @@ module.exports.myCallbackHandler = lambda((event, context, callback) => { ... })
 module.exports.myAsyncHandler = lambda(async (event, context) => { ... });
 ```
 
-**Notice**: if your lambda is not deployed with a `package.json` file, make sure to provide the `packageName` option when initializing Aspecto.  
+**Note:** if your lambda is not deployed with a `package.json` file, make sure to provide the `packageName` option when initializing Aspecto.  
 
 
