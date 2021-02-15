@@ -64,7 +64,7 @@ The entry node is shown with a flag, and a text showing the agent that make the 
 The information view shows details for a node in the graph.   
 This includes details for the incoming segment to the node in the data flow.   
 In the example below, details for the node `/user/login` are shown.   
-This includes the **REQUEST** and **RESPONSE**, other flows using the same endpoint \([Dependencies](../production-environment-debugging/flow-visualization-in-production-environments/dependencies.md)\), and the raw data of the span.
+This includes the **REQUEST** and **RESPONSE**, other flows using the same endpoint \([Dependencies](dependencies.md)\), and the raw data of the span.
 
 ![](../.gitbook/assets/image%20%285%29.png)
 
