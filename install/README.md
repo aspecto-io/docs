@@ -195,3 +195,9 @@ Data collected by the SDK is sent to Aspecto's collector in **protobuf** format 
 An alternative is to send the data in JSON format, which uses less CPU for encoding the message but is more verbose - causing more data to be sent over the network.   
 To export data over JSON instead of protobuf, set the environment variable  `ASPECTO_TRACE_EXPORT_JSON` to any value.
 
+#### Disabling Aspecto
+
+Set the environment variable `DISABLE_ASPECTO` to any value, to disable Aspecto.  
+Affect lambda and GCF wrappers as well.  
+Useful when running unit tests, or as a simple kill switch.
+
