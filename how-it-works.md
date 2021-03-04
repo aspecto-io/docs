@@ -17,7 +17,7 @@ When you use Aspecto, your application is **instrumented** with our Node.js SDK 
 Aspecto supports a number of Node.js libraries.   
 As they are imported into your application, Aspecto automatically includes additional telemetry instrumentation plugin modules for them.
 
-These libraries are supported: 
+These Node.js libraries are supported: 
 
 * http 
 * https
@@ -28,6 +28,8 @@ These libraries are supported:
 * kafkajs 
 * typeorm 
 * sequelize
+* neo4j-driver
+* @elastic/elasticsearch
 
 Some of the plugins were developed by Aspecto and available as open-source.  
 Check them out here: [https://github.com/aspecto-io/opentelemetry-ext-js](https://github.com/aspecto-io/opentelemetry-ext-js)
