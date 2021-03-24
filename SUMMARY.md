@@ -6,9 +6,11 @@
 
 ---
 
-* [Install](install/README.md)
+* [Setup](install/README.md)
+  * [Install the SDK](install/install-the-sdk.md)
   * [Install on AWS Lamba](install/lambda.md)
   * [Install on GCF](install/gcf.md)
+  * [Advanced](install/advanced.md)
 * [How it works](how-it-works.md)
 
 ## 🐞 Live Debugging
