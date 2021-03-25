@@ -11,6 +11,7 @@
   * [Install on AWS Lamba](install/lambda.md)
   * [Install on GCF](install/gcf.md)
   * [Advanced](install/advanced.md)
+  * [Custom Collector](install/custom-collector.md)
 * [How it works](how-it-works.md)
 
 ## 🐞 Live Debugging
