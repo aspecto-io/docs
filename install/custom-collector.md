@@ -1,6 +1,10 @@
-# Custom Collector
+---
+description: >-
+  This page is for advanced users which are already using opentelemetry and need
+  their own collector.
+---
 
-This page is for advanced users which are already using opentelemetry and need their own collector.
+# Custom Collector
 
 Aspecto's SDK is by default exporting collected trace data to our collector at [https://otelcol-fast.aspecto.io/v1/trace](https://otelcol-fast.aspecto.io/v1/trace). Users that need this data for other purposes \(such as exporting it to Jaeger,  process it etc\), can configure Aspecto to send data to a custom collector by using the `otCollectorEndpoint` option:
 
