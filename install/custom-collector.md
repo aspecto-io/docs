@@ -6,7 +6,6 @@ Aspecto's SDK is by default exporting collected trace data to our collector at [
 
 ```javascript
 require('@aspecto/opentelemetry')({
-    local:true,
     aspectoAuth: '*your-token-goes-here*',
     otCollectorEndpoint: 'https://{your-domain}:{port}/v1/trace',
 });
