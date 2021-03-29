@@ -2,7 +2,7 @@
 description: Instrument Aspecto in AWS Lambda
 ---
 
-# Install on AWS Lamba
+# Install on AWS Lambda
 
 Aspecto supports instrumenting AWS Lambdas.  
 To do so, [set up Aspecto](./#usage) as you'd usually do, and extract the returned `lambda` utility:
