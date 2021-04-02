@@ -1,2 +1,4 @@
+root: ./
+
 redirects:  
     live-debugging/live-flow-production: ./production-environment-debugging/live-flow-production.md
