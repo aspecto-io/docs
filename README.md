@@ -28,7 +28,7 @@ By comparing flows run to the application baseline, Aspecto is able to [detect b
 
 ## 🗺  Visualize a Parameter's Journey
 
-Any parameter that appears inside a flow can be easily found: where it started, which components passed it along, and where it ended. This journey is visually marked on the graph and can be inspected inside each component's payload.
+Any parameter that appears inside a flow can be easily found: where it started, which components passed it along, and where it ended. This journey is visually marked on the graph and can be inspected inside each component's payload. 
 
 ![](.gitbook/assets/screen-shot-2021-03-24-at-14.30.44.png)
 
@@ -47,5 +47,5 @@ New developers that join the team can get familiar with the app by inspecting mi
 
 ## See also
 
-{% page-ref page="install/" %}
+{% page-ref page="getting-started/install/" %}
 

@@ -13,7 +13,7 @@ Setting up is a simple process:
 Aspecto is a tool that you install on a Node.js microservice in your local environment.   
 After installing the SDK, each time you create data on your microservice locally, this data will appear in Aspecto.
 
-![](../.gitbook/assets/group-34.png)
+![](../../.gitbook/assets/group-34.png)
 
 ## 
 

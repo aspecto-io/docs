@@ -4,15 +4,13 @@
 
 ## 🎬 GETTING STARTED
 
----
-
-* [Setup](install/README.md)
-  * [Install the SDK](install/install-the-sdk.md)
-  * [Install on AWS Lambda](install/lambda.md)
-  * [Install on GCF](install/gcf.md)
-  * [Advanced](install/advanced.md)
-  * [Custom Collector](install/custom-collector.md)
-* [How it works](how-it-works.md)
+* [Setup](getting-started/install/README.md)
+  * [Install the SDK](getting-started/install/install-the-sdk.md)
+  * [Install on AWS Lambda](getting-started/install/lambda.md)
+  * [Install on GCF](getting-started/install/gcf.md)
+  * [Advanced](getting-started/install/advanced.md)
+  * [Custom Collector](getting-started/install/custom-collector.md)
+* [How it works](getting-started/how-it-works.md)
 
 ## 🐞 Live Debugging
 
