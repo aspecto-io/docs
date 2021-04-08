@@ -11,7 +11,7 @@
   * [Advanced](getting-started/install/advanced.md)
   * [Custom Collector](getting-started/install/custom-collector.md)
 * [Configure Logs](getting-started/configure-logs.md)
-* [How it works](getting-started/how-it-works.md)
+* [How it Works](getting-started/how-it-works.md)
 
 ## 🛡️ Issue Prevention
 
