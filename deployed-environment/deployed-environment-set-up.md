@@ -8,7 +8,7 @@ You can use Aspecto in production environments, to improve your debugging capabi
 
 * Search for flows, and then examine them for details:
 
-{% page-ref page="flow-search.md" %}
+{% page-ref page="../flow-search.md" %}
 
 * See flows related to log events you are examining:
 

@@ -46,7 +46,7 @@ After completing the setup, and deploying your service, find the relevant log in
 
 ![Finding the traceId in a CloudWatch log](../.gitbook/assets/image%20%287%29.png)
 
-Next, go to [Flow Search](flow-search.md) and search for the traceId you just copied:
+Next, go to [Flow Search](../flow-search.md) and search for the traceId you just copied:
 
 ![Searching for traceId in Flow Search](../.gitbook/assets/image%20%288%29.png)
 

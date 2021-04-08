@@ -10,25 +10,35 @@
   * [Install on GCF](getting-started/install/gcf.md)
   * [Advanced](getting-started/install/advanced.md)
   * [Custom Collector](getting-started/install/custom-collector.md)
+* [Configure Logs](getting-started/configure-logs.md)
 * [How it works](getting-started/how-it-works.md)
 
-## 🐞 Live Debugging
+## 🛡️ Issue Prevention
 
-* [Live Flows Overview](live-debugging/live-flows-overview.md)
-* [Flow Visualization](live-debugging/visualize-data-flows/README.md)
-  * [Timeline](live-debugging/visualize-data-flows/timing.md)
-  * [Logging](live-debugging/visualize-data-flows/logging.md)
-* [Breaking Changes](live-debugging/breaking-changes.md)
-* [Dependencies](live-debugging/dependencies.md)
+---
+
+* [Overview](overview.md)
+* [Detect Breaking Changes](breaking-changes.md)
+* [Analyze Dependencies](dependencies.md)
+* [Github Report](prevent-issues-before-merging.md)
+
+## 🔍  Application Troubleshooting
+
+---
+
+* [Overview](live-flows-overview.md)
+* [Troubleshoot Local Environment](visualize-data-flows.md)
+* [Troubleshoot Production](flow-search.md)
+* [Analyze Logs within a Flow](logging.md)
+* [Debug Performance Issues](timing.md)
 
 ## 🏗️ Deployed Environment
 
 * [Setting Up](deployed-environment/deployed-environment-set-up.md)
-* [Flow Search](deployed-environment/flow-search.md)
 * [Logs Correlation](deployed-environment/logs-correlation.md)
-* [Sampling Rules](deployed-environment/sampling-rules.md)
 
 ## ⚙️ Settings
 
+* [Sampling Rules](settings/sampling-rules.md)
 * [Data Privacy](settings/data-privacy.md)
 

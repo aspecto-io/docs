@@ -8,10 +8,10 @@ $ npm install @aspecto/opentelemetry
 
 ### Usage
 
-Obtain your token [here](https://app.aspecto.io/app/integration/api-key).
+After obtaining your token [here](https://app.aspecto.io/app/integration/api-key), **before any other import,** add the following call at the top of your app entry point:
 
-Add this call at the top of your app entry point, **before any other import**:
-
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 require('@aspecto/opentelemetry')({
     local:true,
@@ -19,8 +19,21 @@ require('@aspecto/opentelemetry')({
 });
 // ... other imports ...
 ```
+{% endtab %}
 
-Once the process starts it will output the following link:
+{% tab title="TypeScript" %}
+```typescript
+import init from '@aspecto/opentelemetry';
+init({
+  local: true,
+  aspectoAuth: '*your-token-goes-here*'
+});
+// ... other imports ...
+```
+{% endtab %}
+{% endtabs %}
+
+Once the process starts, it will output the following link:
 
 ```text
 =====================================================================================================================================
@@ -30,9 +43,12 @@ Once the process starts it will output the following link:
 =====================================================================================================================================
 ```
 
-Click on the link to open the Live Flow to see traces from all the microservices that are running on your environment that have local mode enabled. The link is valid for a limited period of time.
+Click on the link to open 'Live Flows' and see traces from all the microservices that are running on your environment.   
+The link is valid for a limited period of time.
 
 {% hint style="info" %}
 See the [advanced page](advanced.md) for specific configurations
 {% endhint %}
+
+{% page-ref page="../how-it-works.md" %}
 
