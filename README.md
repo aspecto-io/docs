@@ -48,7 +48,3 @@ New developers that join the team can get familiar with the app by inspecting mi
 
 ![](.gitbook/assets/bitmap.png)
 
-## See also
-
-{% page-ref page="getting-started/install/" %}
-
