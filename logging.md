@@ -1,6 +1,6 @@
 # Analyze Logs within a Flow
 
-After [configuring your logs in Aspecto](getting-started/configure-logs.md), you can use the Live Flows to examine the logs at each stage of a flow. Logs are associated with the flow's diagram, giving you a strong context to what you're looking at when searching your logs.
+After [configuring your logs in Aspecto](getting-started/install/configure-logs.md), you can use the Live Flows to examine the logs at each stage of a flow. Logs are associated with the flow's diagram, giving you a strong context to what you're looking at when searching your logs.
 
 In the info pane on the right, click _Logs._ The Logs pane will open at the bottom. 
 
