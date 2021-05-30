@@ -6,6 +6,7 @@
 
 * [Setup](getting-started/install/README.md)
   * [Install the SDK](getting-started/install/install-the-sdk.md)
+  * [Manual Spans](getting-started/install/manual-spans.md)
   * [Install on AWS Lambda](getting-started/install/lambda.md)
   * [Install on GCF](getting-started/install/gcf.md)
   * [Advanced](getting-started/install/advanced.md)
