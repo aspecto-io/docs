@@ -70,14 +70,6 @@ Available install configurations \(all are optional\):
       <td style="text-align:left">false</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>isolate</code>
-      </td>
-      <td style="text-align:left">boolean</td>
-      <td style="text-align:left">When set to true, enable isolated mode for <a href="https://www.npmjs.com/package/@aspecto/opentelemetry#live-flows">live flows</a>
-      </td>
-      <td style="text-align:left">false</td>
-    </tr>
-    <tr>
       <td style="text-align:left"><code>liveExporterPort</code>
       </td>
       <td style="text-align:left">number</td>
@@ -127,16 +119,15 @@ Set the environment variable `DISABLE_ASPECTO` to any value, to disable Aspecto.
 Affect lambda and GCF wrappers as well.  
 Useful when running unit tests, or as a simple kill switch.
 
-###  **Advanced Live Flows Modes**
+####  **Live Flow**
 
-Live Flows works in two modes
+Live flow allows you to capture flows from all the microservices that you're running locally \(both on the host env and docker\) with`local`mode enabled. To activate live flow mode use `local` option like so:
 
-* Connected
-* Isolated
+```javascript
+require('@aspecto/opentelemetry')({ local: true });
+```
 
-#### Connected mode
-
-This is the default mode. It allows you to capture flows from all the microservices that you're running locally \(both on the host env and docker\) with`local`mode enabled. Once the process starts it will output the following link:
+ Once the process starts it will output the following link:
 
 ```text
 =====================================================================================================================================
@@ -148,28 +139,6 @@ This is the default mode. It allows you to capture flows from all the microservi
 
 Click on the link to open the Live Flow, to see traces from all the microservices that are running on your environment that have local mode enabled. The link is valid for a limited period of time \(a couple of days, but it may change in the future\).   
 If you don't see a trace from some microservice \(or none of them\), click the newly-generated link.
-
-#### Isolated mode
-
-In this mode, you can only see flows from one microservice. Also, in this case, all the data is being sent directly to the browser. To activate isolated mode use `isolate` option like so:
-
-```javascript
-require('@aspecto/opentelemetry')({ local: true, isolate: true });
-```
-
-In isolated mode, the message in the console will look like this \(with `port` parameter\):
-
-```text
-===============================================================================================
-|                                                                                             |
-| 🕵️‍♀️ See the live tracing stream at https://app.aspecto.io/app/live-flows/sessions?port=59778 |
-|                                                                                             |
-===============================================================================================
-```
-
-{% hint style="info" %}
-To make sure the port used is consistent between restarts, use the`liveExporterPort`configuration option
-{% endhint %}
 
 ## 
 
