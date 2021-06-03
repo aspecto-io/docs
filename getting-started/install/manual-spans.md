@@ -1,7 +1,5 @@
 # Manual Spans
 
-
-
 `"Span"` is the name of the data structure representing interesting operation in your app. Aspecto will automatically collect spans for operations created by popular packages that perform IO \(http, messaging systems, databases etc\). Manual spans are used if you need to trace an operation in a code you wrote, or when using a package that does not provide automatic tracing.
 
 To create a Manual Span for a function run, you need to wrap it in a `trace` call like this:
