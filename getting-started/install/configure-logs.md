@@ -24,3 +24,5 @@ const { setLogger } = Instrument({ local: true });
  setLogger(myLogger); 
 ```
 
+{% page-ref page="../../deployed-environment/logs-correlation.md" %}
+
