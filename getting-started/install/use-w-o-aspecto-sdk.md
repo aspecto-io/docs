@@ -11,7 +11,7 @@ The minimum required for our collector to accept your traces is to have the `ser
 
 ## Send Traces to Aspecto directly from your code
 
-To do so, you'd need to use the [`exporter-collector`](https://www.npmjs.com/package/@opentelemetry/exporter-collector) , here's an example Node.js snippet:
+To do so, you'd need to use the [`exporter-collector`](https://www.npmjs.com/package/@opentelemetry/exporter-collector) , here's an example Node.js TypeScript snippet:
 
 ```typescript
 import { NodeTracerProvider } from '@opentelemetry/node';
@@ -41,7 +41,7 @@ provider.addSpanProcessor(
 
 ## Export to Aspecto Collector from your own OpenTelemetry Collector
 
-If you already have your own [OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector) and want to export your traces to Aspecto, you'd need to add a new `otlphttp` exporter in your config.yml:
+If you already have your own [OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector) and want to export your traces to Aspecto, you'd need to add a new `otlphttp` exporter in your config.yml, with Aspecto API-Key as your Authorization header:
 
 ```yaml
 exporters:

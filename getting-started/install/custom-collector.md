@@ -18,7 +18,7 @@ require('@aspecto/opentelemetry')({
 
 Then, in your custom collector, you can export the spans to Aspecto's collector by defining relevant exporter in `config.yaml`:
 
-```javascript
+```yaml
 exporters:
   otlphttp:
     endpoint: https://otelcol-fast.aspecto.io
