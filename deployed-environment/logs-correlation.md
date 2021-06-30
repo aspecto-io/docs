@@ -43,7 +43,7 @@ const logger = winston.createLogger({
 ### Sampled Flag
 
 Some traces may be unsampled due to [sampling rules](../settings/sampling-rules.md) or  the `samplingRatio` SDK setting.  
-In those cases, you may want to reflect this on your log, so later on, you'd be able to know whether to expect to [see the matching trace on Aspecto](../logging.md), or not.  
+In those cases, you may want to reflect this on your log, so later on, you'd be able to know whether to expect to see the matching trace on Aspecto, or not.  
   
 For this, the `getContext()` response payload will also contain a boolean called `sampled`, reflecting the sampling result.
 
