@@ -1,5 +1,5 @@
 ---
-description: Instrument Aspecto in AWS Lambda
+description: Instrument your AWS Lambda using Aspecto
 ---
 
 # Install on AWS Lambda
