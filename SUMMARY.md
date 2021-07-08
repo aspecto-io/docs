@@ -9,6 +9,7 @@
   * [Manual Spans](getting-started/install/manual-spans.md)
   * [Install on AWS Lambda](getting-started/install/lambda.md)
   * [Install on GCF](getting-started/install/gcf.md)
+  * [Install in CI](getting-started/install/install-in-ci.md)
   * [Advanced](getting-started/install/advanced.md)
   * [Configure Logs](getting-started/install/configure-logs.md)
   * [Custom Collector](getting-started/install/custom-collector.md)
