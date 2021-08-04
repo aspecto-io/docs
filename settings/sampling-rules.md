@@ -8,6 +8,8 @@ description: >-
 
 When initializing Aspecto SDK, you can pass the **`samplingRatio`** option to control the general sampling rate of our client. But sometimes you'd want more sampling control only over specific flows. That's where sampling rules come in handy.
 
+[https://www.loom.com/share/da413db506324f23ba6b89f88880ed32](https://www.loom.com/share/da413db506324f23ba6b89f88880ed32)
+
 ## Create Sample Rules
 
 Go to the [sampling rules page](https://app.aspecto.io/app/settings/sampling-rules) on Aspecto website, and click on the **"New Rule"** button.  
