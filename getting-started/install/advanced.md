@@ -102,6 +102,14 @@ Available install configurations \(all are optional\):
       </td>
       <td style="text-align:left">1</td>
     </tr>
+    <tr>
+      <td style="text-align:left"><code>collectPayloads</code>
+      </td>
+      <td style="text-align:left">boolean</td>
+      <td style="text-align:left">Should instrumentation collect payloads of operations</td>
+      <td style="text-align:left"><code>true</code>
+      </td>
+    </tr>
   </tbody>
 </table>
 

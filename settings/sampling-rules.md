@@ -8,7 +8,7 @@ description: >-
 
 When initializing Aspecto SDK, you can pass the **`samplingRatio`** option to control the general sampling rate of our client. But sometimes you'd want more sampling control only over specific flows. That's where sampling rules come in handy.
 
-[https://www.loom.com/share/da413db506324f23ba6b89f88880ed32](https://www.loom.com/share/da413db506324f23ba6b89f88880ed32)
+[Video Walkthrough](https://www.loom.com/share/da413db506324f23ba6b89f88880ed32)
 
 ## Create Sample Rules
 
@@ -38,5 +38,6 @@ Possible matchers for the extra conditions are:
 * SDK clients are updated in real-time and changes are **effective immediately**, so be careful! 
 * Rules are run by their priority where **1 is the top priority.** Once a rule matches a flow, no other rules will be applied to the same flow. 
 * If non of the rules match, the default sampling rate will be used \(`samplingRate` option or 100% if none provided\). 
-* Sampling rules are ignored when running in local mode.
+* Sampling rules are ignored when running in local mode. 
+* Sample Rate can be any valid floating-point number in the range \[0.0, 100.0\].
 
