@@ -1,8 +1,4 @@
----
-description: How Aspecto shows you the flows within your applications
----
-
-# How it Works
+# About Observability
 
 ## Observability
 
@@ -88,7 +84,7 @@ Aspecto will show you interactions between your microservices, either synchronou
 
 ## OpenTelemetry
 
-Aspecto uses OpenTelemetry, which is an open-source framework by CNCF, backed and maintained by industry-leading companies.
+Aspecto uses [OpenTelemetry](https://opentelemetry.io/docs/), which is an open-source framework by CNCF, backed and maintained by industry-leading companies.
 
 
 

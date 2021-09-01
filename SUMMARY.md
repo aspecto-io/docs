@@ -1,46 +1,35 @@
 # Table of contents
 
-* [What is Aspecto](README.md)
+* [Documentation Home](README.md)
 
 ## 🎬 GETTING STARTED
 
-* [Setup](getting-started/install/README.md)
-  * [Install the SDK](getting-started/install/install-the-sdk.md)
-  * [Manual Spans](getting-started/install/manual-spans.md)
-  * [Install on AWS Lambda](getting-started/install/lambda.md)
-  * [Install on GCF](getting-started/install/gcf.md)
-  * [Install in CI](getting-started/install/install-in-ci.md)
-  * [Advanced](getting-started/install/advanced.md)
-  * [Configure Logs](getting-started/install/configure-logs.md)
-  * [Custom Collector](getting-started/install/custom-collector.md)
-  * [Use w/o Aspecto SDK](getting-started/install/use-w-o-aspecto-sdk.md)
-* [How it Works](getting-started/how-it-works.md)
+* [Quick Start](getting-started/quick-start.md)
+* [Aspecto Overview](getting-started/overview.md)
+* [About Observability](getting-started/how-it-works.md)
 
-## 🛡️ Issue Prevention
+## 🚀 Send Tracing Data to Aspecto
 
----
+* [How Do You Want to Send Your Data?](send-tracing-data-to-aspecto/send-tracing-data-to-aspecto.md)
+* [Using Aspecto SDK](send-tracing-data-to-aspecto/install-the-sdk/README.md)
+  * [For AWS Lambda](send-tracing-data-to-aspecto/install-the-sdk/lambda.md)
+  * [For GCF](send-tracing-data-to-aspecto/install-the-sdk/gcf.md)
+  * [Customize Defaults](send-tracing-data-to-aspecto/install-the-sdk/customize-defaults/README.md)
+    * [Advanced](send-tracing-data-to-aspecto/install-the-sdk/customize-defaults/advanced.md)
+    * [Send Spans Manually](send-tracing-data-to-aspecto/install-the-sdk/customize-defaults/manual-spans.md)
+    * [Send Logs](send-tracing-data-to-aspecto/install-the-sdk/customize-defaults/configure-logs.md)
+    * [Correlate Logs with Traces](send-tracing-data-to-aspecto/install-the-sdk/customize-defaults/logs-correlation.md)
+* [Using OpenTelemetry SDK](send-tracing-data-to-aspecto/use-w-o-aspecto-sdk.md)
+* [Using OpenTelemetry Collector](send-tracing-data-to-aspecto/using-opentelemetry-collector.md)
 
-* [Overview](overview.md)
-* [Detect Breaking Changes](breaking-changes.md)
-* [Analyze Dependencies](dependencies.md)
-* [Github Report](prevent-issues-before-merging.md)
+## 👀 Observability & Debugging <a id="observability-debugging"></a>
 
-## 🔍  Application Troubleshooting
+* [Investigate Your Tracing Data](observability-debugging/untitled/README.md)
+  * [Search for Performance Issues](observability-debugging/untitled/search-for-performance-issues.md)
+* [Troubleshoot in Your Local Environment](observability-debugging/visualize-data-flows/README.md)
+  * [Analyze Logs within a Flow](observability-debugging/visualize-data-flows/logging.md)
 
----
-
-* [Overview](live-flows-overview.md)
-* [Troubleshoot Local Environment](visualize-data-flows.md)
-* [Troubleshoot Production](flow-search.md)
-* [Analyze Logs within a Flow](logging.md)
-* [Debug Performance Issues](timing.md)
-
-## 🏗️ Deployed Environment
-
-* [Setting Up](deployed-environment/deployed-environment-set-up.md)
-* [Logs Correlation](deployed-environment/logs-correlation.md)
-
-## ⚙️ Settings
+## 🏆 Deploy to Production <a id="settings"></a>
 
 * [Sampling Rules](settings/sampling-rules.md)
 * [Data Privacy](settings/data-privacy.md)
