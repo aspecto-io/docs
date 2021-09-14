@@ -6,7 +6,7 @@
 
 * [Quick Start](getting-started/quick-start.md)
 * [Aspecto Overview](getting-started/overview.md)
-* [About Observability](getting-started/how-it-works.md)
+* [About Observability](getting-started/observability.md)
 
 ## 🚀 Send Tracing Data to Aspecto
 
