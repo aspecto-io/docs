@@ -22,8 +22,8 @@ Use the filters in the search bar to locate a specific trace to view more inform
 | :--- | :--- |
 | time frame | The starting and ending period in which the traces was performed  |
 | severity  | Whether the trace threw an error or exception or HTTP 5XX |
-| service | The name of the microservice. [How to configure it](../../send-tracing-data-to-aspecto/install-the-sdk/customize-defaults/advanced.md#configuration) |
-| environment | The name of the environment. [How to configure it](../../send-tracing-data-to-aspecto/install-the-sdk/customize-defaults/advanced.md#configuration) |
+| service | The name of the microservice. [How to configure it](../../send-tracing-data-to-aspecto/aspecto-sdk/customize-defaults/advanced.md#configuration) |
+| environment | The name of the environment. [How to configure it](../../send-tracing-data-to-aspecto/aspecto-sdk/customize-defaults/advanced.md#configuration) |
 | HTTP Method | The HTTP method \(GET, POST, etc..\) |
 | HTTP Status code | The HTTP status code - 200,500 etc.. |
 | route | A specific endpoint request \(/api/v1/users\) |

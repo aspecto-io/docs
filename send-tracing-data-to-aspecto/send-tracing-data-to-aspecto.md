@@ -2,7 +2,7 @@
 
 To enjoy Aspecto to the fullest, we encourage you to use our SDK to send traces.
 
-{% page-ref page="install-the-sdk/" %}
+{% page-ref page="aspecto-sdk/" %}
 
 However, if you already have an existing OpenTelemetry setup and prefer to keep using it, there are a couple of ways to do it.
 
