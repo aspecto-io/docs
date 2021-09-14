@@ -21,3 +21,7 @@ service:
       exporters: [otlphttp, ...]
 ```
 
+{% hint style="info" %}
+The minimum required for our collector to accept your traces is to have the `service.name` resource attribute on your spans and pass the [Aspecto API-Key](https://app.aspecto.io/app/integration/api-key), either through `aspecto.token` resource attribute, or through the `Authorization` HTTP header when making a request to our collector.
+{% endhint %}
+

@@ -19,7 +19,10 @@
     * [Send Spans Manually](send-tracing-data-to-aspecto/install-the-sdk/customize-defaults/manual-spans.md)
     * [Send Logs](send-tracing-data-to-aspecto/install-the-sdk/customize-defaults/configure-logs.md)
     * [Correlate Logs with Traces](send-tracing-data-to-aspecto/install-the-sdk/customize-defaults/logs-correlation.md)
-* [Using OpenTelemetry SDK](send-tracing-data-to-aspecto/use-w-o-aspecto-sdk.md)
+* [Using OpenTelemetry SDK](send-tracing-data-to-aspecto/use-w-o-aspecto-sdk/README.md)
+  * [NodeJS](send-tracing-data-to-aspecto/use-w-o-aspecto-sdk/nodejs.md)
+  * [Python](send-tracing-data-to-aspecto/use-w-o-aspecto-sdk/python.md)
+  * [Ruby](send-tracing-data-to-aspecto/use-w-o-aspecto-sdk/ruby.md)
 * [Using OpenTelemetry Collector](send-tracing-data-to-aspecto/using-opentelemetry-collector.md)
 
 ## 👀 Observability & Debugging <a id="observability-debugging"></a>
