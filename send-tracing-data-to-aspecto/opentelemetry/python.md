@@ -1,10 +1,6 @@
----
-description: >-
-  Instrument your app using the opentelemetry-instrumentation package, and
-  export traces to aspecto's opentelemetry collector.
----
-
 # Python
+
+Instrument your app using the `opentelemetry-instrumentation` package and export traces to Aspecto's opentelemetry collector.
 
 ### Install Opentelemetry Instrumentation Packages
 

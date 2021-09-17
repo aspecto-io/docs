@@ -1,10 +1,6 @@
----
-description: Send Traces to Aspecto directly from your code
----
-
 # NodeJS
 
-You need to use the [`exporter-collector`](https://www.npmjs.com/package/@opentelemetry/exporter-collector) , here's an example Node.js TypeScript snippet:
+Send traces to aspecto directly from your code using [`exporter-collector`](https://www.npmjs.com/package/@opentelemetry/exporter-collector) . Here is an example Node.js TypeScript snippet:
 
 ```typescript
 import { NodeTracerProvider } from '@opentelemetry/node';

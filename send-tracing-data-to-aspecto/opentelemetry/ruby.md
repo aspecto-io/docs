@@ -1,10 +1,6 @@
----
-description: >-
-  Instrument your Ruby on Rails app using opentelemetry, and export traces to
-  aspecto's collector.
----
-
 # Ruby
+
+Instrument your Ruby app using openTelemetry and export traces to Aspecto's collector.
 
 ### Install Opentelemetry SDK and instrumentations
 
