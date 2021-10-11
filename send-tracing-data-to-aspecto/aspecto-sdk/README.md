@@ -37,7 +37,7 @@ init({
 
 Once the process starts, it will output the following link:
 
-```text
+```
 =====================================================================================================================================
 |                                                                                                                                   |
 | 🕵️‍♀️See the live tracing stream at https://app.aspecto.io/app/live-flows/sessions?instanceId=14243e72-14dc-4255-87af-ef846b247578   |
@@ -45,10 +45,9 @@ Once the process starts, it will output the following link:
 =====================================================================================================================================
 ```
 
-Click on the link to open 'Live Flows' and see traces from all the microservices that are running on your environment.   
+Click on the link to open 'Live Flows' and see traces from all the microservices that are running on your environment. \
 The link is valid for a limited period of time.
 
 {% hint style="info" %}
 See the [advanced page](customize-defaults/advanced.md) for specific configurations
 {% endhint %}
-

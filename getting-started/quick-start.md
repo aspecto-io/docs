@@ -20,7 +20,7 @@ Not ready to commit? Use our [playground](https://app.aspecto.io/play/live-flows
 
 The Aspecto SDK can be installed within the microservices in your local environment. Once you've installed the SDK, every time data is locally created on your microservice, it will appear within the Aspecto UI.
 
-![](<../.gitbook/assets/image (14).png>)
+![](<../.gitbook/assets/image (15).png>)
 
 Start by installing the Aspecto package using `npm`: 
 
@@ -73,7 +73,7 @@ The **Live Flows** tool within the Aspecto UI presents a list of all your live t
 
 By clicking on any trace, view all microservice dependencies and how every component within your distributed system communicates or relies on one another. 
 
-![](<../.gitbook/assets/image (15).png>)
+![](<../.gitbook/assets/image (13).png>)
 
 Using the trace diagram, summary, and timeline, you can observe and understand how a code change will affect your entire system as well as pinpoint performance issues and other anomalies, like errors and exceptions. 
 

@@ -14,7 +14,7 @@ Tracing is very powerful, because it allows you to investigate some types of iss
 \
 This is an example of what a trace looks like in Aspecto:
 
-![](<../.gitbook/assets/image (11).png>)
+![](<../.gitbook/assets/image (10).png>)
 
 The diagram above shows how an HTTP request was handled internally:
 

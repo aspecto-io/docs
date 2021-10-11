@@ -2,11 +2,19 @@
 
 Send traces to Aspecto directly from your code using one of the following: 
 
-{% page-ref page="nodejs.md" %}
+{% content-ref url="nodejs.md" %}
+[nodejs.md](nodejs.md)
+{% endcontent-ref %}
 
-{% page-ref page="python.md" %}
+{% content-ref url="python.md" %}
+[python.md](python.md)
+{% endcontent-ref %}
 
-{% page-ref page="ruby.md" %}
+{% content-ref url="ruby.md" %}
+[ruby.md](ruby.md)
+{% endcontent-ref %}
 
-
+{% content-ref url="go.md" %}
+[go.md](go.md)
+{% endcontent-ref %}
 

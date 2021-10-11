@@ -26,7 +26,7 @@ After you've installed the Aspecto SDK across your distributed system, send traf
 
 Once traffic begins to flow, you will see a list of all your traces displayed directly within the Aspecto Live Flow tool. Simply click on any row to analyze the relevant trace. 
 
-![Live Flows displaying flows](../../.gitbook/assets/live-flows-ui-numbered.png)
+![Live Flows displaying flows](<../../.gitbook/assets/live-flows-ui-numbered (1).png>)
 
 **1 **List of the traces that your service generated
 

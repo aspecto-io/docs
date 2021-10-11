@@ -4,23 +4,23 @@ Instrument your app using the `opentelemetry-instrumentation` package and export
 
 ### Install Opentelemetry Instrumentation Packages
 
-```text
+```
 pip install opentelemetry-instrumentation
 pip install opentelemetry-distro 
 pip install opentelemetry-exporter-otlp-proto-grpc
 ```
 
-To create automatic traces from packages you use in your application \(flask, requests, etc\), you need to additionally install a relevant instrumentation package. For example, if you use `flask` in your application, you need to install the package `opentelemetry-instrumentation-flask` .
+To create automatic traces from packages you use in your application (flask, requests, etc), you need to additionally install a relevant instrumentation package. For example, if you use `flask` in your application, you need to install the package `opentelemetry-instrumentation-flask` .
 
 To print recommended instrumentation packages based on your active site-packages directory, run:
 
-```text
+```
 opentelemetry-bootstrap --action=requirements
 ```
 
 To install these packages, run:
 
-```text
+```
 opentelemetry-bootstrap --action=install
 ```
 
@@ -36,7 +36,6 @@ You need to setup the following environment variables to export the traces to As
 
 Then, run your app with the `opentelemetry-instrument` command:
 
-```text
+```
 opentelemetry-instrument python app.py
 ```
-

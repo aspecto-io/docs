@@ -2,13 +2,17 @@
 
 To enjoy Aspecto to the fullest, we encourage you to use our SDK to send traces.
 
-{% page-ref page="aspecto-sdk/" %}
+{% content-ref url="aspecto-sdk/" %}
+[aspecto-sdk](aspecto-sdk/)
+{% endcontent-ref %}
 
 However, if you already have an existing OpenTelemetry setup and prefer to keep using it, there are a couple of ways to do it.
 
-{% page-ref page="opentelemetry/" %}
+{% content-ref url="opentelemetry/" %}
+[opentelemetry](opentelemetry/)
+{% endcontent-ref %}
 
-{% page-ref page="using-opentelemetry-collector.md" %}
-
-
+{% content-ref url="using-opentelemetry-collector.md" %}
+[using-opentelemetry-collector.md](using-opentelemetry-collector.md)
+{% endcontent-ref %}
 

@@ -56,7 +56,7 @@ You can also search for aggregated traces by clicking the **Flow Aggregation** t
 
 From the refined list, select the specific trace or set of aggregated traces you've been searching for in order to view more information. 
 
-![](<../../.gitbook/assets/Aspecto - Flow 9.png>)
+![](../../.gitbook/assets/aspecto-flow-9.png)
 
 Three main sections will appear:
 
@@ -68,21 +68,21 @@ Three main sections will appear:
 
 The summary states the services that rely on the specific components within the trace, what the execution time was of the trace (AKA how long it took to perform), and the longest operation. 
 
-![](<../../.gitbook/assets/Screen Shot 2021-08-18 at 12.42.54 PM.png>)
+![](../../.gitbook/assets/screen-shot-2021-08-18-at-12.42.54-pm.png)
 
 If any component within the trace failed or did not perform as it should, you can click on that component within the diagram or the timeline and the summary section will populate with information as to why. You can also click on the error icon itself to view more information. 
 
-![](<../../.gitbook/assets/Screen Shot 2021-08-18 at 12.23.14 PM.png>)
+![](../../.gitbook/assets/screen-shot-2021-08-18-at-12.23.14-pm.png)
 
 ### Diagram 
 
 The diagram section allows you the visualize the relationship between services, understand the order of activities in a trace, and provides a clear picture of the application's architecture. On a high level, it will showcase how related operations across multiple microservices connect with each other in a single trace and will display the entire route of any message sent through Kafka, RabbitMQ, SQS, and other sorts of message brokers. 
 
-![](<../../.gitbook/assets/Screen Shot 2021-08-17 at 11.50.58 AM.png>)
+![](../../.gitbook/assets/screen-shot-2021-08-17-at-11.50.58-am.png)
 
 Each step in the flow is labeled numerically in the order it was performed. To further understand what took place in each step, simply click on the relevant component and information pertaining to the request, response, dependencies, and (occasionally) exceptions will appear.  
 
-![](<../../.gitbook/assets/Screen Shot 2021-08-18 at 12.41.31 PM.png>)
+![](../../.gitbook/assets/screen-shot-2021-08-18-at-12.41.31-pm.png)
 
 **Request:** information pertaining to the component that you sent data to.
 
@@ -94,7 +94,7 @@ Each step in the flow is labeled numerically in the order it was performed. To f
 
 If any part of the trace failed, the numbered arrow representing that component will appear in red and an exclamation icon (!) appear to catch your attention. The same icon will appear in orange/ yellow if an exception occurred or a component passed but not necessarily as it should. 
 
-![](<../../.gitbook/assets/Screen Shot 2021-08-18 at 6.35.04 PM.png>)
+![](../../.gitbook/assets/screen-shot-2021-08-18-at-6.35.04-pm.png)
 
 ####
 
@@ -102,7 +102,7 @@ If any part of the trace failed, the numbered arrow representing that component 
 
 The timeline showcases the hierarchy between components and displays the order in which every activity was performed, including how long it took. It makes it easy to visually identify bottlenecks and operational delays that result in performance issues within your application.
 
-![](<../../.gitbook/assets/Screen Shot 2021-08-18 at 6.12.05 PM.png>)
+![](../../.gitbook/assets/screen-shot-2021-08-18-at-6.12.05-pm.png)
 
 The component list on the left states the order and sequence of operations while the graph on the right showcases how many milliseconds each operation took. 
 

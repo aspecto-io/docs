@@ -2,13 +2,19 @@
 
 The Aspecto SDK auto-instruments everything for you. However, if you want to manually send spans, logs, or add additional configurations, use these links. 
 
-{% page-ref page="advanced.md" %}
+{% content-ref url="advanced.md" %}
+[advanced.md](advanced.md)
+{% endcontent-ref %}
 
-{% page-ref page="manual-spans.md" %}
+{% content-ref url="manual-spans.md" %}
+[manual-spans.md](manual-spans.md)
+{% endcontent-ref %}
 
-{% page-ref page="configure-logs.md" %}
+{% content-ref url="configure-logs.md" %}
+[configure-logs.md](configure-logs.md)
+{% endcontent-ref %}
 
-{% page-ref page="logs-correlation.md" %}
-
-
+{% content-ref url="logs-correlation.md" %}
+[logs-correlation.md](logs-correlation.md)
+{% endcontent-ref %}
 

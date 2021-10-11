@@ -35,11 +35,11 @@ There are 3 main sections you can utilize to further investigate why a specific 
 
 While the summary and diagram provide excellent insight on the trace and how different components rely and communicate with each other, the timeline section really digs deep into how long each component in the trace took to perform. 
 
-![](<../../.gitbook/assets/Screen Shot 2021-08-24 at 12.28.44 PM.png>)
+![](../../.gitbook/assets/screen-shot-2021-08-24-at-12.28.44-pm.png)
 
 Taking the image above as an example, the timeline pinpointed exactly which components took much longer to perform than the rest. You can click on the component itself within the timeline to understand why this was the case. 
 
-![](<../../.gitbook/assets/Screen Shot 2021-08-24 at 12.42.27 PM.png>)
+![](../../.gitbook/assets/screen-shot-2021-08-24-at-12.42.27-pm.png)
 
 Once you've selected the component, the request, response, and dependencies will appear. You can now verify and check to see if something is wrong in the request, causing the response time to delay. 
 

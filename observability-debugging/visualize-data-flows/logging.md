@@ -8,11 +8,11 @@ In the info pane on the right, click _Logs. _The Logs pane will open at the bott
 
 From the left-side pane, you can filter the view to show different log severities, filter by service name, or search for specific log records using the text search.
 
-![](<../../.gitbook/assets/WhatsApp Image 2020-11-09 at 15.09.09-Log-2-highlighted-filter-search.jpg>)
+![](../../.gitbook/assets/whatsapp-image-2020-11-09-at-15.09.09-log-2-highlighted-filter-search.jpg)
 
 You can also expand each log to show more detail.
 
-![](<../../.gitbook/assets/WhatsApp Image 2020-11-09 at 15.09.09-Log-2-highlighted.jpg>)
+![](../../.gitbook/assets/whatsapp-image-2020-11-09-at-15.09.09-log-2-highlighted.jpg)
 
 
 

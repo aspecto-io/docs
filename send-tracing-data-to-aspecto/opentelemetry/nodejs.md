@@ -27,4 +27,3 @@ provider.addSpanProcessor(
     )
 );
 ```
-

@@ -4,8 +4,8 @@ description: '- Allows you to send data that doesnt normally get sent (done manu
 
 # Send Spans Manually
 
-`"Span"` is the name of the data structure representing an interesting operation in your app.   
-Aspecto will automatically collect spans for operations created by popular packages that perform IO \(such as http, messaging systems, databases, etc\).   
+`"Span"` is the name of the data structure representing an interesting operation in your app. \
+Aspecto will automatically collect spans for operations created by popular packages that perform IO (such as http, messaging systems, databases, etc). \
 Manual spans are used if you need to trace an operation in a code you wrote, or when using a package that does not provide an automatic tracing.
 
 To create a Manual Span for a function run, you need to wrap it in a `trace` call like this:
@@ -96,4 +96,3 @@ trace((span, done) => {
     done(new Error('operation failed'));
 });
 ```
-
