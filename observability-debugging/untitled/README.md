@@ -2,13 +2,13 @@
 
 ## Overview 
 
-Using the Flow Search tool, filter and sort through your trace data to find performance bottlenecks, errors, exceptions and application issues that have reached your production environment. 
+Using the Trace Search tool, filter and sort through your trace data to find performance bottlenecks, errors, exceptions and application issues that have reached your production environment. 
 
 Once you've searched through and easily pinpointed where the problem lies, click on the trace to further investigate and understand why the problem exists. 
 
 ## Search  
 
-Select the **Flow Search** icon to view a list of every trace that has been collected. Each row represents an action that took place in your system. 
+Select the **Trace Search** icon to view a list of every trace that has been collected. Each row represents an action that took place in your system. 
 
 {% hint style="info" %}
 Data collection starts when the application is deployed after instrumentation. For more information on how to deploy the Aspecto SDK, [click here](https://app.gitbook.com/@aspecto/s/v1/\~/drafts/-Mh8W41dJNYI10DR8WQN/send-tracing-data-to-aspecto/send-tracing-data-to-aspecto/install-the-sdk). 
@@ -47,7 +47,7 @@ Now that you've filtered your search and have narrowed down the list of traces, 
 {% hint style="info" %}
 #### Aggregate View
 
-You can also search for aggregated traces by clicking the **Flow Aggregation** tab. The same search filters apply, but in this case, each unique trace will appear in the list once, with the number of occurrences shown per row. 
+You can also search for aggregated traces by clicking the **Trace Aggregation** tab. The same search filters apply, but in this case, each unique trace will appear in the list once, with the number of occurrences shown per row. 
 {% endhint %}
 
 ![](<../../.gitbook/assets/Aspecto - Flows  (2).png>)
@@ -80,7 +80,7 @@ The diagram section allows you the visualize the relationship between services, 
 
 ![](../../.gitbook/assets/screen-shot-2021-08-17-at-11.50.58-am.png)
 
-Each step in the flow is labeled numerically in the order it was performed. To further understand what took place in each step, simply click on the relevant component and information pertaining to the request, response, dependencies, and (occasionally) exceptions will appear.  
+Each step in the trace is labeled numerically in the order it was performed. To further understand what took place in each step, simply click on the relevant component and information pertaining to the request, response, dependencies, and (occasionally) exceptions will appear.  
 
 ![](../../.gitbook/assets/screen-shot-2021-08-18-at-12.41.31-pm.png)
 
@@ -112,5 +112,5 @@ Selecting any bar on the graph will highlight the matching step in the diagram a
 
 Now that you've easily pinpointed the bottlenecks and anomalies in your distributed system, the next step is to reproduce the problem locally, debug, and troubleshoot! 
 
-You can also dive deeper into our Flow Search tool for specific use cases, including searching for specific errors and exceptions or performance issues. 
+You can also dive deeper into our Trace Search tool for specific use cases, including searching for specific errors and exceptions or performance issues. 
 

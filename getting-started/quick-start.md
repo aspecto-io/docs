@@ -53,12 +53,12 @@ init({
 {% endtab %}
 {% endtabs %}
 
-Once the process begins, a link will be outputted. Click on the link to open our **Live Flows **tool and view traces from every microservice that is running in your environment. 
+Once the process begins, a link will be outputted. Click on the link to open our **Live Traces **tool and view traces from every microservice that is running in your environment. 
 
 ```
 =====================================================================================================================================
 |                                                                                                                                   |
-| 🕵️‍♀️See the live tracing stream at https://app.aspecto.io/app/live-flows/sessions?instanceId=14243e72-14dc-4255-87af-ef846b247578   |
+| 🕵️‍♀️See the live tracing stream at https://app.aspecto.io/app/live-traces/sessions?instanceId=14243e72-14dc-4255-87af-ef846b247578   |
 |                                                                                                                                   |
 =====================================================================================================================================
 ```
@@ -69,7 +69,7 @@ The provided link is valid for a limited period of time.
 
 ## Step 3: Access Your Tracing Data 
 
-The **Live Flows** tool within the Aspecto UI presents a list of all your live traces, making it easy to view every action that takes place in your system. It is a powerful way to proactively develop and debug your application, preventing issues from reaching production.
+The **Live Traces** tool within the Aspecto UI presents a list of all your live traces, making it easy to view every action that takes place in your system. It is a powerful way to proactively develop and debug your application, preventing issues from reaching production.
 
 By clicking on any trace, view all microservice dependencies and how every component within your distributed system communicates or relies on one another. 
 

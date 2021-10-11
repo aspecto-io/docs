@@ -18,3 +18,7 @@ Send traces to Aspecto directly from your code using one of the following:
 [go.md](go.md)
 {% endcontent-ref %}
 
+{% content-ref url="java.md" %}
+[java.md](java.md)
+{% endcontent-ref %}
+

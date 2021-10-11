@@ -33,7 +33,7 @@
   * [Search for Performance Issues](observability-debugging/untitled/search-for-performance-issues.md)
   * [Search for Errors and Exceptions](observability-debugging/untitled/search-for-errors-and-exceptions.md)
 * [Troubleshoot in Your Local Environment](observability-debugging/visualize-data-flows/README.md)
-  * [Analyze Logs within a Flow](observability-debugging/visualize-data-flows/logging.md)
+  * [Analyze Logs within a Trace](observability-debugging/visualize-data-flows/logging.md)
 
 ## 🏆 Deploy to Production <a href="settings" id="settings"></a>
 

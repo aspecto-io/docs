@@ -1,12 +1,12 @@
 ---
 description: >-
-  Control how different flows in your service are sampled using remote sampling
+  Control how different traces in your service are sampled using remote sampling
   rules
 ---
 
 # Sampling Rules
 
-When initializing Aspecto SDK, you can pass the **`samplingRatio` **option to control the general sampling rate of our client. But sometimes you'd want more sampling control only over specific flows. That's where sampling rules come in handy.
+When initializing Aspecto SDK, you can pass the **`samplingRatio` **option to control the general sampling rate of our client. But sometimes you'd want more sampling control only over specific trac. That's where sampling rules come in handy.
 
 [Video Walkthrough](https://www.loom.com/share/da413db506324f23ba6b89f88880ed32)
 
@@ -41,7 +41,7 @@ Possible matchers for the extra conditions are:
 
 * SDK clients are updated in real-time and changes are **effective immediately**, so be careful!\
 
-* Rules are run by their priority where **1 is the top priority.** Once a rule matches a flow, no other rules will be applied to the same flow.\
+* Rules are run by their priority where **1 is the top priority.** Once a rule matches a flow, no other rules will be applied to the same flow.e\
 
 * If non of the rules match, the default sampling rate will be used (`samplingRate` option or 100% if none provided).\
 

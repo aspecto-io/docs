@@ -1,8 +1,8 @@
 # Search for Performance Issues
 
-Performance issues almost always lead to customer frustration and dissatisfaction, especially when your application isn't performing as it should or it is too slow. The Flow Search tool can be used to easily locate these performance issues within your distributed system and pinpoint exactly what component is causing the delay or extended execution time. 
+Performance issues almost always lead to customer frustration and dissatisfaction, especially when your application isn't performing as it should or it is too slow. The Trace Search tool can be used to easily locate these performance issues within your distributed system and pinpoint exactly what component is causing the delay or extended execution time. 
 
-In this guide, we'll go over how to use Flow Search to find time-related performance issues and how you can use the Aspecto diagram and Timeline hierarchy to define the exact component that's causing the delay. 
+In this guide, we'll go over how to use Trace Search to find time-related performance issues and how you can use the Aspecto diagram and Timeline hierarchy to define the exact component that's causing the delay. 
 
 The entire process can be completed in 2 steps:
 
@@ -11,7 +11,7 @@ The entire process can be completed in 2 steps:
 
 ### Step 1: Locate the Trace 
 
-1. Navigate to the **Flow Search** tab to view every monitored trace in your system. 
+1. Navigate to the **Trace Search** tab to view every monitored trace in your system. 
 
 ![](<../../.gitbook/assets/Screen Shot 2021-09-28 at 6.02.19 PM.png>)
 

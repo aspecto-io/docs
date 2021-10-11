@@ -25,8 +25,8 @@ Available install configurations (all are optional):
 | `aspectoAuth`          | UUID             | Set Aspecto token from code instead of using `aspecto.json`                                                                                                                                                           |                             |
 | `packageName`          | string           | Service name                                                                                                                                                                                                          | "name" in `package.json`    |
 | `packageVersion`       | string           | Service version                                                                                                                                                                                                       | "version" is `package.json` |
-| `local`                | boolean          | When set to true, enable [live flows](https://www.npmjs.com/package/@aspecto/opentelemetry#live-flows)                                                                                                                | false                       |
-| `liveExporterPort`     | number           | Specify port for [live flows](https://www.npmjs.com/package/@aspecto/opentelemetry#live-flows)                                                                                                                        | random                      |
+| `local`                | boolean          | When set to true, enable [live traces](https://www.npmjs.com/package/@aspecto/opentelemetry#live-flows)                                                                                                               | false                       |
+| `liveExporterPort`     | number           | Specify port for [live traces](https://www.npmjs.com/package/@aspecto/opentelemetry#live-flows)                                                                                                                       | random                      |
 | `logger`               | logger interface | Logger to be used in this tracing library. common use for debugging `logger: console`                                                                                                                                 |                             |
 | `customZipkinEndpoint` | URL              | Send all traces to additional Zipkin server for debug                                                                                                                                                                 |                             |
 | `samplingRatio`        | number           | <p>Rate of traces to be sampled. Between 0 to 1.</p><p>Uses <a href="https://github.com/open-telemetry/opentelemetry-specification/blob/master/specification/trace/sdk.md#parentbased">parent-based</a> sampling.</p> | 1                           |
@@ -46,9 +46,9 @@ Set the environment variable `DISABLE_ASPECTO` to any value, to disable Aspecto.
 Affect lambda and GCF wrappers as well.\
 Useful when running unit tests, or as a simple kill switch.
 
-####  **Live Flow**
+####  **Live Trace**
 
-Live flow allows you to capture flows from all the microservices that you're running locally (both on the host env and docker) with`local`mode enabled. To activate live flow mode use `local` option like so:
+Live trace allows you to capture traces from all the microservices that you're running locally (both on the host env and docker) with`local`mode enabled. To activate live trace mode use `local` option like so:
 
 ```javascript
 require('@aspecto/opentelemetry')({ local: true });
@@ -59,12 +59,12 @@ require('@aspecto/opentelemetry')({ local: true });
 ```
 =====================================================================================================================================
 |                                                                                                                                   |
-| 🕵️‍♀️See the live tracing stream at https://app.aspecto.io/app/live-flows/sessions?instanceId=14243e72-14dc-4255-87af-ef846b247578   |
+| 🕵️‍♀️See the live tracing stream at https://app.aspecto.io/app/live-traces/sessions?instanceId=14243e72-14dc-4255-87af-ef846b247578   |
 |                                                                                                                                   |
 =====================================================================================================================================
 ```
 
-Click on the link to open the Live Flow, to see traces from all the microservices that are running on your environment that have local mode enabled. The link is valid for a limited period of time (a couple of days, but it may change in the future). \
+Click on the link to open the Live Trace, to see traces from all the microservices that are running on your environment that have local mode enabled. The link is valid for a limited period of time (a couple of days, but it may change in the future). \
 If you don't see a trace from some microservice (or none of them), click the newly-generated link.
 
 ##

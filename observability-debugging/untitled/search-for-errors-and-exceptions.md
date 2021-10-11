@@ -1,6 +1,6 @@
 # Search for Errors and Exceptions
 
-The Flow Search tool can be used to filter and find errors or exceptions that may be detrimental to your application's success. 
+The Trace Search tool can be used to filter and find errors or exceptions that may be detrimental to your application's success. 
 
 In this guide, we'll go over how to view a list of every trace that contained an error, as well as how to observe and pinpoint why that error occurred. 
 
@@ -11,7 +11,7 @@ The entire process can be completed in 2 steps:
 
 ### Step 1: Locate the Trace 
 
-1. Click on the **Flow Search** tab to view every monitored trace in your system. 
+1. Click on the **Trace Search** tab to view every monitored trace in your system. 
 
 ![](<../../.gitbook/assets/Screen Shot 2021-09-28 at 6.02.19 PM (1).png>)
 

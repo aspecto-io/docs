@@ -36,7 +36,7 @@ and then in your main function add the following code
 ```go
 	ctx := context.Background()
 	traceExporter, err := otlptracehttp.New(ctx,
-		otlptracehttp.WithEndpoint("collector.aspecto.io"),
+		otlptracehttp.WithEndpoint("otelcol.aspecto.io"),
 		otlptracehttp.WithHeaders(map[string]string{"Authorization": "<YOUR ASPECTO TOKEN HERE>"}))
 
 	if err != nil {

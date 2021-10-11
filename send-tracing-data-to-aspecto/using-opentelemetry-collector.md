@@ -9,7 +9,7 @@ If you already have your own [OpenTelemetry Collector](https://github.com/open-t
 ```yaml
 exporters:
   otlphttp:
-    endpoint: https://otelcol-fast.aspecto.io
+    endpoint: https://otelcol.aspecto.io
     headers:
       Authorization: <aspecto-api-key>
     

@@ -18,7 +18,7 @@ provider.register();
 provider.addSpanProcessor(
     new SimpleSpanProcessor(
         new CollectorTraceExporter({
-            url: 'https://otelcol-fast.aspecto.io/v1/trace',
+            url: 'https://otelcol.aspecto.io/v1/trace',
             headers: {
                 // Aspecto API-Key is required
                 Authorization: process.env.ASPECTO_API_KEY

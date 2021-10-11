@@ -1,10 +1,10 @@
 ---
-description: Correlate logs from your flows with Aspecto traces.
+description: Correlate logs from your traces with Aspecto traces.
 ---
 
 # Correlate Logs with Traces
 
-A common use case for the Flow Search tool is to see the related trace while inspecting a log event. To do this, you must attach an active `traceId` to your logs.
+A common use case for the Trace Search tool is to see the related trace while inspecting a log event. To do this, you must attach an active `traceId` to your logs.
 
 ## Setup
 
@@ -52,8 +52,8 @@ After completing the setup, and deploying your service, find the relevant log in
 
 ![Finding the traceId in a CloudWatch log](<../../../.gitbook/assets/image (7).png>)
 
-Next, go to [Flow Search](broken-reference) and search for the traceId you just copied:
+Next, go to [Trace Search](../../../observability-debugging/untitled/) and search for the traceId you just copied:
 
-![Searching for traceId in Flow Search](<../../../.gitbook/assets/image (8).png>)
+![Searching for traceId in Trace Search](<../../../.gitbook/assets/image (8).png>)
 
-Then, visualize and debug the flow.
+Then, visualize and debug the trace.
