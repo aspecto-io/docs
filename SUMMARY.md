@@ -21,19 +21,20 @@
     * [Correlate Logs with Traces](send-tracing-data-to-aspecto/aspecto-sdk/customize-defaults/logs-correlation.md)
 * [Using OpenTelemetry SDK](send-tracing-data-to-aspecto/opentelemetry/README.md)
   * [NodeJS](send-tracing-data-to-aspecto/opentelemetry/nodejs.md)
+  * [Java](send-tracing-data-to-aspecto/opentelemetry/java.md)
   * [Python](send-tracing-data-to-aspecto/opentelemetry/python.md)
   * [Ruby](send-tracing-data-to-aspecto/opentelemetry/ruby.md)
 * [Using OpenTelemetry Collector](send-tracing-data-to-aspecto/using-opentelemetry-collector.md)
 
-## 👀 Observability & Debugging <a id="observability-debugging"></a>
+## 👀 Observability & Debugging <a href="observability-debugging" id="observability-debugging"></a>
 
 * [Investigate Your Tracing Data](observability-debugging/untitled/README.md)
   * [Search for Performance Issues](observability-debugging/untitled/search-for-performance-issues.md)
+  * [Search for Errors and Exceptions](observability-debugging/untitled/search-for-errors-and-exceptions.md)
 * [Troubleshoot in Your Local Environment](observability-debugging/visualize-data-flows/README.md)
   * [Analyze Logs within a Flow](observability-debugging/visualize-data-flows/logging.md)
 
-## 🏆 Deploy to Production <a id="settings"></a>
+## 🏆 Deploy to Production <a href="settings" id="settings"></a>
 
 * [Sampling Rules](settings/sampling-rules.md)
 * [Data Privacy](settings/data-privacy.md)
-

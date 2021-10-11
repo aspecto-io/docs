@@ -4,14 +4,14 @@ description: Instrument Aspecto on Google Cloud Functions
 
 # For GCF
 
-Aspecto supports instrumenting Google Cloud Functions \(GCF\) using an **HTTP trigger**.  
-To do so, [set up Aspecto]() as you'd usually do, and extract the `gcf` utility:
+Aspecto supports instrumenting Google Cloud Functions (GCF) using an **HTTP trigger**.\
+To do so, [set up Aspecto](broken-reference) as you'd usually do, and extract the `gcf` utility:
 
 ```javascript
 const { gcf } = require('@aspecto/opentelemetry')();
 ```
 
-Next, wrap your function handler definition with the returned utility.   
+Next, wrap your function handler definition with the returned utility. \
 Example:
 
 ```javascript
@@ -36,6 +36,5 @@ app.use('/users/', getAllUsers);
 exports.users = gcf(app);
 ```
 
-  
+\
 **Note**: if your GCF is not deployed with a `package.json` file, make sure to provide the `packageName` option when initializing Aspecto.
-
