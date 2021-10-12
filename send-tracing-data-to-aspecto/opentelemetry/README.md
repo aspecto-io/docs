@@ -6,6 +6,10 @@ Send traces to Aspecto directly from your code using one of the following:
 [nodejs.md](nodejs.md)
 {% endcontent-ref %}
 
+{% content-ref url="java.md" %}
+[java.md](java.md)
+{% endcontent-ref %}
+
 {% content-ref url="python.md" %}
 [python.md](python.md)
 {% endcontent-ref %}
@@ -16,9 +20,5 @@ Send traces to Aspecto directly from your code using one of the following:
 
 {% content-ref url="go.md" %}
 [go.md](go.md)
-{% endcontent-ref %}
-
-{% content-ref url="java.md" %}
-[java.md](java.md)
 {% endcontent-ref %}
 

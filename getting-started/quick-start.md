@@ -13,7 +13,7 @@ Ready to gain visibility and a deeper understanding of your distributed system? 
 Once you've created an account, you can play around with the Aspecto UI using our simulated playground system or you can continue to step 2 and install our SDK. 
 
 {% hint style="info" %}
-Not ready to commit? Use our [playground](https://app.aspecto.io/play/live-flows) to get a glimpse of Aspecto in action. 
+Not ready to commit? Use our [playground](https://app.aspecto.io/play/search) to get a glimpse of Aspecto in action. 
 {% endhint %}
 
 ## Step 2: Install the Aspecto SDK 
