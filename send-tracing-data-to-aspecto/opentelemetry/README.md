@@ -1,6 +1,6 @@
 # Using OpenTelemetry SDK
 
-Send traces to Aspecto directly from your code using one of the following: 
+Send traces to Aspecto directly from your code using one of the following:&#x20;
 
 {% content-ref url="nodejs.md" %}
 [nodejs.md](nodejs.md)
@@ -16,6 +16,10 @@ Send traces to Aspecto directly from your code using one of the following:
 
 {% content-ref url="ruby.md" %}
 [ruby.md](ruby.md)
+{% endcontent-ref %}
+
+{% content-ref url=".net.md" %}
+[.net.md](.net.md)
 {% endcontent-ref %}
 
 {% content-ref url="go.md" %}

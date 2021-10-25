@@ -24,6 +24,7 @@
   * [Java](send-tracing-data-to-aspecto/opentelemetry/java.md)
   * [Python](send-tracing-data-to-aspecto/opentelemetry/python.md)
   * [Ruby](send-tracing-data-to-aspecto/opentelemetry/ruby.md)
+  * [.NET](send-tracing-data-to-aspecto/opentelemetry/.net.md)
   * [Go](send-tracing-data-to-aspecto/opentelemetry/go.md)
 * [Using OpenTelemetry Collector](send-tracing-data-to-aspecto/using-opentelemetry-collector.md)
 
