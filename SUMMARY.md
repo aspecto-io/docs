@@ -17,6 +17,7 @@
   * [Customize Defaults](send-tracing-data-to-aspecto/aspecto-sdk/customize-defaults/README.md)
     * [Advanced](send-tracing-data-to-aspecto/aspecto-sdk/customize-defaults/advanced.md)
     * [Send Spans Manually](send-tracing-data-to-aspecto/aspecto-sdk/customize-defaults/manual-spans.md)
+    * [Add span attributes manually](send-tracing-data-to-aspecto/aspecto-sdk/customize-defaults/add-span-attributes-manually.md)
     * [Send Logs](send-tracing-data-to-aspecto/aspecto-sdk/customize-defaults/configure-logs.md)
     * [Correlate Logs with Traces](send-tracing-data-to-aspecto/aspecto-sdk/customize-defaults/logs-correlation.md)
 * [Using OpenTelemetry SDK](send-tracing-data-to-aspecto/opentelemetry/README.md)
