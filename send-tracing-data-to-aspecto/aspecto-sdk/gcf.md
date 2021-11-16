@@ -5,7 +5,7 @@ description: Instrument Aspecto on Google Cloud Functions
 # For GCF
 
 Aspecto supports instrumenting Google Cloud Functions (GCF) using an **HTTP trigger**.\
-To do so, [set up Aspecto](broken-reference) as you'd usually do, and extract the `gcf` utility:
+To do so, [set up Aspecto](https://docs.aspecto.io/v1/send-tracing-data-to-aspecto/aspecto-sdk) as you'd usually do, and extract the `gcf` utility:
 
 ```javascript
 const { gcf } = require('@aspecto/opentelemetry')();

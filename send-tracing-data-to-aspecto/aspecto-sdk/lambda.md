@@ -28,7 +28,7 @@ In your Lambda function configuration, add or update the `NODE_OPTIONS` environm
 
 ### Option 2: Wrap Lambda handler with function
 
-To do so, [set up Aspecto](broken-reference) as you'd usually do, and extract the returned `lambda` utility:
+To do so, [set up Aspecto](https://docs.aspecto.io/v1/send-tracing-data-to-aspecto/aspecto-sdk) as you'd usually do, and extract the returned `lambda` utility:
 
 ```javascript
 const instrument = require('@aspecto/opentelemetry');

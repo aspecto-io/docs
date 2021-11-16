@@ -6,7 +6,7 @@ description: >-
 
 # Sampling Rules
 
-When initializing Aspecto SDK, you can pass the **`samplingRatio` **option to control the general sampling rate of our client. But sometimes you'd want more sampling control only over specific trac. That's where sampling rules come in handy.
+When initializing Aspecto SDK, you can pass the **`samplingRatio` **option to control the general sampling rate of our client. But sometimes you'd want more sampling control only over specific trace. That's where sampling rules come in handy.
 
 [Video Walkthrough](https://www.loom.com/share/da413db506324f23ba6b89f88880ed32)
 
@@ -27,7 +27,7 @@ Possible matchers for the extra conditions are:
 * HTTP Full URL (i.e. `https://my.domain.com/api/users?page=6&size=10`)
 * HTTP Method (i.e. `GET`, `POST`, etc.)
 * HTTP Host (i.e. `my.domain.com`)
-* User Agent (i.e. `PostmanRuntime/7.2` ) 
+* User Agent (i.e. `PostmanRuntime/7.2` )&#x20;
 * Queue/Topic Name (Queue name for SQS, Topic name for Kafka, etc.)
 
 ## **Important Notes**
