@@ -41,7 +41,7 @@ const logger = winston.createLogger({
 
 ### Sampled Flag
 
-Some traces may be unsampled due to [sampling rules](../../../settings/sampling-rules.md) or  the `samplingRatio` SDK setting.\
+Some traces may be unsampled due to [sampling rules](../../../../settings/sampling-rules.md) or  the `samplingRatio` SDK setting.\
 In those cases, you may want to reflect this on your log, so later on, you'd be able to know whether to expect to see the matching trace on Aspecto, or not.\
 \
 For this, the `getContext()` response payload will also contain a boolean called `sampled`, reflecting the sampling result.
@@ -50,10 +50,10 @@ For this, the `getContext()` response payload will also contain a boolean called
 
 After completing the setup, and deploying your service, find the relevant log in your logging solution (e.g., CloudWatch, logz.io, etc...) and copy the **traceId**.
 
-![Finding the traceId in a CloudWatch log](<../../../.gitbook/assets/image (7).png>)
+![Finding the traceId in a CloudWatch log](<../../../../.gitbook/assets/image (7).png>)
 
-Next, go to [Trace Search](../../../observability-debugging/untitled/) and search for the traceId you just copied:
+Next, go to [Trace Search](../../../../observability-debugging/untitled/) and search for the traceId you just copied:
 
-![Searching for traceId in Trace Search](<../../../.gitbook/assets/image (8).png>)
+![Searching for traceId in Trace Search](<../../../../.gitbook/assets/image (8).png>)
 
 Then, visualize and debug the trace.

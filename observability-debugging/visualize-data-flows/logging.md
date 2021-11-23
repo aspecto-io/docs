@@ -1,6 +1,6 @@
 # Analyze Logs within a Trace
 
-After [configuring your logs in Aspecto](../../send-tracing-data-to-aspecto/aspecto-sdk/customize-defaults/configure-logs.md), you can use the Live Trace tool to examine the logs of each stage in a trace. Logs are associated with a trace's diagram, giving you context of what you're looking at when searching your logs.
+After [configuring your logs in Aspecto](../../send-tracing-data-to-aspecto/aspecto-sdk/nodejs/customize-defaults/configure-logs.md), you can use the Live Trace tool to examine the logs of each stage in a trace. Logs are associated with a trace's diagram, giving you context of what you're looking at when searching your logs.
 
 In the info panel on the right, click _Logs. _The Logs pane will open at the bottom.&#x20;
 

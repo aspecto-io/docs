@@ -20,19 +20,19 @@ Data collection starts when the application is deployed after instrumentation. F
 
 Use the filters in the search bar to locate a specific trace to view more information on the endpoint-to-endpoint transaction. You can filter your search using the open search field or by:
 
-| Filter Name      | Description                                                                                                                                      |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| time frame       | The starting and ending period in which the traces was performed                                                                                 |
-| severity         | Whether the trace threw an error or exception or HTTP 5XX                                                                                        |
-| service          | The name of the microservice. [How to configure it](../../send-tracing-data-to-aspecto/aspecto-sdk/customize-defaults/advanced.md#configuration) |
-| environment      | The name of the environment. [How to configure it](../../send-tracing-data-to-aspecto/aspecto-sdk/customize-defaults/advanced.md#configuration)  |
-| HTTP Method      | The HTTP method (GET, POST, etc..)                                                                                                               |
-| HTTP Status code | The HTTP status code - 200,500 etc..                                                                                                             |
-| route            | A specific endpoint request (/api/v1/users)                                                                                                      |
-| database name    | The name of the relevant database component                                                                                                      |
-| AWS service      | The name of the Amazon service (S3, SQS, kinesis)                                                                                                |
-| queue            | The name of the queue (sqs queue name, kafka topic )                                                                                             |
-| functions        | A severless function, such as an AWS Lambda function                                                                                             |
+| Filter Name      | Description                                                                                                                                             |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| time frame       | The starting and ending period in which the traces was performed                                                                                        |
+| severity         | Whether the trace threw an error or exception or HTTP 5XX                                                                                               |
+| service          | The name of the microservice. [How to configure it](../../send-tracing-data-to-aspecto/aspecto-sdk/nodejs/customize-defaults/advanced.md#configuration) |
+| environment      | The name of the environment. [How to configure it](../../send-tracing-data-to-aspecto/aspecto-sdk/nodejs/customize-defaults/advanced.md#configuration)  |
+| HTTP Method      | The HTTP method (GET, POST, etc..)                                                                                                                      |
+| HTTP Status code | The HTTP status code - 200,500 etc..                                                                                                                    |
+| route            | A specific endpoint request (/api/v1/users)                                                                                                             |
+| database name    | The name of the relevant database component                                                                                                             |
+| AWS service      | The name of the Amazon service (S3, SQS, kinesis)                                                                                                       |
+| queue            | The name of the queue (sqs queue name, kafka topic )                                                                                                    |
+| functions        | A severless function, such as an AWS Lambda function                                                                                                    |
 
 Feel free to use more than one search parameter to really define what you're looking for. For example, perhaps you are searching for a failed HTTP request to POST `/v1/example`.  Simply filter the HTTP method to only POST requests, filter the route to `/v1/example`, and filter the status code to 500. The search results will display every POST `/v1/example `request that failed due to 500 within the selected time frame.&#x20;
 

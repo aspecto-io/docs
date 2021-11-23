@@ -30,6 +30,6 @@ app.get('/health-check', async (req, res) => {
 
 After a successful run:
 
-Go to [Trace Search](../../../observability-debugging/untitled/) -> select the relevant trace -> select the span you added attributes to -> click the 'raw data' tab.
+Go to [Trace Search](../../../../observability-debugging/untitled/) -> select the relevant trace -> select the span you added attributes to -> click the 'raw data' tab.
 
-![](<../../../.gitbook/assets/Screen Shot 2021-10-28 at 13.41.53.png>)
+![](<../../../../.gitbook/assets/Screen Shot 2021-10-28 at 13.41.53.png>)
