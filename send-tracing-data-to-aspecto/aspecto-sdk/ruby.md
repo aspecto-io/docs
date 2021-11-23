@@ -6,7 +6,7 @@ description: Aspecto's SDK for ruby.
 
 ## Aspecto::OpenTelemetry
 
-Aspecto's SDK for ruby. This gem is a distribution of OpenTelemetry configured to use all available instrumentations and export trace data to Aspecto.
+Aspecto's SDK for Ruby. This gem is a distribution of OpenTelemetry configured to use all available instrumentations and export trace data to Aspecto.
 
 ### Installation
 
@@ -30,19 +30,9 @@ $ gem install aspecto-opentelemetry
 
 ### Usage
 
-#### Auto Instrumentation
+#### Instrumentation
 
-Does not require code changes. Just modify you `Gemfile` to add `require` like this:
-
-```
-gem 'aspecto-opentelemetry', require: 'aspecto/auto_instrument'
-```
-
-When using auto-instrumentation, you need to pass relevant configuration options via environment variables.
-
-#### Manual Instrumentation
-
-Allow you to configure the SDK via code:
+Configure the SDK with the following code:
 
 ```rb
 require 'aspecto/opentelemetry'
