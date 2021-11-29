@@ -31,7 +31,7 @@ Add this code to a new file `aspecto.rb` under `config/initializers/`:
 require 'aspecto/opentelemetry'
 
 Aspecto::OpenTelemetry::configure do |c|
-  c.service_name = '<YOUR_SERIVCE_NAME>'
+  c.service_name = '<YOUR_SERVICE_NAME>'
   c.aspecto_auth = '<YOUR_ASPECTO_TOKEN>'
   # c.sampling_ratio = 1.0 # [optional]: defaults to 1.0, use aspecto app to configure remotely
 end
@@ -48,7 +48,7 @@ gem 'aspecto-opentelemetry', require: 'aspecto/auto_instrument'
 And set environment variables:
 
 ```
-OTEL_SERVICE_NAME=<YOUR_SERIVCE_NAME>
+OTEL_SERVICE_NAME=<YOUR_SERVICE_NAME>
 ASPECTO_AUTH=<YOUR_ASPECTO_TOKEN>
 # ASPECTO_SAMPLING_RATIO=1.0 # [optional]: defaults to 1.0, use aspecto app to configure remotely
 ```
@@ -63,7 +63,7 @@ Add this code after your require other gems:
 require 'aspecto/opentelemetry'
 
 Aspecto::OpenTelemetry::configure do |c|
-  c.service_name = '<YOUR_SERIVCE_NAME>'
+  c.service_name = '<YOUR_SERVICE_NAME>'
   c.aspecto_auth = '<YOUR_ASPECTO_TOKEN>'
   # c.env = '<CURRENT_ENVIRONMENT>' # [optional]: automatically detected for rails and sinatra
   # c.sampling_ratio = 1.0 # [optional]: defaults to 1.0, use aspecto app to configure remotely
@@ -81,7 +81,7 @@ require 'aspecto/auto_instrument'
 And set environment variables:
 
 ```
-OTEL_SERVICE_NAME=<YOUR_SERIVCE_NAME>
+OTEL_SERVICE_NAME=<YOUR_SERVICE_NAME>
 ASPECTO_AUTH=<YOUR_ASPECTO_TOKEN>
 # ASPECTO_ENV=<CURRENT_ENVIRONMENT> # [optional]: automatically detected for rails and sinatra
 # ASPECTO_SAMPLING_RATIO=1.0 # [optional]: defaults to 1.0, use aspecto app to configure remotely
@@ -101,11 +101,12 @@ You can set configuration via environment variables or via code. Values set in c
 
 #### Configuration Options
 
-| Option Name      | Environment Variable     | Type        | Default                                 | Description                                                                                                                                           |
-| ---------------- | ------------------------ | ----------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `aspecto_auth`   | `ASPECTO_AUTH`           | UUID string | -                                       | Aspecto's [API key for authentication](https://app.aspecto.io/app/integration/api-key)                                                                |
-| `service_name`   | `OTEL_SERVICE_NAME`      | string      | -                                       | name of the service which is sending telemetry                                                                                                        |
-| `env`            | `ASPECTO_ENV`            | string      | extracted from rails or sinatra if used | deployment environment: `production` / `staging` / `development`, etc.                                                                                |
-| `log_level`      | `OTEL_LOG_LEVEL`         | string      | `ERROR`                                 | `ERROR` / `WARN` / `INFO`, etc.                                                                                                                       |
-| `sampling_ratio` | `ASPECTO_SAMPLING_RATIO` | float       | 1.0                                     | How many of the traces starting in this service should be sampled. set to number in range \[0.0, 1.0] where 0.0 is no sampling, and 1.0 is sample all |
+| Option Name                          | Environment Variable                 | Type        | Default                                                                      | Description                                                                                                                                           |
+| ------------------------------------ | ------------------------------------ | ----------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `aspecto_auth`                       | `ASPECTO_AUTH`                       | UUID string | -                                                                            | Aspecto's [API key for authentication](https://app.aspecto.io/app/integration/api-key)                                                                |
+| `service_name`                       | `OTEL_SERVICE_NAME`                  | string      | -                                                                            | name of the service which is sending telemetry                                                                                                        |
+| `env`                                | `ASPECTO_ENV`                        | string      | extracted from rails or sinatra if used                                      | deployment environment: `production` / `staging` / `development`, etc.                                                                                |
+| `log_level`                          | `OTEL_LOG_LEVEL`                     | string      | `ERROR`                                                                      | `ERROR` / `WARN` / `INFO`, etc.                                                                                                                       |
+| `sampling_ratio`                     | `ASPECTO_SAMPLING_RATIO`             | float       | 1.0                                                                          | How many of the traces starting in this service should be sampled. set to number in range \[0.0, 1.0] where 0.0 is no sampling, and 1.0 is sample all |
+| `otel_exporter_otlp_traces_endpoint` | `OTEL_EXPORTER_OTLP_TRACES_ENDPOINT` | URL         | "[https://otelcol.aspecto.io/v1/trace](https://otelcol.aspecto.io/v1/trace)" | Url                                                                                                                                                   |
 
