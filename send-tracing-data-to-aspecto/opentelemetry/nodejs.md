@@ -3,14 +3,16 @@
 Send traces to aspecto directly from your code using [`exporter-collector`](https://www.npmjs.com/package/@opentelemetry/exporter-collector) . Here is an example Node.js TypeScript snippet:
 
 ```typescript
-import { NodeTracerProvider } from '@opentelemetry/node';
+import { NodeTracerProvider } from '@opentelemetry/sdk-trace-node';
 import { Resource } from '@opentelemetry/resources';
-import { SimpleSpanProcessor } from '@opentelemetry/tracing';
+import { SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
+import { SimpleSpanProcessor } from '@opentelemetry/sdk-trace-base';
 import { CollectorTraceExporter } from '@opentelemetry/exporter-collector';
+import { registerInstrumentations } from '@opentelemetry/instrumentation';
 
 const provider = new NodeTracerProvider({
     resource: new Resource({
-        'service.name': 'my-service-name' // service.name is required
+        [SemanticResourceAttributes.SERVICE_NAME]: 'my-service-name' // service name is required
     }),
 });
 
@@ -26,4 +28,10 @@ provider.addSpanProcessor(
         })
     )
 );
+
+registerInstrumentations({
+  instrumentations: [
+    // add auto instrumentations here for packages your app uses
+  ],
+});
 ```
