@@ -20,7 +20,7 @@ For trace segments, you can set the rule to block collection of telemetry data f
 Click _Settings_, in the lower left of the Aspecto app, and then select _Data Privacy_. The rules you have created are listed. You can search them for specific rules based on text in the rule (for example the name of a field or segment).
 
 1. Click _NEW RULE._\
-   __![](../.gitbook/assets/2020-11-26-12\_10\_56-aspecto-data-privacy-new-rule.png)_  _ &#x20;
+   __![](../.gitbook/assets/2020-11-26-12\_10\_56-aspecto-data-privacy-new-rule.png)  __ &#x20;
 2. Select whether the rule will apply to a data field or a trace segment
 3. Select whether the rule will block collection of data for the item or, for data fields, permit data collection,  but scramble the data.
 4. Select the name of the field or trace. For example, _/user/profile._

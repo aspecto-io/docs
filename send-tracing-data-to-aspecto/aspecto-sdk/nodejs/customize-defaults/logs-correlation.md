@@ -8,7 +8,7 @@ A common use case for the Trace Search tool is to see the related trace while in
 
 ## Setup
 
-Follow these steps to attach `traceId`** **to your logs.
+Follow these steps to attach `traceId` **** to your logs.
 
 Use the `getContext` method, exposed from our package:
 
@@ -18,7 +18,7 @@ const { getContext } = require('@aspecto/opentelemetry');
 console.log('Something happened!', { traceId: getContext().traceId });
 ```
 
-If you're using a custom logger, we recommend you add the **traceId **to all logs by default.\
+If you're using a custom logger, we recommend you add the **traceId** to all logs by default.\
 Here's an example using **winston**:
 
 ```typescript

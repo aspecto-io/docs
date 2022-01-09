@@ -8,7 +8,7 @@ Ready to gain visibility and a deeper understanding of your distributed system? 
 
 ## Step 1: Sign Up for an Account&#x20;
 
-[Use this link](https://app.aspecto.io/user/login) to sign up for an Aspecto account or navigate to the [Aspecto website](https://www.aspecto.io) and select the **Get Started **button.&#x20;
+[Use this link](https://app.aspecto.io/user/login) to sign up for an Aspecto account or navigate to the [Aspecto website](https://www.aspecto.io) and select the **Get Started** button.&#x20;
 
 Once you've created an account, you can play around with the Aspecto UI using our simulated playground system or you can continue to step 2 and install our SDK.&#x20;
 
@@ -53,7 +53,7 @@ init({
 {% endtab %}
 {% endtabs %}
 
-Once the process begins, a link will be outputted. Click on the link to open our **Live Traces **tool and view traces from every microservice that is running in your environment.&#x20;
+Once the process begins, a link will be outputted. Click on the link to open our **Live Traces** tool and view traces from every microservice that is running in your environment.&#x20;
 
 ```
 =====================================================================================================================================
