@@ -70,7 +70,7 @@ In the above example, we are creating a rule to sample 100% of the traces that c
 
 ![Create new tail sampling rule](<../.gitbook/assets/Create new tail sampling rule - duration.png>)
 
-In the above example, we are creating a rule to sample 100% of the traces whose _`http.status_code`_ is 4xx format and their duration > 15 seconds.\
+In the above example, we are creating a rule to sample 100% of the traces whose _`http.status_code`_ is `4xx` format and their duration > 15 seconds.\
 \
 You can then choose to create extra conditions for your rules.\
 Possible matchers for tail-based sampling are (in addition to the head-based sampling matchers):
