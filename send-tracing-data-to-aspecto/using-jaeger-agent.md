@@ -10,6 +10,7 @@ You'd need to set the following CLI flags in your agent entry point
 
 ```
 --reporter.grpc.host-port=collector.aspecto.io:14250
+--reporter.grpc.tls.enabled=true
 --agent.tags=aspecto.token=<aspecto-api-key>
 ```
 
@@ -24,6 +25,7 @@ docker run
 -p5778:5778/tcp \
 jaegertracing/jaeger-agent:1.30 \
 --reporter.grpc.host-port=collector.aspecto.io:14250 \
+--reporter.grpc.tls.enabled=true \
 --agent.tags=aspecto.token=<aspecto-api-key>
 ```
 
