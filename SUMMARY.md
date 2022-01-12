@@ -30,8 +30,9 @@
   * [.NET](send-tracing-data-to-aspecto/opentelemetry/.net.md)
   * [Go](send-tracing-data-to-aspecto/opentelemetry/go.md)
 * [Using OpenTelemetry Collector](send-tracing-data-to-aspecto/using-opentelemetry-collector.md)
+* [Using Jaeger Agent](send-tracing-data-to-aspecto/using-jaeger-agent.md)
 
-## 👀 Observability & Debugging <a href="observability-debugging" id="observability-debugging"></a>
+## 👀 Observability & Debugging <a href="#observability-debugging" id="observability-debugging"></a>
 
 * [Investigate Your Tracing Data](observability-debugging/untitled/README.md)
   * [Search for Performance Issues](observability-debugging/untitled/search-for-performance-issues.md)
@@ -39,7 +40,7 @@
 * [Troubleshoot in Your Local Environment](observability-debugging/visualize-data-flows/README.md)
   * [Analyze Logs within a Trace](observability-debugging/visualize-data-flows/logging.md)
 
-## 🏆 Deploy to Production <a href="settings" id="settings"></a>
+## 🏆 Deploy to Production <a href="#settings" id="settings"></a>
 
 * [Sampling Rules](settings/sampling-rules.md)
 * [Data Privacy](settings/data-privacy.md)

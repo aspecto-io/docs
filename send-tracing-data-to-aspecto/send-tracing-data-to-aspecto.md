@@ -16,3 +16,8 @@ However, if you already have an existing OpenTelemetry setup and prefer to keep 
 [using-opentelemetry-collector.md](using-opentelemetry-collector.md)
 {% endcontent-ref %}
 
+Or, maybe you already have an existing Jaeger setup and prefer to keep using it, you can configure its agents to send traces to Aspecto.
+
+{% content-ref url="using-jaeger-agent.md" %}
+[using-jaeger-agent.md](using-jaeger-agent.md)
+{% endcontent-ref %}
