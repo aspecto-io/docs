@@ -3,8 +3,8 @@
 Ready to gain visibility and a deeper understanding of your distributed system? Get started with Aspecto in just 3 easy steps:
 
 1. [Sign up an Aspecto account ](https://app.aspecto.io/user/login)(it's free!)
-2. Install our SDK
-3. Access and observe your tracing data&#x20;
+2. Install the Aspecto SDK
+3. Access and observe your tracing data from Aspecto UI
 
 ## Step 1: Sign Up for an Account&#x20;
 
@@ -18,23 +18,24 @@ Not ready to commit? Use our [playground](https://app.aspecto.io/play/search) to
 
 ## Step 2: Install the Aspecto SDK&#x20;
 
-The Aspecto SDK can be installed within the microservices in your local environment. Once you've installed the SDK, every time data is locally created on your microservice, it will appear within the Aspecto UI.
+There are several ways to send telemetry data to Aspecto. The instructions below show you how to add instrumentation to your applications using Aspecto SDK.\
+The Aspecto SDK can be installed within the microservices in your local environment. Once you've installed the SDK and deploy, every time data is created on your microservice, it will appear within the Aspecto UI.
 
-![](<../.gitbook/assets/image (15).png>)
+&#x20;Use the tabs below to see which option is recommended based on the language you will be using.
 
+{% tabs %}
+{% tab title="JavaScript" %}
 Start by installing the Aspecto package using `npm`:&#x20;
 
 ```
 $ npm install @aspecto/opentelemetry
 ```
 
+\
 At the beginning of each project, add the following code. Make sure to use your authentication token, which can be found [here](https://app.aspecto.io/app/integration/api-key).&#x20;
 
-{% tabs %}
-{% tab title="JavaScript" %}
 ```javascript
 require('@aspecto/opentelemetry')({
-    local:true,
     aspectoAuth: '*your-token-goes-here*'
 });
 // ... other imports ...
@@ -42,47 +43,123 @@ require('@aspecto/opentelemetry')({
 {% endtab %}
 
 {% tab title="TypeScript" %}
+Start by installing the Aspecto package using `npm`:&#x20;
+
+```
+$ npm install @aspecto/opentelemetry
+```
+
+\
+At the beginning of each project, add the following code. Make sure to use your authentication token, which can be found [here](https://app.aspecto.io/app/integration/api-key).&#x20;
+
 ```typescript
 import init from '@aspecto/opentelemetry';
 init({
-  local: true,
   aspectoAuth: '*your-token-goes-here*'
 });
 // ... other imports ...
 ```
 {% endtab %}
+
+{% tab title="Rails" %}
+**Installation**
+
+Install the gem using:
+
+```
+$ gem install aspecto-opentelemetry
+```
+
+Or, if you use [bundler](https://bundler.io), include aspecto-opentelemetry in your Gemfile.
+
+****\
+**Configuration in Code**
+
+Add this code to a new file `aspecto.rb` under `config/initializers/`:
+
+```
+# config/initializers/aspecto.rb
+require 'aspecto/opentelemetry'
+
+Aspecto::OpenTelemetry::configure do |c|
+  c.service_name = '<YOUR_SERVICE_NAME>'
+  c.aspecto_auth = '<YOUR_ASPECTO_TOKEN>'
+  # c.sampling_ratio = 1.0 # [optional]: defaults to 1.0, use aspecto app to configure remotely
+end
+```
+{% endtab %}
+
+{% tab title="Ruby" %}
+**Installation**
+
+Install the gem using:
+
+```
+$ gem install aspecto-opentelemetry
+```
+
+Or, if you use [bundler](https://bundler.io), include aspecto-opentelemetry in your Gemfile.
+
+****\
+**Configuration in Code**
+
+```
+require 'aspecto/opentelemetry'
+
+Aspecto::OpenTelemetry::configure do |c|
+  c.service_name = '<YOUR_SERVICE_NAME>'
+  c.aspecto_auth = '<YOUR_ASPECTO_TOKEN>'
+  # c.env = '<CURRENT_ENVIRONMENT>' # [optional]: automatically detected for rails and sinatra
+  # c.sampling_ratio = 1.0 # [optional]: defaults to 1.0, use aspecto app to configure remotely
+end
+```
+{% endtab %}
 {% endtabs %}
 
-Once the process begins, a link will be outputted. Click on the link to open our **Live Traces** tool and view traces from every microservice that is running in your environment.&#x20;
+### Send traffic to your service
 
-```
-=====================================================================================================================================
-|                                                                                                                                   |
-| 🕵️‍♀️See the live tracing stream at https://app.aspecto.io/app/live-traces/sessions?instanceId=14243e72-14dc-4255-87af-ef846b247578   |
-|                                                                                                                                   |
-=====================================================================================================================================
-```
+So far, you have configured your application to send telemetry to Aspecto for any inbound or outbound requests. Next, you will need to make requests to your service in order to generate the telemetry that will be sent to Aspecto.
 
-{% hint style="info" %}
-The provided link is valid for a limited period of time.
-{% endhint %}
+Interact with your application by making a few requests. Telemetry data should now appear in the Aspecto UI!\
+\
+Continue to the next step to start access your tracing data.
 
 ## Step 3: Access Your Tracing Data&#x20;
 
-The **Live Traces** tool within the Aspecto UI presents a list of all your live traces, making it easy to view every action that takes place in your system. It is a powerful way to proactively develop and debug your application, preventing issues from reaching production.
+Using the Trace Search tool, filter and sort through your trace data to find performance bottlenecks, errors, exceptions and application issues that have reached your production environment.
 
-By clicking on any trace, view all microservice dependencies and how every component within your distributed system communicates or relies on one another.&#x20;
+Once you've searched through and easily pinpointed where the problem lies, click on the trace to further investigate and understand why the problem exists.&#x20;
 
-![](<../.gitbook/assets/image (13).png>)
+### Search
 
-Using the trace diagram, summary, and timeline, you can observe and understand how a code change will affect your entire system as well as pinpoint performance issues and other anomalies, like errors and exceptions.&#x20;
+Select the **Trace Search** icon to view a list of every trace that has been collected. Each row represents an action that took place in your system. ****&#x20;
 
-## Bonus: Taking Aspecto One Step Further&#x20;
+![](<../.gitbook/assets/Trace Search.png>)
 
-👉  Check out our [Advanced](https://docs.aspecto.io/v1/send-tracing-data-to-aspecto/aspecto-sdk/customize-defaults/advanced) guide to customize what data is sent to Aspecto and to enable customized settings according to your use case.&#x20;
+### **Filter**
 
-🔎 [Investigate your tracing data](https://docs.aspecto.io/v1/observability-debugging/untitled) and pinpoint areas that can be improved or fixed.&#x20;
+Use the filters in the search bar to locate a specific trace to view more information on the endpoint-to-endpoint transaction. You can filter your search using the open search field or by: environment, time frame, HTTP Method**,** etc. You can check all the filters [here](https://docs.aspecto.io/v1/observability-debugging/untitled#filter).
 
-🚀 Want to deploy to production? Create [sampling rules](https://docs.aspecto.io/v1/settings/sampling-rules) to determine exactly what data should be sent to Aspecto in production. \
+![](<../.gitbook/assets/Trace Filters.png>)
 
+### **Sort**
 
+Now that you've filtered your search and have narrowed down the list of traces, you can sort through the remaining traces by clicking on any column header. The traces will automatically sort from ascending to descending but you can change the order of the sort using the arrow that appears next to the column name.
+
+![](<../.gitbook/assets/sort traces.png>)
+
+### **Observe**
+
+From the refined list, select the specific trace or set of aggregated traces you've been searching for in order to view more information. Three main sections will appear: Summary, Diagram and Timeline.
+
+![](../.gitbook/assets/aspecto-flow-9.png)
+
+{% hint style="info" %}
+Learn more how to [Investigate Your Tracing Data](https://docs.aspecto.io/v1/observability-debugging/untitled).
+{% endhint %}
+
+## What's Next?
+
+* Check out our [Advanced](https://docs.aspecto.io/v1/send-tracing-data-to-aspecto/aspecto-sdk/customize-defaults/advanced) guide to customize what data is sent to Aspecto and to enable customized settings according to your use case.&#x20;
+* [Investigate your tracing data](https://docs.aspecto.io/v1/observability-debugging/untitled) and pinpoint areas that can be improved or fixed.&#x20;
+* Want to deploy to production? Create [sampling rules](https://docs.aspecto.io/v1/settings/sampling-rules) to determine exactly what data should be sent to Aspecto in production.&#x20;
