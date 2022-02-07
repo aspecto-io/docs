@@ -37,18 +37,13 @@ init({
 {% endtab %}
 {% endtabs %}
 
-Once the process starts, it will output the following link:
+### Send traffic to your service
 
-```
-=====================================================================================================================================
-|                                                                                                                                   |
-| 🕵️‍♀️See the live tracing stream at https://app.aspecto.io/app/live-traces/sessions?instanceId=14243e72-14dc-4255-87af-ef846b247578   |
-|                                                                                                                                   |
-=====================================================================================================================================
-```
+So far, you have configured your application to send telemetry to Aspecto for any inbound or outbound requests. Next, you will need to make requests to your service in order to generate the telemetry that will be sent to Aspecto.
 
-Click on the link to open 'Live traces' and see traces from all the microservices that are running on your environment. \
-The link is valid for a limited period of time.
+Interact with your application by making a few requests. Telemetry data should now appear in the Aspecto UI!
+
+Continue to the next step to start [investigate your tracing data](../../../observability-debugging/untitled/).
 
 {% hint style="info" %}
 See the [advanced page](customize-defaults/advanced.md) for specific configurations
