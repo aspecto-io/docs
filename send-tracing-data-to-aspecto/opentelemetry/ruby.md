@@ -44,6 +44,6 @@ require 'opentelemetry'
 OpenTelemetry::Trace.current_span.set_attribute('attribute.name', 'attribute value')
 ```
 
-Attribute name can be any static string. It is recommended to be namespaced with dot notation: `company.scope.name`: "my\__company.user.id", "my\_company.tier", "my\__company.features.promotion"
+Attribute name can be any static string, recommended to be namespaced with dot notation (`<company>.<scope>.<name>`), for example: "my\__company.user.id", "my\_company.tier", "my\__company.features.promotion".
 
 Attribute value can be any string, number, boolean or array of these
