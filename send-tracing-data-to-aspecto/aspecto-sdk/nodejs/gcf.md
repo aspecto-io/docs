@@ -37,4 +37,4 @@ exports.users = gcf(app);
 ```
 
 \
-**Note**: if your GCF is not deployed with a `package.json` file, make sure to provide the `packageName` option when initializing Aspecto.
+**Note**: if your GCF is not deployed with a `package.json` file, make sure to provide the `serviceName` option when initializing Aspecto.

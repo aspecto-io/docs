@@ -1,5 +1,5 @@
 ---
-description: '- Allows you to send data that doesnt normally get sent (done manually)'
+description: '- Allows you to send data that doesn''t normally get sent (done manually)'
 ---
 
 # Send Spans Manually

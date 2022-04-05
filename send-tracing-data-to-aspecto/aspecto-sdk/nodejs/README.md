@@ -12,6 +12,34 @@ Install our Node.js library using `npm`:
 $ npm install @aspecto/opentelemetry
 ```
 
+#### Auto Instrument
+
+1. Use node `-r` (or `--require`) [cli option](https://nodejs.org/api/cli.html#-r---require-module) to preload Aspecto SDK before application start:
+
+```
+-r @aspecto/opentelemetry/auto-instrument
+```
+
+e.g. your `node` invocation should look like this:
+
+```
+// before
+node ./app
+
+// after
+node -r @aspecto/opentelemetry/auto-instrument ./app
+```
+
+2\. Set `aspectoAuth` and other optional SDK options via [environment variables or `aspecto.json` file](customize-defaults/advanced.md).
+
+For example:
+
+```
+ASPECTO_AUTH="*your-token-goes-here*" node -r @aspecto/opentelemetry/auto-instrument ./app
+```
+
+#### Initialise in Code
+
 After obtaining your token [here](https://app.aspecto.io/app/integration/api-key), **before any other import,** add the following call at the top of your app entry point:
 
 {% tabs %}

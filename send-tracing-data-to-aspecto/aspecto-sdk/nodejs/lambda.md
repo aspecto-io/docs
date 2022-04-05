@@ -18,7 +18,7 @@ const instrument = require('@aspecto/opentelemetry');
 instrument({
     aspectoAuth: '*your-token-goes-here*',
     env: 'production',
-    packageName: 'your-lambda-name'
+    serviceName: 'your-lambda-name'
 });
 ```
 
@@ -49,4 +49,4 @@ module.exports.myCallbackHandler = lambda((event, context, callback) => { ... })
 module.exports.myAsyncHandler = lambda(async (event, context) => { ... });
 ```
 
-**Note:** if your lambda is not deployed with a `package.json` file, make sure to provide the `packageName` option when initializing Aspecto.\
+**Note:** if your lambda is not deployed with a `package.json` file, make sure to provide the `serviceName` option when initializing Aspecto.\
