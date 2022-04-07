@@ -22,8 +22,6 @@ Or, if you use [bundler](https://bundler.io), include aspecto-opentelemetry in y
 
 #### Rails Applications
 
-**Configuration in Code**
-
 Add this code to a new file `aspecto.rb` under `config/initializers/`:
 
 ```
@@ -37,25 +35,7 @@ Aspecto::OpenTelemetry::configure do |c|
 end
 ```
 
-**Configuration via Environment Variables**
-
-In your Gemfile:
-
-```
-gem 'aspecto-opentelemetry', require: 'aspecto/auto_instrument'
-```
-
-And set environment variables:
-
-```
-OTEL_SERVICE_NAME=<YOUR_SERVICE_NAME>
-ASPECTO_AUTH=<YOUR_ASPECTO_TOKEN>
-# ASPECTO_SAMPLING_RATIO=1.0 # [optional]: defaults to 1.0, use aspecto app to configure remotely
-```
-
 #### Ruby Applications
-
-**Configuration in Code**
 
 Add this code after your require other gems:
 
@@ -68,23 +48,6 @@ Aspecto::OpenTelemetry::configure do |c|
   # c.env = '<CURRENT_ENVIRONMENT>' # [optional]: automatically detected for rails and sinatra
   # c.sampling_ratio = 1.0 # [optional]: defaults to 1.0, use aspecto app to configure remotely
 end
-```
-
-**Configuration via Environment Variables**
-
-Add this require statement after your require other gems:
-
-```
-require 'aspecto/auto_instrument'
-```
-
-And set environment variables:
-
-```
-OTEL_SERVICE_NAME=<YOUR_SERVICE_NAME>
-ASPECTO_AUTH=<YOUR_ASPECTO_TOKEN>
-# ASPECTO_ENV=<CURRENT_ENVIRONMENT> # [optional]: automatically detected for rails and sinatra
-# ASPECTO_SAMPLING_RATIO=1.0 # [optional]: defaults to 1.0, use aspecto app to configure remotely
 ```
 
 #### Shutdown
