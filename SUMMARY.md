@@ -40,6 +40,10 @@
   * [Search for Errors and Exceptions](observability-debugging/untitled/search-for-errors-and-exceptions.md)
 * [Troubleshoot in Your Local Environment](observability-debugging/visualize-data-flows/README.md)
   * [Analyze Logs within a Trace](observability-debugging/visualize-data-flows/logging.md)
+* [Integrations](observability-debugging/integrations/README.md)
+  * [Logs](observability-debugging/integrations/logs/README.md)
+    * [Coralogix](observability-debugging/integrations/logs/coralogix.md)
+    * [Logz.io](observability-debugging/integrations/logs/logz.io.md)
 
 ## 🏆 Deploy to Production <a href="#settings" id="settings"></a>
 
