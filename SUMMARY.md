@@ -49,3 +49,4 @@
 
 * [Sampling Rules](settings/sampling-rules.md)
 * [Data Privacy](settings/data-privacy.md)
+* [Create Workspaces for Your Environments](settings/create-workspaces-for-your-environments.md)
