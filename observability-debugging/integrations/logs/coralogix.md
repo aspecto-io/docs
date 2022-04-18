@@ -34,7 +34,7 @@ When you start typing the curly brackets in **\{{** **\}}** you will see the hin
 For example:&#x20;
 
 ```
-https://app.aspecto.io/app/traces/{{$d.contextTraceId }}
+https://app.aspecto.io/app/traces/{{$d.contextTraceId}}
 ```
 
 7\.  In the Advanced option you can make the **Action** available only for specific Applications and/or Subsystems and also you can share it with your team mates by clicking on **Make Public when saved**.\
