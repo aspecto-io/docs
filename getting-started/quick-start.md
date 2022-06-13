@@ -8,7 +8,7 @@ Ready to gain visibility and a deeper understanding of your distributed system? 
 
 ## Step 1: Sign Up for an Account&#x20;
 
-[Use this link](https://app.aspecto.io/user/login) to sign up for an Aspecto account or navigate to the [Aspecto website](https://www.aspecto.io) and select the **Get Started** button.&#x20;
+[Use this link](https://app.aspecto.io/user/login) to sign up for an Aspecto account or navigate to the [Aspecto website](https://www.aspecto.io/) and select the **Get Started** button.&#x20;
 
 Once you've created an account, you can play around with the Aspecto UI using our simulated playground system or you can continue to step 2 and install our SDK.&#x20;
 
@@ -70,7 +70,7 @@ Install the gem using:
 $ gem install aspecto-opentelemetry
 ```
 
-Or, if you use [bundler](https://bundler.io), include aspecto-opentelemetry in your Gemfile.
+Or, if you use [bundler](https://bundler.io/), include aspecto-opentelemetry in your Gemfile.
 
 ****\
 **Configuration in Code**
@@ -98,7 +98,7 @@ Install the gem using:
 $ gem install aspecto-opentelemetry
 ```
 
-Or, if you use [bundler](https://bundler.io), include aspecto-opentelemetry in your Gemfile.
+Or, if you use [bundler](https://bundler.io/), include aspecto-opentelemetry in your Gemfile.
 
 ****\
 **Configuration in Code**

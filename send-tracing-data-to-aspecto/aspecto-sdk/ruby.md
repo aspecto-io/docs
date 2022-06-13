@@ -16,7 +16,7 @@ Install the gem using:
 $ gem install aspecto-opentelemetry
 ```
 
-Or, if you use [bundler](https://bundler.io), include aspecto-opentelemetry in your Gemfile.
+Or, if you use [bundler](https://bundler.io/), include aspecto-opentelemetry in your Gemfile.
 
 ### Usage
 

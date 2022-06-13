@@ -44,6 +44,9 @@
   * [Logs](observability-debugging/integrations/logs/README.md)
     * [Coralogix](observability-debugging/integrations/logs/coralogix.md)
     * [Logz.io](observability-debugging/integrations/logs/logz.io.md)
+  * [Error Monitoring](observability-debugging/integrations/error-monitoring/README.md)
+    * [Rollbar](observability-debugging/integrations/error-monitoring/rollbar.md)
+    * [Sentry](observability-debugging/integrations/error-monitoring/sentry.md)
 
 ## 🏆 Deploy to Production <a href="#settings" id="settings"></a>
 
