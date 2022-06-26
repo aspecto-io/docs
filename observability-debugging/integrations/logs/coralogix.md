@@ -8,7 +8,31 @@ To search for the logs related to a specific trace or the request transaction wh
 
 The enrichment process depends on the language and log type. You can find [here](../../../send-tracing-data-to-aspecto/aspecto-sdk/nodejs/customize-defaults/logs-correlation.md) example how to add it using Aspecto SDK.
 
-## Correlating Logs and Traces <a href="#correlating-logs-and-traces" id="correlating-logs-and-traces"></a>
+## View logs from Trace within Aspecto <a href="#correlating-logs-and-traces" id="correlating-logs-and-traces"></a>
+
+This integration allows you access and view your logs within Aspecto. It easily enables navigate from a trace to its correlated logs.
+
+Integrate once, and start viewing your logs from the trace viewer . Here's how to integrate:
+
+1\. Log into your **Coralogix** account as an administrator.
+
+2\. Navigate to **Data Flow** > **API Keys**_._
+
+![](<../../../.gitbook/assets/Screen Shot 2022-05-19 at 11.54.07.png>)
+
+3\. Copy the __ **Logs Query Key** __ (generate new key if not exist)_,_ and enter it.
+
+4\. Enter your **Elasticsearch-api**, following the next table [here](https://coralogix.com/docs/elastic-api/#how-to-query-your-coralogix-elastic-api) (e.g. `https://coralogix-esapi.coralogix.com:9443`).
+
+5\. Enter the **trace ID** field name as you saved it in your logs (can be multiple fields, e.g. `traceId` if the field saved in the first level, or `metadta.trace-id` if the field name is `trace-id` within object called `metadta`).
+
+6\. Enter the **span ID** field name as you saved it in your logs (can be multiple fields, e.g. `spanId`).
+
+7\. Click on **Integrate.**
+
+Once you complete the Integration, You will be able to view your logs correlated to specific trace (if exist) from the trace viewer.
+
+## View Trace in Aspecto from Coralogix Log <a href="#correlating-logs-and-traces" id="correlating-logs-and-traces"></a>
 
 1. Once the trace ID is part of the log attributes, open the Coralogix Logs screen page.
 2. Click on **Settings** in the top right corner and then on **Manage Actions** Configurations at the bottom.
@@ -44,7 +68,7 @@ https://app.aspecto.io/app/traces/{{$d.contextTraceId}}
 
 8\. Click on the Reset button to clear the entered data or on the **SAVE ACTION** button to save it.
 
-## Jump from Log to Trace in Aspecto
+### Jump from Log to Trace in Aspecto
 
 After you added the trace ID to your Coralogix logs and defined the action, you are now able to jump easily from the log to its correlated trace in Aspecto.
 
