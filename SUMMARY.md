@@ -46,6 +46,7 @@
   * [Error Monitoring](observability-debugging/integrations/error-monitoring/README.md)
     * [Rollbar](observability-debugging/integrations/error-monitoring/rollbar.md)
     * [Sentry](observability-debugging/integrations/error-monitoring/sentry.md)
+  * [External Events](observability-debugging/integrations/external-events.md)
 
 ## 🏆 Deploy to Production <a href="#settings" id="settings"></a>
 
