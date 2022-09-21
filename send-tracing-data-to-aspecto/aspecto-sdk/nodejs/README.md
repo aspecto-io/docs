@@ -46,7 +46,6 @@ After obtaining your token [here](https://app.aspecto.io/app/integration/api-key
 {% tab title="JavaScript" %}
 ```javascript
 require('@aspecto/opentelemetry')({
-    local:true,
     aspectoAuth: '*your-token-goes-here*'
 });
 // ... other imports ...
@@ -57,7 +56,6 @@ require('@aspecto/opentelemetry')({
 ```typescript
 import init from '@aspecto/opentelemetry';
 init({
-  local: true,
   aspectoAuth: '*your-token-goes-here*'
 });
 // ... other imports ...

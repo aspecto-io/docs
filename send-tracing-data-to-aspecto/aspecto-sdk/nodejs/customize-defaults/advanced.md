@@ -55,7 +55,6 @@ Available install configurations (all are optional):
 | `requireConfigForTraces`                  | `ASPECTO_REQUIRE_CONFIG_FOR_TRACES`                    | boolean          | `false`                                    | When `true`, the SDK will not trace anything until remote sampling configuration arrives (few hundreds ms). Can be used to enforce sampling configuration is always applied, with the cost of losing traces generated during service startup.                                 |
 | `logger`                                  | -                                                      | logger interface |                                            | Logger to be used in this tracing library. Common use for debugging `logger: console`                                                                                                                                                                                         |
 | `collectPayloads`                         | `ASPECTO_COLLECT_PAYLOADS`                             | boolean          | `true`                                     | Should Aspecto SDK collect payloads of operations                                                                                                                                                                                                                             |
-| `local`                                   | -                                                      | boolean          | `false`                                    | When set to true, enable [live traces](https://www.npmjs.com/package/@aspecto/opentelemetry#live-traces)                                                                                                                                                                      |
 | `otlpCollectorEndpoint`                   | `OTEL_EXPORTER_OTLP_TRACES_ENDPOINT`                   | string           | `https://otelcol-fast.aspecto.io/v1/trace` | Target URL to which the OTLP http exporter is going to send spans                                                                                                                                                                                                             |
 | `exportBatchSize`                         | `ASPECTO_EXPORT_BATCH_SIZE`                            | number           | `100`                                      | How many spans to batch in a single export to the collector                                                                                                                                                                                                                   |
 | `exportBatchTimeoutMs`                    | `ASPECTO_EXPORT_BATCH_TIMEOUT_MS`                      | number           | `1000` (1s)                                | Maximum time in ms for batching spans before sending to collector                                                                                                                                                                                                             |
@@ -79,26 +78,3 @@ To export data over JSON instead of protobuf, set the environment variable  `ASP
 Set the environment variable `DISABLE_ASPECTO` to any value, to disable Aspecto.\
 Affect lambda and GCF wrappers as well.\
 Useful when running unit tests, or as a simple kill switch.
-
-#### &#x20;**Live Trace**
-
-Live trace allows you to capture traces from all the microservices that you're running locally (both on the host env and docker) with`local`mode enabled. To activate live trace mode use `local` option like so:
-
-```javascript
-require('@aspecto/opentelemetry')({ local: true });
-```
-
-&#x20;Once the process starts it will output the following link:
-
-```
-=====================================================================================================================================
-|                                                                                                                                   |
-| 🕵️‍♀️See the live tracing stream at https://app.aspecto.io/app/live-traces/sessions?instanceId=14243e72-14dc-4255-87af-ef846b247578   |
-|                                                                                                                                   |
-=====================================================================================================================================
-```
-
-Click on the link to open the Live Trace, to see traces from all the microservices that are running on your environment that have local mode enabled. The link is valid for a limited period of time (a couple of days, but it may change in the future). \
-If you don't see a trace from some microservice (or none of them), click the newly-generated link.
-
-##
