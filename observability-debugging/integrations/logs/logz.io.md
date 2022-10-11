@@ -34,6 +34,8 @@ Integrate once, and start viewing your logs from the trace viewer . Here's how t
 
 Once you complete the Integration, You will be able to view your logs correlated to specific trace (if exist) from the trace viewer.
 
+![Navigate from a trace to its correlated logs](../../../.gitbook/assets/Logs-metrics-integration-w-warning-compressed.gif)
+
 ## View Trace in Aspecto from Logz.io Log <a href="#correlating-logs-and-traces" id="correlating-logs-and-traces"></a>
 
 1. Once the trace ID is part of the log attributes, open the Kibana left menu, and select **Management**.
