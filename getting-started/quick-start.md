@@ -132,27 +132,28 @@ Once you've searched through and easily pinpointed where the problem lies, click
 
 ### Search
 
-Select the **Trace Search** icon to view a list of every trace that has been collected. Each row represents an action that took place in your system. ****&#x20;
+Select the **Trace Search** icon to view a list of every trace that has been collected. Each row represents a trace - actions that took place in your system.
 
-![](<../.gitbook/assets/Trace Search.png>)
+<figure><img src="../.gitbook/assets/Trace Search (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Filter**
 
-Use the filters in the search bar to locate a specific trace to view more information on the endpoint-to-endpoint transaction. You can filter your search using the open search field or by: environment, time frame, HTTP Method**,** etc. You can check all the filters [here](https://docs.aspecto.io/v1/observability-debugging/untitled#filter).
+Use the filters in the search bar to locate a specific trace to view more information on the endpoint-to-endpoint transaction. You can filter your search using the open search field or by: environment, service name, HTTP method**,** etc. You can check all the common filters [here](https://docs.aspecto.io/v1/observability-debugging/untitled#filter).
 
-![](<../.gitbook/assets/Trace Filters.png>)
+![](<../.gitbook/assets/Trace Search filters (1).png>)
 
 ### **Sort**
 
 Now that you've filtered your search and have narrowed down the list of traces, you can sort through the remaining traces by clicking on any column header. The traces will automatically sort from ascending to descending but you can change the order of the sort using the arrow that appears next to the column name.
 
-![](<../.gitbook/assets/sort traces.png>)
+![](<../.gitbook/assets/Trace search duration sort.png>)
 
 ### **Observe**
 
-From the refined list, select the specific trace or set of aggregated traces you've been searching for in order to view more information. Three main sections will appear: Summary, Diagram and Timeline.
+From the refined list, select the specific trace you've been searching for in order to view more information. \
+Three main sections will appear: Diagram, Summary and Timeline.
 
-![](../.gitbook/assets/aspecto-flow-9.png)
+![](<../.gitbook/assets/Trace viewer.png>)
 
 {% hint style="info" %}
 Learn more how to [Investigate Your Tracing Data](https://docs.aspecto.io/v1/observability-debugging/untitled).

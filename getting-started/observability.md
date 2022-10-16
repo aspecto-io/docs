@@ -14,9 +14,9 @@ Tracing is very powerful, because it allows you to investigate some types of iss
 \
 This is an example of what a trace looks like in Aspecto:
 
-![](<../.gitbook/assets/image (10).png>)
+![](<../.gitbook/assets/Diagram and timeline.png>)
 
-The diagram above shows how an HTTP request was handled internally:
+The diagram and timeline above shows how an HTTP request was handled internally:
 
 * It first triggered an HTTP call to route '/user/token' on service 'user-service' which performed the FIND\_ONE operation on the 'aspecto-demo' database and returned status code 200 to the caller.
 * Then, it sent an HTTP GET request to an external API (`en.wikipedia.org`) which returned status code 200.
