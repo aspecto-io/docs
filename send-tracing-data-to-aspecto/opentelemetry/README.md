@@ -2,8 +2,8 @@
 
 Send traces to Aspecto directly from your code using one of the following:&#x20;
 
-{% content-ref url="nodejs.md" %}
-[nodejs.md](nodejs.md)
+{% content-ref url="nodejs/" %}
+[nodejs](nodejs/)
 {% endcontent-ref %}
 
 {% content-ref url="java.md" %}
