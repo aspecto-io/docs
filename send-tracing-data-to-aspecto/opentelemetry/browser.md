@@ -4,18 +4,73 @@ Collecting traces from the browser will allow you to track user interaction. Tra
 \
 Instrument your web app using the OpenTelemetry JS SDK and send traces to Aspecto.
 
+### Install dependencies
+
+{% tabs %}
+{% tab title="npm" %}
+```bash
+npm install @opentelemetry/api @opentelemetry/sdk-trace-web @opentelemetry/sdk-trace-base @opentelemetry/context-zone @opentelemetry/resources @opentelemetry/semantic-conventions @opentelemetry/exporter-trace-otlp-http
+```
+
+
+{% endtab %}
+
+{% tab title="yarn" %}
+```bash
+yarn add @opentelemetry/api @opentelemetry/sdk-trace-web @opentelemetry/sdk-trace-base @opentelemetry/context-zone @opentelemetry/resources @opentelemetry/semantic-conventions @opentelemetry/exporter-trace-otlp-http @opentelemetry/instrumentation
+```
+{% endtab %}
+{% endtabs %}
+
+### Install Instrumentation Libraries
+
+You can choose instrumentation libraries that are relevant to you, for example:
+
+{% tabs %}
+{% tab title="npm" %}
+```bash
+npm install @opentelemetry/instrumentation-document-load @opentelemetry/instrumentation-xml-http-request @opentelemetry/instrumentation-user-interaction
+```
+{% endtab %}
+
+{% tab title="yarn" %}
+```bash
+yarn add @opentelemetry/instrumentation-document-load @opentelemetry/instrumentation-xml-http-request @opentelemetry/instrumentation-user-interaction
+```
+{% endtab %}
+{% endtabs %}
+
+Or install **all** instrumentation libraries with the "@opentelemetry/auto-instrumentations-web" package:
+
+{% tabs %}
+{% tab title="npm" %}
+```bash
+npm install @opentelemetry/auto-instrumentations-web
+```
+{% endtab %}
+
+{% tab title="yarn" %}
+```bash
+yarn add @opentelemetry/auto-instrumentations-web
+```
+{% endtab %}
+{% endtabs %}
+
+### Register OpenTelemetry SDK
+
 Add this code to your application and invoke `registerOpenTelemetry` as early as possible to instrument your code.
 
 <pre class="language-javascript"><code class="lang-javascript"><strong>import { WebTracerProvider } from '@opentelemetry/sdk-trace-web';
-</strong>import { DocumentLoadInstrumentation } from '@opentelemetry/instrumentation-document-load';
+</strong>import { BatchSpanProcessor } from '@opentelemetry/sdk-trace-base';
+import { ZoneContextManager } from '@opentelemetry/context-zone';
+import { Resource, detectResources, browserDetector } from '@opentelemetry/resources';
+import { SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
+import { OTLPTraceExporter } from '@opentelemetry/exporter-trace-otlp-http';
+
+import { registerInstrumentations } from '@opentelemetry/instrumentation';
+import { DocumentLoadInstrumentation } from '@opentelemetry/instrumentation-document-load';
 import { XMLHttpRequestInstrumentation } from '@opentelemetry/instrumentation-xml-http-request';
 import { UserInteractionInstrumentation } from '@opentelemetry/instrumentation-user-interaction';
-import { ZoneContextManager } from '@opentelemetry/context-zone';
-import { registerInstrumentations } from '@opentelemetry/instrumentation';
-import { BatchSpanProcessor } from '@opentelemetry/sdk-trace-base';
-import { OTLPTraceExporter } from '@opentelemetry/exporter-trace-otlp-http';
-import { SemanticResourceAttributes } from '@aspecto-io/aspecto-span';
-import { Resource, detectResources, browserDetector } from '@opentelemetry/resources';
 
 const aspectoToken = '--YOUR ASPECTO TOKEN--';
 const serviceName = '--YOUR SERVICE NAME--';

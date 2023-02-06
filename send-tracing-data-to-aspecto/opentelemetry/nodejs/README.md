@@ -1,6 +1,26 @@
 # NodeJS
 
-Send traces to Aspecto directly from your code using [`exporter-trace-otlp-proto`](https://www.npmjs.com/package/@opentelemetry/exporter-trace-otlp-proto) . Here is an example Node.js TypeScript and JavaScript snippets:
+Send traces to Aspecto directly from your code using [`exporter-trace-otlp-proto`](https://www.npmjs.com/package/@opentelemetry/exporter-trace-otlp-proto) .
+
+### Install dependencies&#x20;
+
+{% tabs %}
+{% tab title="npm" %}
+```bash
+npm install @opentelemetry/api @opentelemetry/sdk-trace-base @opentelemetry/sdk-trace-node @opentelemetry/resources @opentelemetry/semantic-conventions @opentelemetry/exporter-trace-otlp-proto @opentelemetry/instrumentation
+```
+{% endtab %}
+
+{% tab title="yarn" %}
+```bash
+yarn add @opentelemetry/api @opentelemetry/sdk-trace-base @opentelemetry/sdk-trace-node @opentelemetry/resources @opentelemetry/semantic-conventions @opentelemetry/exporter-trace-otlp-proto @opentelemetry/instrumentation
+```
+{% endtab %}
+{% endtabs %}
+
+### Register OpenTelemetry SDK&#x20;
+
+Execute the below code as early as possible in your service
 
 {% tabs %}
 {% tab title="Type Script" %}
@@ -8,7 +28,7 @@ Send traces to Aspecto directly from your code using [`exporter-trace-otlp-proto
 import { NodeTracerProvider } from '@opentelemetry/sdk-trace-node';
 import { Resource } from '@opentelemetry/resources';
 import { SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
-import { SimpleSpanProcessor } from '@opentelemetry/sdk-trace-base';
+import { BatchSpanProcessor } from '@opentelemetry/sdk-trace-base';
 import { OTLPTraceExporter } from '@opentelemetry/exporter-trace-otlp-proto';
 import { registerInstrumentations } from '@opentelemetry/instrumentation';
 
@@ -20,7 +40,7 @@ const provider = new NodeTracerProvider({
 
 provider.register();
 provider.addSpanProcessor(
-    new SimpleSpanProcessor(
+    new BatchSpanProcessor(
         new OTLPTraceExporter({
             url: 'https://otelcol.aspecto.io/v1/traces',
             headers: {
