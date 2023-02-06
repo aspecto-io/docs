@@ -4,7 +4,7 @@ Collecting traces from the browser will allow you to track user interaction. Tra
 \
 Instrument your web app using the OpenTelemetry JS SDK and send traces to Aspecto.
 
-### Install dependencies
+### Install Dependencies
 
 {% tabs %}
 {% tab title="npm" %}

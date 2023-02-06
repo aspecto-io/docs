@@ -2,7 +2,7 @@
 
 Send traces to Aspecto directly from your code using [`exporter-trace-otlp-proto`](https://www.npmjs.com/package/@opentelemetry/exporter-trace-otlp-proto) .
 
-### Install dependencies&#x20;
+### Install Dependencies&#x20;
 
 {% tabs %}
 {% tab title="npm" %}
