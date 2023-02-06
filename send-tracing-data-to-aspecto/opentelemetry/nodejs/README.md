@@ -1,6 +1,6 @@
 # NodeJS
 
-Send traces to aspecto directly from your code using [`exporter-trace-otlp-proto`](https://www.npmjs.com/package/@opentelemetry/exporter-trace-otlp-proto) . Here is an example Node.js TypeScript and JavaScript snippets:
+Send traces to Aspecto directly from your code using [`exporter-trace-otlp-proto`](https://www.npmjs.com/package/@opentelemetry/exporter-trace-otlp-proto) . Here is an example Node.js TypeScript and JavaScript snippets:
 
 {% tabs %}
 {% tab title="Type Script" %}
