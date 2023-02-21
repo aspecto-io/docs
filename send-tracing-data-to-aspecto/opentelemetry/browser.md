@@ -4,7 +4,7 @@ Collecting traces from the browser will allow you to track user interaction. Tra
 \
 Instrument your web app using the OpenTelemetry JS SDK and send traces to Aspecto.
 
-### Install Dependencies
+## Step 1 - Install Depenendecies
 
 {% tabs %}
 {% tab title="npm" %}
@@ -22,9 +22,13 @@ yarn add @opentelemetry/api @opentelemetry/sdk-trace-web @opentelemetry/sdk-trac
 {% endtab %}
 {% endtabs %}
 
-### Install Instrumentation Libraries
+## Step 2 - Install Instrumentation Libraries
 
-You can choose instrumentation libraries that are relevant to you, for example:
+You can choose to
+
+### Either
+
+&#x20;Install **instrumentation libraries that are relevant** to you, for example:
 
 {% tabs %}
 {% tab title="npm" %}
@@ -40,7 +44,11 @@ yarn add @opentelemetry/instrumentation-document-load @opentelemetry/instrumenta
 {% endtab %}
 {% endtabs %}
 
-Or install **all** instrumentation libraries with the "@opentelemetry/auto-instrumentations-web" package:
+This option is friendlier for your bundle size as it only pulls in packages that are actually used.
+
+### Or
+
+Install **all** instrumentation libraries with the "@opentelemetry/auto-instrumentations-web" package:
 
 {% tabs %}
 {% tab title="npm" %}
@@ -56,9 +64,13 @@ yarn add @opentelemetry/auto-instrumentations-web
 {% endtab %}
 {% endtabs %}
 
-### Register OpenTelemetry SDK
+## Step 3 - Register OpenTelemetry SDK
 
 Add this code to your application and invoke `registerOpenTelemetry` as early as possible to instrument your code.
+
+{% hint style="danger" %}
+This code contains parts you need to fill in yourself. `ignoreUrls` should include all your third parties domains to avoid CORS errors.
+{% endhint %}
 
 <pre class="language-javascript"><code class="lang-javascript"><strong>import { WebTracerProvider } from '@opentelemetry/sdk-trace-web';
 </strong>import { BatchSpanProcessor } from '@opentelemetry/sdk-trace-base';
@@ -68,6 +80,7 @@ import { SemanticResourceAttributes } from '@opentelemetry/semantic-conventions'
 import { OTLPTraceExporter } from '@opentelemetry/exporter-trace-otlp-http';
 
 import { registerInstrumentations } from '@opentelemetry/instrumentation';
+// import the libraries you are using from Step 2
 import { DocumentLoadInstrumentation } from '@opentelemetry/instrumentation-document-load';
 import { XMLHttpRequestInstrumentation } from '@opentelemetry/instrumentation-xml-http-request';
 import { UserInteractionInstrumentation } from '@opentelemetry/instrumentation-user-interaction';
@@ -121,9 +134,16 @@ export const registerOpenTelemetry = async () => {
 };
 </code></pre>
 
-You'll need to set up the following in order to export traces to Aspecto:
+## Step 4 - Configure the Installation
 
-* `aspectoToken` - You can get your token [here](https://app.aspecto.io/86092cc0/integration/tokens).
-* `serviceName` - The name of your web application. You will be able to filter and search for it in Aspecto.
-* `propagateTraceHeaderCorsUrls` - In order to propagate the context to your instrumented services, add their urls by matching a regex.
-* `ignoreUrls` - Urls that match any regex in `ignoreUrls` will not be traced and the context will not be propagate. It can be used to ignore uninteresting spans from the traces, avoid CORS issues, and ignore third party API calls.
+Fill in the following i**n the code above** in order to export traces to Aspecto:
+
+1\) `aspectoToken` - You can get your token [here](https://app.aspecto.io/86092cc0/integration/tokens).
+
+2\) `serviceName` - The name of your web application. You will be able to filter and search for it in Aspecto trace viewer and use it for sampling rules and alerts.
+
+3\) `propagateTraceHeaderCorsUrls` - In order to propagate the context to your instrumented services, add their urls by matching a regex.
+
+4\) `ignoreUrls` - Urls that match any regex in `ignoreUrls` will not be traced and the context will not be propagate. It can be used to ignore uninteresting spans from the traces, avoid CORS issues, and ignore third-party API calls.
+
+``
