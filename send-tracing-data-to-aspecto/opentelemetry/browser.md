@@ -28,7 +28,7 @@ You can choose to
 
 ### Either
 
-&#x20;Install **instrumentation libraries that are relevant** to you, for example:
+&#x20;Install **all instrumentation libraries that are relevant** to you, for example:
 
 {% tabs %}
 {% tab title="npm" %}
@@ -45,6 +45,8 @@ yarn add @opentelemetry/instrumentation-document-load @opentelemetry/instrumenta
 {% endtabs %}
 
 This option is friendlier for your bundle size as it only pulls in packages that are actually used.
+
+A list of instrumentations and usage instructions is available at [OpenTelemetry Registry](https://opentelemetry.io/ecosystem/registry/?s=Browser\&component=instrumentation\&language=js)&#x20;
 
 ### Or
 
@@ -64,9 +66,9 @@ yarn add @opentelemetry/auto-instrumentations-web
 {% endtab %}
 {% endtabs %}
 
-## Step 3 - Register OpenTelemetry SDK
+## Step 3 - Add OpenTelemetry SDK Setup Code
 
-Add this code to your application and invoke `registerOpenTelemetry` as early as possible to instrument your code.
+Add this code to your application in a file named `opentelemetry.ts`
 
 {% hint style="danger" %}
 This code contains parts you need to fill in yourself. `ignoreUrls` should include all your third parties domains to avoid CORS errors.
@@ -92,7 +94,7 @@ const serviceName = '--YOUR SERVICE NAME--';
 const propagateTraceHeaderCorsUrls = [/my\.company\.domain/];
 
 // urls that match any regex in ignoreUrls will not be traced and the context will not be propagate.
-// it can be used to ignore uninteresting spans from the traces, avoid CORS issues, and ignore third party API calls
+// it can be used to execlude uninteresting spans from the traces, avoid CORS issues, and ignore third party API calls
 const ignoreUrls = [/third\.parties.\urls/];
 
 export const registerOpenTelemetry = async () => {
@@ -144,6 +146,24 @@ Fill in the following i**n the code above** in order to export traces to Aspecto
 
 3\) `propagateTraceHeaderCorsUrls` - In order to propagate the context to your instrumented services, add their urls by matching a regex.
 
-4\) `ignoreUrls` - Urls that match any regex in `ignoreUrls` will not be traced and the context will not be propagate. It can be used to ignore uninteresting spans from the traces, avoid CORS issues, and ignore third-party API calls.
+This option is where you control which API calls in your frontend (browser) connect with traces in your backend ([nodejs](nodejs/) \ [java](java.md) \ [python](python.md) \ [ruby](ruby.md) \ .[NET](.net.md) \ [GO](go.md)).
 
-``
+4\) `ignoreUrls` - Urls that match any regex in `ignoreUrls` will not be traced and the context will not be propagated. It can be used to exclude uninteresting spans from the traces, avoid CORS issues, and ignore third-party API calls.
+
+## Step 5 - Register OpenTelemetry in Your Code
+
+Invoke the `registerOpenTelemetry` function in **your main `index.ts`** file as early as possible.
+
+An example **React** startup might look similar to this:
+
+```typescript
+import { registerOpenTelemetry } from './opentelemetry';
+import React from 'react';
+import { render } from 'react-dom';
+import App from './App';
+
+registerOpenTelemetry();
+
+const rootElement = document.getElementById('react-app');
+render(<App />, rootElement);
+```
