@@ -31,7 +31,9 @@
   * [Ruby](send-tracing-data-to-aspecto/opentelemetry/ruby.md)
   * [.NET](send-tracing-data-to-aspecto/opentelemetry/.net.md)
   * [Go](send-tracing-data-to-aspecto/opentelemetry/go.md)
-  * [Browser](send-tracing-data-to-aspecto/opentelemetry/browser.md)
+  * [Browser](send-tracing-data-to-aspecto/opentelemetry/browser/README.md)
+    * [Install All Auto Instrumentations](send-tracing-data-to-aspecto/opentelemetry/browser/install-all-auto-instrumentations.md)
+    * [Install Specific Auto Instrumentations](send-tracing-data-to-aspecto/opentelemetry/browser/install-specific-auto-instrumentations.md)
 * [Using OpenTelemetry Collector](send-tracing-data-to-aspecto/using-opentelemetry-collector.md)
 * [Using Jaeger Agent](send-tracing-data-to-aspecto/using-jaeger-agent.md)
 

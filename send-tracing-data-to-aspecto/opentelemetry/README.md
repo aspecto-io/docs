@@ -26,6 +26,6 @@ Send traces to Aspecto directly from your code using one of the following:&#x20;
 [go.md](go.md)
 {% endcontent-ref %}
 
-{% content-ref url="browser.md" %}
-[browser.md](browser.md)
+{% content-ref url="browser/" %}
+[browser](browser/)
 {% endcontent-ref %}
