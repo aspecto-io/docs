@@ -54,6 +54,6 @@ After completing the setup, and deploying your service, find the relevant log in
 
 Next, go to [Trace Search](../../../../observability-debugging/untitled/) and search for the traceId you just copied:
 
-![Searching for traceId in Trace Search](<../../../../.gitbook/assets/image (8).png>)
+![Searching for traceId in Trace Search](<../../../../.gitbook/assets/image (8) (1).png>)
 
 Then, visualize and debug the trace.

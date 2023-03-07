@@ -49,6 +49,7 @@
     * [Logz.io](observability-debugging/integrations/logs/logz.io.md)
     * [Amazon OpenSearch](observability-debugging/integrations/logs/amazon-opensearch.md)
   * [Error Monitoring](observability-debugging/integrations/error-monitoring/README.md)
+    * [Bugsnag](observability-debugging/integrations/error-monitoring/bugsnag.md)
     * [Rollbar](observability-debugging/integrations/error-monitoring/rollbar.md)
     * [Sentry](observability-debugging/integrations/error-monitoring/sentry.md)
   * [External Events](observability-debugging/integrations/external-events.md)
