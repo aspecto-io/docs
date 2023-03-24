@@ -1,14 +1,14 @@
 ---
-description: Describe how to integrate Aspecto with Bugsnag
+description: Describe how to integrate Aspecto with BugSnag
 ---
 
-# Bugsnag
+# BugSnag
 
-Bugsang allows you to collect application errors from your entire stack and pinpoint the issue you are trying to understand and solve. In most cases, especially in distributed applications, a single error lacks context as the error is the effect. But still, you need to have the whole picture to understand the cause of the error. Distributed traces will allow you to understand the cause and effect throughout your services. Integrating your errors with traces will give you complete observability into your system.
+BugSang allows you to collect application errors from your entire stack and pinpoint the issue you are trying to understand and solve. In most cases, especially in distributed applications, a single error lacks context as the error is the effect. But still, you need to have the whole picture to understand the cause of the error. Distributed traces will allow you to understand the cause and effect throughout your services. Integrating your errors with traces will provide you with complete observability of your system.
 
 When investigating an error, you will be able to understand what other services were involved in the process.
 
-It is a straightforward integration between Aspecto and Bugsnag. When reporting an error to Bugsang the OpenTelemetry trace id should be added as metadata so that it will be correlated to Aspecto.
+It is a straightforward integration between Aspecto and BugSnag. When reporting an error to BugSang the OpenTelemetry trace id should be added as metadata so that it will be correlated to Aspecto.
 
 Depending on the programming language, here is the first step, adding the trace id to any reported error:
 
@@ -146,7 +146,7 @@ end
 {% endtab %}
 {% endtabs %}
 
-In Bugsang you will have a tab called "Aspecto", you can grab that traceId from there and search for it in Aspecto.
+In BugSang you will have a tab called "Aspecto", you can grab that traceId from there and search for it in Aspecto.
 
 ![](<../../../.gitbook/assets/image (8).png>)
 
