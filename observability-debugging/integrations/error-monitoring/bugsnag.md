@@ -4,27 +4,40 @@ description: Describe how to integrate Aspecto with BugSnag
 
 # BugSnag
 
-BugSnag allows you to collect application errors from your entire stack and pinpoint the issue you are trying to understand and solve. In most cases, especially in distributed applications, a single error lacks context as the error is the effect. But still, you need to have the whole picture to understand the cause of the error. Distributed traces will allow you to understand the cause and effect throughout your services. Integrating your errors with traces will provide you with complete observability of your system.
+**BugSnag Integration with Aspecto**
 
-When investigating an error, you will be able to understand what other services were involved in the process.
+BugSnag enables you to collect application errors across your entire stack, helping you identify and address issues efficiently. In distributed applications, errors often lack context, representing only the effect rather than the cause. To gain a comprehensive understanding of the error's root cause, you need visibility into your entire system. Distributed traces provide this insight by tracing the cause-and-effect relationships across your services. By integrating your errors with traces, you achieve complete observability of your system.
 
-It is a straightforward integration between Aspecto and BugSnag. When reporting an error to BugSnag the OpenTelemetry trace id should be added as metadata so that it will be correlated to Aspecto.
+**Investigating Errors**
 
-Depending on the programming language, here is the first step, adding the trace id to any reported error:
+When investigating an error, it's essential to understand which other services were involved in the process. Integrating BugSnag with Aspecto is a straightforward process. When reporting an error to BugSnag, you have the option to include the following parameters based on your specific needs:
+
+1. **Trace ID (Required)**: To correlate your error with Aspecto, ensure you include the OpenTelemetry trace ID as metadata when reporting the error.
+2. **Workspace ID (Optional)**: Optionally, you can include the Workspace ID, which can be found in the Aspecto platform. If not provided, the link will point to the default workspace.
+3. **Sampled Flag (Optional)**: In situations where the trace during the error was not sampled, you can include the Sampled Flag in the error report. In BugSnag's user interface, a message will indicate that the trace won't be available in Aspecto due to sampling.
+
+**Getting Started**
+
+Depending on your programming language, the first step is to add the trace ID and any optional parameters to your reported error. This ensures that you have complete visibility into the error's context, and, if needed, the ability to link it to specific Aspecto workspaces.
+
+By following these steps, you can effectively integrate BugSnag with Aspecto, enabling you to better understand and resolve errors in your distributed application environment.
 
 {% tabs %}
 {% tab title="JS" %}
 ```javascript
 import { trace, context } from '@opentelemetry/api';
-var Bugsnag = require('@bugsnag/js')
+import Bugsnag from '@bugsnag/js'
+
 Bugsnag.start({
-    apiKey: 'token goes here', //insert Bugsnag's api key
+    apiKey: 'api key goes here', //insert Bugsnag's api key
     onError: function (event: any) {
         const activeSpan = trace.getSpanContext(context.active());
+        const sampled = activeSpan.traceFlags.sampled;
         event.addMetadata('Aspecto', { 
             trace_id: activeSpan?.traceId,
-            workspace_id: 'workspace_id'// optinal, will use the default workspace if not provided
-      }) // Adding traceId to any error
+            workspace_id: 'optinal workspace id',// Optinal, will use the default workspace if not provided
+            sampled: sampled // Optinal if provided when the trace was not sampled the bugsnag UI will display appropriate message
+      });
     }
 })
 ```
@@ -49,7 +62,7 @@ public String getActiveTraceId() {
 bugsnag.addCallback(new Callback() {
     @Override
     public void beforeNotify(Report report) {
-        report.addToTab("Aspecto", "trace_id", getActiveTraceId(), "workspace_id", "workspace_id");
+        report.addToTab("Aspecto", "trace_id", getActiveTraceId(), "workspace_id", "optinal workspace id");
 
     }
 });
@@ -71,7 +84,7 @@ def callback(event):
 
     event.add_tab("Aspecto", {
         "trace_id": get_active_trace_id(),
-        "workspace_id": "workspace_id", # optinal, will use the defult one if not provided
+        "workspace_id": "optinal workspace id", # Optinal, will use the defult one if not provided
         })
 
 # Call `callback` before every event
@@ -99,7 +112,7 @@ bugsnag.Notify(err, ctx,
     bugsnag.MetaData{
         "Aspecto": {
             "trace_id": getActiveTraceID(),
-            "workspace_id": "workspace_id", //optinal, will use default if not provided
+            "workspace_id": "optinal workspace id", // Optinal, will use default if not provided
         },
     })
 
@@ -119,7 +132,7 @@ public string GetActiveTraceId() {
 }
 
 bugsnag.BeforeNotify(report => {
-  report.Event.Metadata.Add("Aspecto", new Dictionary<string, object> { { "trace_id", GetActiveTraceId(),  "workspace_id", "workspace_id" } });
+  report.Event.Metadata.Add("Aspecto", new Dictionary<string, object> { { "trace_id", GetActiveTraceId(),  "workspace_id", "optinal workspace id" } });
 });
 
 ```
@@ -142,7 +155,7 @@ Bugsnag.configure do |config|
     # Add customer information to every event
     event.add_metadata(:Aspecto, {
       trace_id: get_active_trace_id(),
-      workspace_id: "workspace_id", # Optinal, will use default if not provided
+      workspace_id: "optinal workspace id", # Optinal, will use default if not provided
     })
  
   end)
