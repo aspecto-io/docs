@@ -11,7 +11,11 @@ description: See events from 3rd party systems in Aspecto
 * When the event happens, it will be reported to Aspecto.
 * The external event will be presented in the Trace Search graph.
 
-![](https://app.aspecto.io/a1a1f91d9aa5a99e4c8051700ad6ec4b.svg)
+<div align="center">
+
+<img src="https://app.aspecto.io/a1a1f91d9aa5a99e4c8051700ad6ec4b.svg" alt="">
+
+</div>
 
 ## Installation
 

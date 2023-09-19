@@ -72,7 +72,7 @@ $ gem install aspecto-opentelemetry
 
 Or, if you use [bundler](https://bundler.io/), include aspecto-opentelemetry in your Gemfile.
 
-****\
+\
 **Configuration in Code**
 
 Add this code to a new file `aspecto.rb` under `config/initializers/`:
@@ -100,7 +100,7 @@ $ gem install aspecto-opentelemetry
 
 Or, if you use [bundler](https://bundler.io/), include aspecto-opentelemetry in your Gemfile.
 
-****\
+\
 **Configuration in Code**
 
 ```

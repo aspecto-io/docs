@@ -26,7 +26,7 @@ There are two different modes when creating privacy rules:
 This option means **all payload will be collected** across all services and environments, except for specific fields that you will add to the block-list manually.
 
 1. Click _NEW RULE._\
-   &#x20; __  ![](../.gitbook/assets/collect-payload-new-rule.png)
+   &#x20;   ![](../.gitbook/assets/collect-payload-new-rule.png)
 2. Select whether the rule will apply to a data field or a route.
 3. Select whether the rule will block collection of data for the item or, for data fields, permit data collection, but scramble the data.
 4. Select the name of the field or trace. For example, secret_-key._
@@ -38,7 +38,7 @@ This option means **all payload will be collected** across all services and envi
 This option means **no payload will be collected** across all services and environments, except for specific fields that you will add to the allow-list manually.
 
 * Click _NEW RULE._\
-  &#x20; __  ![](../.gitbook/assets/drop-payload-new-rule.png)
+  &#x20;   ![](../.gitbook/assets/drop-payload-new-rule.png)
 * Select only the field you want will be collected (i.e: '_token'_ or '_user.token'_ or '_users\[0].id'_). All the other fields will be dropped automatically.
 * Then, select the specific service it occurs, or anywhere (all services or traces).
 * Click _CREATE_, to add the rule.

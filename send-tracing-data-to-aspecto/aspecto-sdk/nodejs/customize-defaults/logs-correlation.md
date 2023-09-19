@@ -8,7 +8,7 @@ A common use case for the Trace Search tool is to see the related trace while in
 
 ## Setup
 
-Follow these steps to attach `traceId` **** to your logs.
+Follow these steps to attach `traceId` to your logs.
 
 Use the `getContext` method, exposed from our package:
 

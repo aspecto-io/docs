@@ -21,7 +21,10 @@ Bugsnag.start({
     apiKey: 'token goes here', //insert Bugsnag's api key
     onError: function (event: any) {
         const activeSpan = trace.getSpanContext(context.active());
-        event.addMetadata('Aspecto', { traceId: activeSpan?.traceId }) // Adding traceId to any error
+        event.addMetadata('Aspecto', { 
+            trace_id: activeSpan?.traceId,
+            workspace_id: 'workspace_id'// optinal, will use the default workspace if not provided
+      }) // Adding traceId to any error
     }
 })
 ```
@@ -46,7 +49,7 @@ public String getActiveTraceId() {
 bugsnag.addCallback(new Callback() {
     @Override
     public void beforeNotify(Report report) {
-        report.addToTab("Aspecto", "traceId", getActiveTraceId());
+        report.addToTab("Aspecto", "trace_id", getActiveTraceId(), "workspace_id", "workspace_id");
 
     }
 });
@@ -66,7 +69,10 @@ def get_active_trace_id():
 
 def callback(event):
 
-    event.add_tab("Aspecto", {"traceId": get_active_trace_id()})
+    event.add_tab("Aspecto", {
+        "trace_id": get_active_trace_id(),
+        "workspace_id": "workspace_id", # optinal, will use the defult one if not provided
+        })
 
 # Call `callback` before every event
 bugsnag.before_notify(callback)
@@ -92,7 +98,8 @@ func getActiveTraceID() string {
 bugsnag.Notify(err, ctx,
     bugsnag.MetaData{
         "Aspecto": {
-            "traceId": getActiveTraceID(),
+            "trace_id": getActiveTraceID(),
+            "workspace_id": "workspace_id", //optinal, will use default if not provided
         },
     })
 
@@ -112,7 +119,7 @@ public string GetActiveTraceId() {
 }
 
 bugsnag.BeforeNotify(report => {
-  report.Event.Metadata.Add("Aspecto", new Dictionary<string, object> { { "traceId", GetActiveTraceId() } });
+  report.Event.Metadata.Add("Aspecto", new Dictionary<string, object> { { "trace_id", GetActiveTraceId(),  "workspace_id", "workspace_id" } });
 });
 
 ```
@@ -134,7 +141,8 @@ Bugsnag.configure do |config|
   config.add_on_error(proc do |event|
     # Add customer information to every event
     event.add_metadata(:Aspecto, {
-      traceId: get_active_trace_id(),
+      trace_id: get_active_trace_id(),
+      workspace_id: "workspace_id", # Optinal, will use default if not provided
     })
  
   end)
@@ -146,7 +154,8 @@ end
 {% endtab %}
 {% endtabs %}
 
-In BugSnag you will have a tab called "Aspecto", you can grab that traceId from there and search for it in Aspecto.
+In BugSnag you will have a tab called "Aspecto", there you will have a link to the trace in Aspecto.
 
-![](<../../../.gitbook/assets/image (8).png>)
 
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-09-19 at 10.12.21.png" alt=""><figcaption></figcaption></figure>

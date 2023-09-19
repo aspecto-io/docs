@@ -20,7 +20,7 @@ Integrate once, and start viewing your logs from the trace viewer . Here's how t
 
 ![](<../../../.gitbook/assets/Screen Shot 2022-05-19 at 11.54.07.png>)
 
-3\. Copy the __ **Logs Query Key** __ (generate new key if not exist)_,_ and enter it.
+3\. Copy the **Logs Query Key** (generate new key if not exist)_,_ and enter it.
 
 4\. Enter your **Elasticsearch-api**, following the next table [here](https://coralogix.com/docs/elastic-api/#how-to-query-your-coralogix-elastic-api) (e.g. `https://coralogix-esapi.coralogix.com:9443`).
 
